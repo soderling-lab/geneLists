@@ -3,6 +3,11 @@
 ## Building a disease-associated gene GO collection for analysis with 
 # the AnRichment package.
 
+# Which DisGene dataset to download and compile.
+dataset <- "All_Disease_Genes"
+save_data <- TRUE
+save_GOcollection <- TRUE
+
 # Imports.
 suppressPackageStartupMessages({
 	library(anRichment)
@@ -15,9 +20,15 @@ suppressPackageStartupMessages({
 here <- getwd()
 root <- dirname(here)
 rdatdir <- file.path(root,"rdata")
+tabsdir <- file.path(root,"tables")
 
 # Download and unzip the DisgeneNet currated gene list.
-myurl <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads/curated_gene_disease_associations.tsv.gz"
+base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
+datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz",
+	      All_Disease_Genes = "all_gene_disease_associations.tsv.gz",
+	      Curated_Variants = "curated_variant_disease_associations.tsv.gz",
+	      All_Variants = "all_variant_disease_associations.tsv.gz")
+myurl <- file.path(base_url,datasets[dataset])
 download.file(myurl,destfile=basename(myurl))
 system(command = paste("gunzip",basename(myurl)))
 
@@ -40,6 +51,12 @@ percent_removed <- round(100*(n_out/length(msEntrez)),2)
 message(paste("Percent disease genes without mouse homology:",
 	      percent_removed))
 data <- subset(data, !is.na(data$msEntrez))
+
+# Write data to file.
+if (save_data) {
+	myfile <- paste0("DisGeneNet_",dataset,".csv")
+	data.table::fwrite(data,myfile)
+}
 
 # Split data into disease groups.
 data_list <- split(data,data$diseaseId)
@@ -85,5 +102,7 @@ PLgroup <- newGroup(name = "PL",
 DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,"mouse_DisGeneNETcollection.RData")
-saveRDS(DisGeneNETcollection,myfile)
+if (save_GOcollection) {
+	myfile <- file.path(rdatdir,paste0("DisGeneNet_",dataset,"_mouse.RData"))
+	saveRDS(DisGeneNETcollection,myfile)
+}
