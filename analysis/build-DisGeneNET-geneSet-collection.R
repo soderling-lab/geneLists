@@ -61,7 +61,8 @@ for (i in 1:length(data_list)) {
 	df <- data_list[[i]]
 	diseaseID <- names(data_list)[i]
 	entrez <- df$msEntrez
-	namen <- gsub(" ","_",df$diseaseName)
+	namen <- gsub(" ","_",unique(df$diseaseName))
+	if (length(namen) > 1) { stop() }
 	geneSets[[i]] <- newGeneSet(geneEntrez = entrez,
 				    geneEvidence = "IEA", # Inferred from Electronic Annotation
 				    geneSource = "DisGeneNET",
@@ -70,19 +71,19 @@ for (i in 1:length(data_list)) {
 				    description = data_description,
 				    source = myurl,
 				    organism = "mouse",
-				    internalClassification = "DisGeneNET",
-				    groups = "DisGeneNET",
+				    internalClassification = c("PL","DisGeneNET"),
+				    groups = "PL",
 				    lastModified = "2020-01-03")
-}
+} # Ends loop.
 
 # Define gene collection groups.
-PLgroup <- newGroup(name = "DisGeneNET", 
+PLgroup <- newGroup(name = "PL", 
 		   description = "Currated gene-disease associations from DisGenNET mapped to mouse homologs.",
 		   source = "disgenenet.org")
 
 # Combine as gene collection.
 DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
-# Save.
+# Save as RData.
 myfile <- file.path(rdatdir,"mouse_DisGeneNETcollection.RData")
 saveRDS(DisGeneNETcollection,myfile)
