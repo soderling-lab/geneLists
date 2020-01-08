@@ -1,0 +1,860 @@
+status,gene_symbol,gene_name,ensembl_id,entrez_id,osEntrez,chromosome,genetic_category,gene_score,syndromic,number_of_reports
+9,ABAT,4-aminobutyrate aminotransferase,ENSG00000183044,18,268860,16,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,ABCA13,ATP binding cassette subfamily A member 13,ENSG00000179869,154664,268379,7,"Rare Single Gene Mutation, Functional",3,0,6
+9,ABCA7,"ATP-binding cassette, sub-family A (ABC1), member 7",ENSG00000064687,10347,27403,19,Rare Single Gene Mutation,3,0,4
+9,ACE,angiotensin I converting enzyme,ENSG00000159640,1636,11421,17,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,ACHE,Acetylcholinesterase (Yt blood group),ENSG00000087085,43,11423,7,Rare Single Gene Mutation,2,0,4
+9,ACTB,actin beta,ENSG00000075624,60,11461,7,"Rare Single Gene Mutation, Syndromic",1,0,3
+9,ACTL6B,actin like 6B,ENSG00000077080,51412,83766,7,"Rare Single Gene Mutation, Syndromic",,1,8
+9,ACTN4,actinin alpha 4,ENSG00000130402,81,60595,19,Rare Single Gene Mutation,3,0,4
+9,ACY1,aminoacylase 1,ENSG00000243989,95,109652,3,"Rare Single Gene Mutation, Syndromic",,1,9
+9,ADA,adenosine deaminase,ENSG00000196839,100,11486,20,"Rare Single Gene Mutation, Genetic Association",2,0,7
+9,ADCY3,adenylate cyclase 3,ENSG00000138031,109,104111,2,Rare Single Gene Mutation,2,0,2
+9,ADCY5,Adenylate cyclase 5,ENSG00000173175,111,224129,3,Rare Single Gene Mutation,3,0,6
+9,ADK,adenosine kinase,ENSG00000156110,132,11534,10,Rare Single Gene Mutation,3,0,2
+9,ADNP,Activity-dependent neuroprotector homeobox,ENSG00000101126,23394,11538,20,"Rare Single Gene Mutation, Syndromic, Functional",1,0,39
+9,ADORA3,Adenosine A3 receptor,ENSG00000282608,140,11542,1,"Rare Single Gene Mutation, Functional",3,0,2
+9,ADSL,adenylosuccinate lyase,ENSG00000239900,158,11564,22,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,AGAP1,"ArfGAP with GTPase domain, ankyrin repeat and PH domain 1",ENSG00000157985,116987,347722,2,Rare Single Gene Mutation,3,0,8
+9,AGAP2,"ArfGAP with GTPase domain, ankyrin repeat and PH domain 2",ENSG00000135439,116986,216439,12,Rare Single Gene Mutation,2,0,4
+9,AGBL4,ATP/GTP binding protein-like 4,ENSG00000186094,84871,78933,1,Rare Single Gene Mutation,3,0,3
+9,AGMO,alkylglycerol monooxygenase,ENSG00000187546,392636,319660,7,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,AGO1,"argonaute 1, RISC catalytic component",ENSG00000092847,26523,236511,1,Rare Single Gene Mutation,2,0,7
+9,AGO3,argonaute RISC catalytic component 3,ENSG00000126070,192669,214150,1,Rare Single Gene Mutation,3,0,4
+9,AGO4,argonaute RISC catalytic component 4,ENSG00000134698,192670,76850,1,Rare Single Gene Mutation,2,0,3
+9,AGTR2,"angiotensin II receptor, type 2",ENSG00000180772,186,11609,X,Rare Single Gene Mutation,3,0,3
+9,AHDC1,AT-hook DNA binding motif containing 1,ENSG00000126705,27245,230793,1,"Rare Single Gene Mutation, Syndromic",1,0,11
+9,AHI1,Abelson helper integration site 1,ENSG00000135541,54806,52906,6,"Rare Single Gene Mutation, Syndromic, Genetic Association",,1,19
+9,ALDH1A3,aldehyde dehydrogenase 1 family member A3,ENSG00000184254,220,56847,15,"Rare Single Gene Mutation, Syndromic",,1,5
+9,ADSS2,adenylosuccinate synthase 2,ENSG00000035687,159,11566,1,Rare Single Gene Mutation,3,0,3
+9,ALDH5A1,"aldehyde dehydrogenase 5 family, member A1 (succinate-semialdehyde dehydrogenase )",ENSG00000112294,7915,214579,6,"Rare Single Gene Mutation, Syndromic",1,0,10
+9,AMPD1,Adenosine monophosphate deaminase 1,ENSG00000116748,270,229665,1,"Rare Single Gene Mutation, Genetic Association",2,0,3
+9,AMT,Aminomethyltransferase,ENSG00000145020,275,434437,3,Rare Single Gene Mutation,2,0,1
+9,ANK3,ankyrin 3,ENSG00000151150,288,11735,10,"Rare Single Gene Mutation, Genetic Association",1,0,26
+9,ANKRD11,ankyrin repeat domain 11,ENSG00000167522,29123,77087,16,"Rare Single Gene Mutation, Syndromic",1,0,43
+9,ANKS1B,ankyrin repeat and sterile alpha motif domain containing 1B,ENSG00000185046,56899,77531,12,"Rare Single Gene Mutation, Syndromic",3,1,3
+9,ANXA1,Annexin A1,ENSG00000135046,301,16952,9,Rare Single Gene Mutation,2,0,2
+9,AP1S2,adaptor related protein complex 1 sigma 2 subunit,ENSG00000182287,8905,108012,X,"Rare Single Gene Mutation, Syndromic",,1,5
+9,APBA2,"amyloid beta (A4) precursor protein-binding, family A, member 2",ENSG00000034053,321,11784,15,Rare Single Gene Mutation,3,0,7
+9,APBB1,amyloid beta precursor protein binding family B member 1,ENSG00000166313,322,11785,11,"Rare Single Gene Mutation, Functional",2,0,3
+9,APH1A,APH1A gamma secretase subunit,ENSG00000117362,51107,226548,1,Rare Single Gene Mutation,2,0,2
+9,ARHGAP32,Rho GTPase activating protein 32,ENSG00000134909,9743,330914,11,"Rare Single Gene Mutation, Functional",3,0,7
+9,ARHGAP5,Rho GTPase activating protein 5,ENSG00000100852,394,11855,14,Rare Single Gene Mutation,3,0,4
+9,ARHGEF10,Rho guanine nucleotide exchange factor 10,ENSG00000104728,9639,234094,8,"Rare Single Gene Mutation, Functional",3,0,4
+9,ARHGEF9,Cdc42 guanine nucleotide exchange factor (GEF) 9,ENSG00000131089,23229,236915,X,"Rare Single Gene Mutation, Syndromic",1,0,10
+9,ARID1B,AT-rich interaction domain 1B,ENSG00000049618,57492,239985,6,"Rare Single Gene Mutation, Syndromic",1,0,44
+9,ARID2,AT-rich interaction domain 2,ENSG00000189079,196528,77044,12,"Rare Single Gene Mutation, Syndromic",3,1,6
+9,ARNT2,aryl-hydrocarbon receptor nuclear translocator 2,ENSG00000172379,9915,11864,15,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,11
+9,ARX,aristaless related homeobox,ENSG00000004848,170302,11878,X,"Rare Single Gene Mutation, Syndromic",1,0,17
+9,ADORA2A,adenosine A2a receptor,ENSG00000128271,135,11540,22,Genetic Association,3,0,7
+9,ADRB2,"adrenergic, beta-2-, receptor, surface",ENSG00000169252,154,11555,5,Genetic Association,3,0,10
+9,ALG6,"ALG6, alpha-1,3-glucosyltransferase",ENSG00000088035,29929,320438,1,Syndromic,,1,1
+9,AR,androgen receptor,ENSG00000169083,367,11835,X,Genetic Association,3,0,6
+9,ASAP2,"ArfGAP with SH3 domain, ankyrin repeat and PH domain 2",ENSG00000151693,8853,211914,2,Rare Single Gene Mutation,2,0,3
+9,ASB14,ankyrin repeat and SOCS box containing 14,ENSG00000239388,142686,142687,3,Rare Single Gene Mutation,3,0,4
+9,ASH1L,"Ash1 (absent, small, or homeotic)-like (Drosophila)",ENSG00000116539,55870,192195,1,"Rare Single Gene Mutation, Syndromic",1,0,15
+9,ASPM,abnormal spindle microtubule assembly,ENSG00000066279,259266,12316,1,"Rare Single Gene Mutation, Syndromic",2,0,7
+9,ASTN2,astrotactin 2,ENSG00000148219,23245,56079,9,"Rare Single Gene Mutation, Genetic Association",2,0,13
+9,ASXL3,Additional sex combs like 3 (Drosophila),ENSG00000141431,80816,211961,18,"Rare Single Gene Mutation, Syndromic",1,0,23
+9,ATP10A,Probable phospholipid-transporting ATPase VA,ENSG00000206190,57194,11982,15,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,9
+9,ATP1A1,ATPase Na+/K+ transporting subunit alpha 1,ENSG00000163399,476,11928,1,"Rare Single Gene Mutation, Syndromic",3,1,3
+9,ATP1A3,ATPase Na+/K+ transporting subunit alpha 3,ENSG00000105409,478,232975,19,"Rare Single Gene Mutation, Syndromic, Functional",3,1,13
+9,ATP2B2,"ATPase, Ca++ transporting, plasma membrane 2",ENSG00000157087,491,11941,3,"Rare Single Gene Mutation, Genetic Association",2,0,9
+9,ATP6V0A2,ATPase H+ transporting V0 subunit a2,ENSG00000185344,23545,21871,12,Rare Single Gene Mutation,3,0,3
+9,ATRX,alpha thalassemia/mental retardation syndrome X-linked,ENSG00000085224,546,22589,X,"Rare Single Gene Mutation, Syndromic",1,0,21
+9,AUTS2,autism susceptibility candidate 2,ENSG00000158321,26053,319974,7,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,38
+9,AVPR1A,arginine vasopressin receptor 1A,ENSG00000166148,552,54140,12,"Rare Single Gene Mutation, Genetic Association",2,0,22
+9,AVPR1B,arginine vasopressin receptor 1B,ENSG00000198049,553,26361,1,"Genetic Association, Functional",3,0,8
+9,AZGP1,"alpha-2-glycoprotein 1, zinc-binding",ENSG00000160862,563,12007,7,Rare Single Gene Mutation,3,0,3
+9,BAZ2B,bromodomain adjacent to zinc finger domain 2B,ENSG00000123636,29994,407823,2,Rare Single Gene Mutation,1,0,4
+9,BBS4,Bardet-Biedl syndrome 4,ENSG00000140463,585,102774,15,"Rare Single Gene Mutation, Syndromic",3,0,5
+9,BCAS1,breast carcinoma amplified sequence 1,ENSG00000064787,8537,76960,20,Rare Single Gene Mutation,3,0,3
+9,BCKDK,Branched chain ketoacid dehydrogenase kinase,ENSG00000103507,10295,12041,16,Rare Single Gene Mutation,1,0,4
+9,BCL11A,B-cell CLL/lymphoma 11A (zinc finger protein),ENSG00000119866,53335,14025,2,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,BCORL1,BCL6 corepressor like 1,ENSG00000085185,63035,320376,X,"Rare Single Gene Mutation, Syndromic",,1,4
+9,BIRC6,Baculoviral IAP repeat containing 6,ENSG00000115760,57448,12211,2,Rare Single Gene Mutation,3,0,10
+9,BRAF,v-raf murine sarcoma viral oncogene homolog B,ENSG00000157764,673,109880,7,"Rare Single Gene Mutation, Syndromic",1,0,8
+9,BRCA2,"breast cancer 2, early onset",ENSG00000139618,675,12190,13,Rare Single Gene Mutation,3,0,5
+9,BICDL1,BICD family like cargo adaptor 1,ENSG00000135127,92558,75665,12,Genetic Association,3,0,2
+9,BRSK2,BR serine/threonine kinase 2,ENSG00000174672,9024,75770,11,"Rare Single Gene Mutation, Syndromic",1,0,4
+9,BST1,bone marrow stromal cell antigen 1,ENSG00000109743,683,12182,4,"Genetic Association, Functional",3,0,5
+9,BTAF1,"RNA polymerase II, B-TFIID transcription factor-associated, 170kDa (Mot1 homolog, S. cerevisiae)",ENSG00000095564,9044,107182,10,Rare Single Gene Mutation,2,0,7
+9,BTRC,beta-transducin repeat containing E3 ubiquitin protein ligase,ENSG00000166167,8945,12234,10,Rare Single Gene Mutation,3,0,2
+9,C12orf57,Chromosome 12 open reading frame 57,ENSG00000111678,113246,14790,12,"Rare Single Gene Mutation, Syndromic",,1,11
+9,C15orf62,chromosome 15 open reading frame 62,ENSG00000188277,643338,623781,15,Rare Single Gene Mutation,3,0,2
+9,C4B,complement component 4B,ENSG00000203710,721,625018,6,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,6
+9,CA6,carbonic anhydrase VI,ENSG00000131686,765,12353,1,Rare Single Gene Mutation,3,0,6
+9,CACNA1A,"Calcium channel, voltage-dependent, P/Q type, alpha 1A subunit",ENSG00000141837,773,12286,19,"Rare Single Gene Mutation, Genetic Association",,1,16
+9,CACNA1B,calcium voltage-gated channel subunit alpha1 B,ENSG00000148408,774,12287,9,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,9
+9,CACNA1C,"calcium channel, voltage-dependent, L type, alpha 1C subunit",ENSG00000151067,775,12288,12,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",1,0,45
+9,CACNA1D,"calcium channel, voltage-dependent, L type, alpha 1D",ENSG00000157388,776,12289,3,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",2,0,20
+9,CACNA1E,calcium voltage-gated channel subunit alpha1 E,ENSG00000198216,777,12290,1,Rare Single Gene Mutation,2,0,10
+9,CACNA1F,"calcium channel, voltage-dependent, alpha 1F",ENSG00000102001,778,54652,X,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,CACNA1G,"calcium channel, voltage-dependent, T type, alpha 1G subunit",ENSG00000006283,8913,12291,17,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,20
+9,CACNA1H,"calcium channel, voltage-dependent, alpha 1H subunit",ENSG00000196557,8912,58226,16,Rare Single Gene Mutation,2,0,27
+9,CACNA1I,"Calcium channel, voltage-dependent, T type, alpha 1I subunit",ENSG00000100346,8911,239556,22,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,CACNA2D1,calcium voltage-gated channel auxiliary subunit alpha2delta 1,ENSG00000153956,781,12293,7,Rare Single Gene Mutation,3,0,3
+9,CACNA2D3,"Calcium channel, voltage-dependent, alpha 2/delta subunit 3",ENSG00000157445,55799,12294,3,Rare Single Gene Mutation,2,0,6
+9,CACNB2,"Calcium channel, voltage-dependent, beta 2 subunit",ENSG00000165995,783,12296,10,"Rare Single Gene Mutation, Genetic Association",2,0,4
+9,CADM1,cell adhesion molecule 1,ENSG00000182985,23705,54725,11,Rare Single Gene Mutation,3,0,9
+9,CADPS,calcium dependent secretion activator,ENSG00000163618,8618,27062,3,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,CADPS2,Ca2+-dependent activator protein for secretion 2,ENSG00000081803,93664,320405,7,"Rare Single Gene Mutation, Functional",3,0,12
+9,CAMK2A,calcium/calmodulin dependent protein kinase II alpha,ENSG00000070808,815,12322,5,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",3,1,8
+9,CAMK2B,calcium/calmodulin dependent protein kinase II beta,ENSG00000058404,816,12323,7,"Rare Single Gene Mutation, Syndromic",,1,5
+9,CAPN12,Calpain 12,ENSG00000182472,147968,60594,19,Rare Single Gene Mutation,3,0,6
+9,CAPRIN1,Cell cycle associated protein 1,ENSG00000135387,4076,53872,11,"Rare Single Gene Mutation, Functional",2,0,4
+9,CARD11,caspase recruitment domain family member 11,ENSG00000198286,84433,108723,7,Rare Single Gene Mutation,3,0,1
+9,CASC4,cancer susceptibility candidate 4,ENSG00000166734,113201,319996,15,Rare Single Gene Mutation,3,0,4
+9,CASK,calcium/calmodulin dependent serine protein kinase,ENSG00000147044,8573,12361,X,"Rare Single Gene Mutation, Syndromic",1,0,15
+9,CASZ1,castor zinc finger 1,ENSG00000130940,54897,69743,1,Rare Single Gene Mutation,2,0,4
+9,CC2D1A,Coiled-coil and C2 domain containing 1A,ENSG00000132024,54862,212139,19,"Rare Single Gene Mutation, Functional",2,0,12
+9,CCDC88C,Coiled-coil domain containing 88C,ENSG00000015133,440193,68339,14,Rare Single Gene Mutation,3,0,6
+9,CCDC91,coiled-coil domain containing 91,ENSG00000123106,55297,67015,12,Rare Single Gene Mutation,3,0,4
+9,CCIN,calicin,ENSG00000185972,881,442829,9,Rare Single Gene Mutation,3,0,2
+9,CCNG1,cyclin G1,ENSG00000113328,900,12450,5,Rare Single Gene Mutation,2,0,1
+9,CCNK,cyclin K,ENSG00000090061,8812,12454,14,"Rare Single Gene Mutation, Syndromic",,1,3
+9,CCSER1,coiled-coil serine rich protein 1,ENSG00000184305,401145,232035,4,Rare Single Gene Mutation,3,0,2
+9,CCT4,"Chaperonin containing TCP1, subunit 4 (delta)",ENSG00000115484,10575,12464,2,Rare Single Gene Mutation,2,0,3
+9,CD276,CD276molecule,ENSG00000103855,80381,102657,15,Rare Single Gene Mutation,3,0,2
+9,CD38,CD38 molecule,ENSG00000004468,952,12494,4,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,8
+9,CDC42BPB,CDC42 binding protein kinase beta (DMPK-like),ENSG00000198752,9578,217866,14,Rare Single Gene Mutation,2,0,7
+9,CDH10,"cadherin 10, type 2 (T2-cadherin)",ENSG00000040731,1008,320873,5,"Rare Single Gene Mutation, Genetic Association",3,0,10
+9,CDH11,cadherin 11,ENSG00000140937,1009,12552,16,Rare Single Gene Mutation,3,0,4
+9,CDH13,cadherin 13,ENSG00000140945,1012,12554,16,Rare Single Gene Mutation,2,0,3
+9,CDH8,"cadherin 8, type 2",ENSG00000150394,1006,12564,16,Rare Single Gene Mutation,3,0,10
+9,CDH9,"cadherin 9, type 2 (T1-cadherin)",ENSG00000113100,1007,12565,5,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,CDK13,cyclin dependent kinase 13,ENSG00000065883,8621,69562,7,"Rare Single Gene Mutation, Syndromic",,1,9
+9,CDK8,cyclin dependent kinase 8,ENSG00000132964,1024,264064,13,Syndromic,,1,1
+9,CDKL5,cyclin-dependent kinase-like 5,ENSG00000008086,6792,382253,X,"Rare Single Gene Mutation, Syndromic",1,0,36
+9,CECR2,"CECR2, histone acetyl-lysine reader",ENSG00000099954,27443,330409,22,Rare Single Gene Mutation,3,0,2
+9,CELF4,"CUGBP, Elav-like family member 4",ENSG00000101489,56853,108013,18,"Rare Single Gene Mutation, Functional",2,0,10
+9,CEP135,centrosomal protein 135,ENSG00000174799,9662,381644,4,"Rare Single Gene Mutation, Syndromic",2,0,6
+9,CEP290,Centrosomal protein 290kDa,ENSG00000198707,80184,216274,12,"Rare Single Gene Mutation, Syndromic",3,1,8
+9,CEP41,"testis specific, 14",ENSG00000106477,95681,83922,7,"Rare Single Gene Mutation, Syndromic",2,0,5
+9,CGNL1,Cingulin-like 1,ENSG00000128849,84952,68178,15,Rare Single Gene Mutation,2,0,4
+9,CHAMP1,chromosome alignment maintaining phosphoprotein 1,ENSG00000198824,283489,101994,13,"Rare Single Gene Mutation, Syndromic",1,0,5
+9,CHD1,chromodomain helicase DNA binding protein 1,ENSG00000153922,1105,12648,5,Rare Single Gene Mutation,3,1,4
+9,CHD2,Chromodomain helicase DNA binding protein 2,ENSG00000173575,1106,244059,15,"Rare Single Gene Mutation, Syndromic",1,0,36
+9,CHD3,chromodomain helicase DNA binding protein 3,ENSG00000170004,1107,216848,17,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,CHD7,chromodomain helicase DNA binding protein 7,ENSG00000171316,55636,320790,8,"Rare Single Gene Mutation, Syndromic",1,0,28
+9,CHD8,chromodomain helicase DNA binding protein 8,ENSG00000100888,57680,67772,14,"Rare Single Gene Mutation, Syndromic, Functional",1,0,49
+9,CHKB,Choline kinase beta,ENSG00000100288,1120,12651,22,"Rare Single Gene Mutation, Syndromic",,1,4
+9,CHMP1A,charged multivesicular body protein 1A,ENSG00000131165,5119,234852,16,"Rare Single Gene Mutation, Syndromic",2,0,5
+9,CHRM3,cholinergic receptor muscarinic 3,ENSG00000133019,1131,12671,1,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,CHRNA7,"cholinergic receptor, nicotinic, alpha 7",ENSG00000166664,1139,11441,15,Rare Single Gene Mutation,2,0,13
+9,CHRNB3,cholinergic receptor nicotinic beta 3 subunit,ENSG00000147432,1142,108043,8,Rare Single Gene Mutation,3,0,3
+9,CIB2,Calcium and integrin binding family member 2,ENSG00000136425,10518,56506,15,Rare Single Gene Mutation,2,0,1
+9,CIC,capicua transcriptional repressor,ENSG00000079432,23152,71722,19,"Rare Single Gene Mutation, Functional",1,0,5
+9,CLASP1,cytoplasmic linker associated protein 1,ENSG00000074054,23332,76707,2,Rare Single Gene Mutation,2,0,3
+9,CLN8,"Ceroid-lipofuscinosis, neuronal 8 (epilepsy, progressive with mental retardation)",ENSG00000182372,2055,26889,8,"Rare Single Gene Mutation, Syndromic",3,0,3
+9,CMIP,c-Maf inducing protein,ENSG00000153815,80790,74440,16,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,CMPK2,cytidine/uridine monophosphate kinase 2,ENSG00000134326,129607,22169,2,Rare Single Gene Mutation,3,0,2
+9,CNGB3,cyclic nucleotide gated channel beta 3,ENSG00000170289,54714,30952,8,Rare Single Gene Mutation,3,0,3
+9,CNKSR2,connector enhancer of kinase suppressor of Ras 2,ENSG00000149970,22866,245684,X,"Rare Single Gene Mutation, Syndromic",2,1,5
+9,CNOT3,CCR4-NOT transcription complex subunit 3,ENSG00000088038,4849,232791,19,"Rare Single Gene Mutation, Syndromic",1,0,7
+9,CNR1,cannabinoid receptor 1 (brain),ENSG00000118432,1268,12801,6,"Rare Single Gene Mutation, Genetic Association",2,0,7
+9,CNTN3,contactin 3,ENSG00000113805,5067,18488,3,Rare Single Gene Mutation,3,0,5
+9,CNTN4,contactin 4,ENSG00000144619,152330,269784,3,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,21
+9,CNTN5,Contactin 5,ENSG00000149972,53942,244682,11,"Rare Single Gene Mutation, Genetic Association",2,0,9
+9,CNTN6,Contactin 6,ENSG00000134115,27255,53870,3,"Rare Single Gene Mutation, Genetic Association",2,0,13
+9,CNTNAP2,contactin associated protein-like 2,ENSG00000174469,26047,66797,7,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,1,67
+9,CNTNAP3,contactin associated protein-like 3,ENSG00000106714,79937,238680,9,"Rare Single Gene Mutation, Functional",2,0,5
+9,CNTNAP4,Contactin associated protein-like 4,ENSG00000152910,85445,170571,16,"Rare Single Gene Mutation, Functional",2,0,11
+9,CNTNAP5,contactin associated protein-like 5,ENSG00000155052,129684,636808,2,"Rare Single Gene Mutation, Genetic Association",3,0,12
+9,COL28A1,collagen type XXVIII alpha 1 chain,ENSG00000215018,340267,213945,7,Rare Single Gene Mutation,3,0,3
+9,CPT2,carnitine palmitoyltransferase 2,ENSG00000157184,1376,12896,1,Rare Single Gene Mutation,3,0,2
+9,CPZ,carboxypeptidase Z,ENSG00000109625,8532,242939,4,Rare Single Gene Mutation,3,0,3
+9,CREBBP,CREB binding protein,ENSG00000005339,1387,12914,16,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,28
+9,CSDE1,cold shock domain containing E1,ENSG00000009307,7812,229663,1,"Rare Single Gene Mutation, Syndromic",2,1,2
+9,CSMD1,CUB and Sushi multiple domains 1,ENSG00000183117,64478,94109,8,"Rare Single Gene Mutation, Genetic Association",3,0,13
+9,CSNK1E,casein kinase 1 epsilon,ENSG00000213923,1454,27373,22,"Rare Single Gene Mutation, Functional",3,0,5
+9,CTCF,CCCTC-binding factor,ENSG00000102974,10664,13018,16,"Rare Single Gene Mutation, Syndromic, Functional",1,0,14
+9,CTNNA2,catenin alpha 2,ENSG00000066032,1496,12386,2,Syndromic,,1,1
+9,CTNNA3,"catenin (cadherin-associated protein), alpha 3",ENSG00000183230,29119,216033,10,"Rare Single Gene Mutation, Genetic Association",3,0,15
+9,CTNNB1,catenin beta 1,ENSG00000168036,1499,12387,3,"Rare Single Gene Mutation, Syndromic",1,0,21
+9,CTNND2,"Catenin (cadherin-associated protein), delta 2",ENSG00000169862,1501,18163,5,Rare Single Gene Mutation,2,0,5
+9,CTTNBP2,cortactin binding protein 2,ENSG00000077063,83992,30785,7,"Rare Single Gene Mutation, Syndromic",2,0,8
+9,CUL3,Cullin 3,ENSG00000036257,8452,26554,2,"Rare Single Gene Mutation, Genetic Association",1,0,21
+9,CUL7,Cullin 7,ENSG00000044090,9820,66515,6,Rare Single Gene Mutation,2,0,6
+9,CUX2,cut like homeobox 2,ENSG00000111249,23316,13048,12,"Rare Single Gene Mutation, Syndromic",3,1,8
+9,CX3CR1,Chemokine (C-X3-C motif) receptor 1,ENSG00000168329,1524,13051,3,"Rare Single Gene Mutation, Functional",3,0,3
+9,CYFIP1,cytoplasmic FMR1 interacting protein 1,ENSG00000273749,23191,20430,15,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,16
+9,CYP27A1,cytochrome P450 family 27 subfamily A member 1,ENSG00000135929,1593,104086,2,"Rare Single Gene Mutation, Syndromic",,1,3
+9,DAGLA,diacylglycerol lipase alpha,ENSG00000134780,747,269060,11,"Rare Single Gene Mutation, Functional",3,0,5
+9,DAPP1,Dual adaptor of phosphotyrosine and 3-phosphoinositides,ENSG00000070190,27071,26377,4,Rare Single Gene Mutation,2,0,1
+9,DDX3X,"DEAD (Asp-Glu-Ala-Asp) box helicase 3, X-linked",ENSG00000215301,1654,13205,X,"Rare Single Gene Mutation, Syndromic",1,0,19
+9,DEAF1,DEAF1 transcription factor,ENSG00000177030,10522,54006,11,"Rare Single Gene Mutation, Syndromic",2,1,17
+9,CADM2,Cell adhesion molecule 2,ENSG00000175161,253559,239857,3,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,CAMK4,Calcium/calmodulin-dependent protein kinase IV,ENSG00000152495,814,12326,5,Genetic Association,3,0,1
+9,CD99L2,CD99 molecule like 2,ENSG00000102181,83692,171486,X,Genetic Association,3,0,1
+9,CDH22,cadherin-like 22,ENSG00000149654,64405,104010,20,Genetic Association,3,0,4
+9,CPEB4,cytoplasmic polyadenylation element binding protein 4,ENSG00000113742,80315,67579,5,Functional,2,0,1
+9,CYP11B1,"cytochrome P450, family 11, subfamily B, polypeptide 1",ENSG00000160882,1584,13072,8,Syndromic,3,0,4
+9,DDC,dopa decarboxylase,ENSG00000132437,1644,13195,7,Genetic Association,3,0,2
+9,DENR,density-regulated protein,ENSG00000139726,8562,68184,12,Rare Single Gene Mutation,2,0,3
+9,DEPDC5,DEP domain containing 5,ENSG00000100150,9681,277854,22,"Rare Single Gene Mutation, Syndromic",,1,13
+9,DHCR7,7-dehydrocholesterol reductase,ENSG00000172893,1717,13360,11,"Rare Single Gene Mutation, Syndromic",1,0,17
+9,DHX30,DExH-box helicase 30,ENSG00000132153,22907,72831,3,"Rare Single Gene Mutation, Syndromic",,1,2
+9,DIP2A,DIP2 disco-interacting protein 2 homolog A (Drosophila),ENSG00000160305,23181,64451,21,"Rare Single Gene Mutation, Functional",2,0,6
+9,DIP2C,disco interacting protein 2 homolog C,ENSG00000151240,22982,208440,10,Rare Single Gene Mutation,2,0,2
+9,DISC1,disrupted in schizophrenia 1,ENSG00000162946,27185,244667,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,34
+9,DIPK2A,divergent protein kinase domain 2A,ENSG00000181744,205428,68861,3,Rare Single Gene Mutation,3,0,3
+9,DIXDC1,DIX domain containing 1,ENSG00000150764,85458,330938,11,"Rare Single Gene Mutation, Functional",3,0,4
+9,DLG1,discs large MAGUK scaffold protein 1,ENSG00000075711,1739,13383,3,Rare Single Gene Mutation,3,0,4
+9,DLG2,discs large MAGUK scaffold protein 2,ENSG00000150672,1740,23859,11,Rare Single Gene Mutation,2,0,2
+9,DLG4,discs large MAGUK scaffold protein 4,ENSG00000132535,1742,13385,17,"Rare Single Gene Mutation, Syndromic, Functional",1,0,11
+9,DLGAP1,DLG associated protein 1,ENSG00000170579,9229,224997,18,"Rare Single Gene Mutation, Functional",2,0,8
+9,DLGAP2,"discs, large (Drosophila) homolog-associated protein 2",ENSG00000198010,9228,244310,8,Rare Single Gene Mutation,3,0,12
+9,DLGAP3,DLG associated protein 3,ENSG00000116544,58512,242667,1,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,10
+9,DLL1,delta like canonical Notch ligand 1,ENSG00000198719,28514,13388,6,"Rare Single Gene Mutation, Syndromic",3,1,2
+9,DLX3,distal-less homeobox 3,ENSG00000064195,1747,13393,17,Rare Single Gene Mutation,2,0,2
+9,DLX6,distal-less homeobox 6,ENSG00000006377,1750,13396,7,Rare Single Gene Mutation,3,0,9
+9,DMD,"dystrophin (muscular dystrophy, Duchenne and Becker types)",ENSG00000198947,1756,13405,X,"Rare Single Gene Mutation, Syndromic, Genetic Association",,1,37
+9,DMPK,dystrophia myotonica-protein kinase,ENSG00000104936,1760,13400,19,"Rare Single Gene Mutation, Syndromic",1,0,8
+9,DMWD,"DM1 locus, WD repeat containing",ENSG00000185800,1762,13401,19,Rare Single Gene Mutation,3,0,2
+9,DMXL2,Dmx-like 2,ENSG00000104093,23312,235380,15,Rare Single Gene Mutation,3,0,6
+9,DNAH10,"Dynein, axonemal, heavy chain 10",ENSG00000197653,196385,56087,12,Rare Single Gene Mutation,3,0,6
+9,DNAH17,dynein axonemal heavy chain 17,ENSG00000187775,8632,69926,17,Rare Single Gene Mutation,3,0,6
+9,DNAH3,dynein axonemal heavy chain 3,ENSG00000158486,55567,381917,16,Rare Single Gene Mutation,3,0,5
+9,DNER,Delta/notch-like EGF repeat containing,ENSG00000187957,92737,227325,2,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,DNMT3A,DNA (cytosine-5-)-methyltransferase 3 alpha,ENSG00000119772,1788,13435,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,14
+9,DOCK1,Dedicator of cytokinesis 1,ENSG00000150760,1793,330662,10,Rare Single Gene Mutation,3,0,3
+9,DOCK4,Dedicator of cytokinesis 4,ENSG00000128512,9732,238130,7,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,9
+9,DOCK8,dedicator of cytokinesis 8,ENSG00000107099,81704,76088,9,Rare Single Gene Mutation,2,0,10
+9,DOLK,dolichol kinase,ENSG00000175283,22845,227697,9,Syndromic,,1,2
+9,DPP10,Dipeptidyl-peptidase 10,ENSG00000175497,57628,269109,2,Rare Single Gene Mutation,2,0,11
+9,DPP3,dipeptidyl peptidase 3,ENSG00000254986,10072,75221,11,Rare Single Gene Mutation,3,0,3
+9,DPP4,Dipeptidyl-peptidase 4,ENSG00000197635,1803,13482,2,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,DPP6,dipeptidyl-peptidase 6,ENSG00000130226,1804,13483,7,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,25
+9,DPYD,dihydropyrimidine dehydrogenase,ENSG00000188641,1806,99586,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,13
+9,DPYSL2,dihydropyrimidinase like 2,ENSG00000092964,1808,12934,8,"Rare Single Gene Mutation, Genetic Association",2,0,12
+9,DPYSL3,dihydropyrimidinase like 3,ENSG00000113657,1809,22240,5,Rare Single Gene Mutation,3,0,2
+9,DRD2,Dopamine receptor D2,ENSG00000149295,1813,13489,11,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,DRD3,dopamine receptor D3,ENSG00000151577,1814,13490,3,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,DSCAM,Down syndrome cell adhesion molecule,ENSG00000171587,1826,13508,21,"Rare Single Gene Mutation, Genetic Association",1,0,8
+9,DUSP15,dual specificity phosphatase 15,ENSG00000149599,128853,252864,20,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,DVL3,Dishevelled segment polarity protein 3,ENSG00000161202,1857,13544,3,"Rare Single Gene Mutation, Functional",3,0,3
+9,DYDC1,DPY30 domain containing 1,ENSG00000170788,143241,69496,10,Rare Single Gene Mutation,3,0,2
+9,DYDC2,DPY30 domain containing 2,ENSG00000133665,84332,71200,10,"",3,0,1
+9,DYNC1H1,dynein cytoplasmic 1 heavy chain 1,ENSG00000197102,1778,13424,14,"Rare Single Gene Mutation, Syndromic",2,0,14
+9,DYRK1A,Dual-specificity tyrosine-(Y)-phosphorylation regulated kinase 1A,ENSG00000157540,1859,13548,21,"Rare Single Gene Mutation, Syndromic, Functional",1,0,42
+9,EBF3,early B-cell factor 3,ENSG00000108001,253738,13593,10,"Rare Single Gene Mutation, Syndromic",1,0,7
+9,EEF1A2,Eukaryotic translation elongation factor 1 alpha 2,ENSG00000101210,1917,13628,20,"Rare Single Gene Mutation, Syndromic",,1,8
+9,EFR3A,EFR3 homolog A (S. cerevisiae),ENSG00000132294,23167,76740,8,Rare Single Gene Mutation,2,0,5
+9,EGR3,early growth response 3,ENSG00000179388,1960,13655,8,Rare Single Gene Mutation,3,0,2
+9,EHMT1,Euchromatic histone-lysine N-methyltransferase 1,ENSG00000181090,79813,77683,9,"Rare Single Gene Mutation, Syndromic",1,0,23
+9,BRWD3,bromodomain and WD repeat domain containing 3,ENSG00000165288,254065,382236,X,Syndromic,,1,3
+9,CLCN4,chloride voltage-gated channel 4,ENSG00000073464,1183,12727,X,"Rare Single Gene Mutation, Syndromic",3,1,4
+9,DLX2,distal-less homeobox 2,ENSG00000115844,1746,13392,2,Genetic Association,3,0,11
+9,DRD1,Dopamine receptor D1,ENSG00000184845,1812,13488,5,"Genetic Association, Functional",3,0,4
+9,EIF3G,eukaryotic translation initiation factor 3 subunit G,ENSG00000130811,8666,53356,19,Rare Single Gene Mutation,3,0,3
+9,EIF4E,eukaryotic translation initiation factor 4E,ENSG00000151247,1977,13684,4,"Rare Single Gene Mutation, Genetic Association",3,0,12
+9,ELAVL2,ELAV like neuron-specific RNA binding protein 2,ENSG00000107105,1993,15569,9,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,5
+9,ELAVL3,ELAV like neuron-specific RNA binding protein 3,ENSG00000196361,1995,15571,19,Rare Single Gene Mutation,2,0,3
+9,ELOVL2,ELOVL fatty acid elongase 2,ENSG00000197977,54898,54326,6,Genetic Association,3,0,1
+9,ELP4,Elongator acetyltransferase complex subunit 4,ENSG00000109911,26610,77766,11,"Rare Single Gene Mutation, Genetic Association",2,0,7
+9,EN2,engrailed homolog 2,ENSG00000164778,2020,13799,7,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,23
+9,EP300,E1A binding protein p300,ENSG00000100393,2033,328572,22,"Rare Single Gene Mutation, Syndromic",1,0,17
+9,EP400,E1A binding protein p400,ENSG00000183495,57634,75560,12,Rare Single Gene Mutation,2,0,6
+9,EPC2,Enhancer of polycomb homolog 2 (Drosophila),ENSG00000135999,26122,227867,2,Rare Single Gene Mutation,3,0,4
+9,EMSY,"EMSY, BRCA2 interacting transcriptional repressor",ENSG00000158636,56946,233545,11,"Rare Single Gene Mutation, Functional",2,0,4
+9,EPHB2,EPH receptor B2,ENSG00000133216,2048,13844,1,Rare Single Gene Mutation,3,0,4
+9,EPPK1,epiplakin 1,ENSG00000261150,83481,223650,8,Rare Single Gene Mutation,3,0,5
+9,ERG,"ERG, ETS transcription factor",ENSG00000157554,2078,13876,21,Genetic Association,3,0,1
+9,ERMN,ermin,ENSG00000136541,57471,77767,2,Rare Single Gene Mutation,3,0,1
+9,ESR2,estrogen receptor 2 (ER beta),ENSG00000140009,2100,13983,14,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,9
+9,ESRRB,estrogen-related receptor beta,ENSG00000119715,2103,26380,14,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,ETFB,"Electron-transfer-flavoprotein, beta polypeptide",ENSG00000105379,2109,110826,19,Rare Single Gene Mutation,2,0,4
+9,EXOC3,exocyst complex component 3,ENSG00000180104,11336,211446,5,Rare Single Gene Mutation,3,0,1
+9,EXOC5,exocyst complex component 5,ENSG00000070367,10640,105504,14,Rare Single Gene Mutation,3,0,2
+9,EXOC6,exocyst complex component 6,ENSG00000138190,54536,107371,10,Rare Single Gene Mutation,3,0,1
+9,EXOC6B,exocyst complex component 6B,ENSG00000144036,23233,75914,2,Rare Single Gene Mutation,3,0,4
+9,EXT1,Exostosin 1,ENSG00000182197,2131,14042,8,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,FABP5,fatty acid binding protein 5 (psoriasis-associated),ENSG00000164687,2171,16592,8,"Rare Single Gene Mutation, Functional",3,0,7
+9,FAM47A,family with sequence similarity 47 member A,ENSG00000185448,158724,70864,X,Rare Single Gene Mutation,3,0,1
+9,FAM92B,"Family with sequence similarity 92, member B",ENSG00000153789,339145,436062,16,Rare Single Gene Mutation,2,0,3
+9,FAM98C,family with sequence similarity 98 member C,ENSG00000130244,147965,73833,19,Rare Single Gene Mutation,3,0,2
+9,FAN1,FANCD2/FANCI-associated nuclease 1,ENSG00000198690,22909,330554,15,Rare Single Gene Mutation,3,0,1
+9,FAT1,FAT atypical cadherin 1,ENSG00000083857,2195,14107,4,Rare Single Gene Mutation,3,0,5
+9,FBN1,Fibrillin 1,ENSG00000166147,2200,14118,15,Rare Single Gene Mutation,2,0,10
+9,ERBIN,erbb2 interacting protein,ENSG00000112851,55914,59079,5,Rare Single Gene Mutation,2,0,6
+9,FBXO11,F-box protein 11,ENSG00000138081,80204,225055,2,"Rare Single Gene Mutation, Syndromic",3,1,5
+9,FBXO40,F-box protein 40,ENSG00000163833,51725,207215,3,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,FCRL6,Fc receptor like 6,ENSG00000181036,343413,677296,1,Rare Single Gene Mutation,3,0,4
+9,FEZF2,FEZ family zinc finger 2,ENSG00000153266,55079,54713,3,"Rare Single Gene Mutation, Genetic Association",3,0,9
+9,FGA,Fibrinogen alpha chain,ENSG00000171560,2243,14161,4,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,FHIT,fragile histidine triad gene,ENSG00000189283,2272,14198,3,"Rare Single Gene Mutation, Genetic Association",3,0,12
+9,FMR1,fragile X mental retardation 1,ENSG00000102081,2332,14265,X,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",1,0,42
+9,FOXG1,Forkhead box G1,ENSG00000176165,2290,15228,14,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,26
+9,FRK,fyn-related kinase,ENSG00000111816,2444,14302,6,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,FRMPD4,FERM and PDZ domain containing 4,ENSG00000169933,9758,333605,X,"Rare Single Gene Mutation, Syndromic",,1,6
+9,GABBR2,gamma-aminobutyric acid type B receptor subunit 2,ENSG00000136928,9568,242425,9,"Rare Single Gene Mutation, Syndromic, Functional",3,1,10
+9,GABRA3,"Gamma-aminobutyric acid (GABA) A receptor, alpha 3",ENSG00000011677,2556,14396,X,Rare Single Gene Mutation,,1,3
+9,GABRA4,"gamma-aminobutyric acid (GABA) A receptor, alpha 4",ENSG00000109158,2557,14397,4,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,GABRB3,"gamma-aminobutyric acid (GABA) A receptor, beta 3",ENSG00000166206,2562,14402,15,"Rare Single Gene Mutation, Genetic Association",2,0,37
+9,GABRG3,gamma-aminobutyric acid type A receptor gamma3 subunit,ENSG00000182256,2567,14407,15,Genetic Association,2,0,9
+9,GALNT13,polypeptide N-acetylgalactosaminyltransferase 13,ENSG00000144278,114805,271786,2,Rare Single Gene Mutation,3,0,4
+9,GALNT14,polypeptide N-acetylgalactosaminyltransferase 14,ENSG00000158089,79623,71685,2,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,GATM,Glycine amidinotransferase (L-arginine:glycine amidinotransferase),ENSG00000171766,2628,67092,15,Syndromic,,1,2
+9,GDA,guanine deaminase,ENSG00000119125,9615,14544,9,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,GGNBP2,gametogenetin binding protein 2,ENSG00000278311,79893,217039,17,Rare Single Gene Mutation,2,0,2
+9,GIGYF1,GRB10 interacting GYF protein 1,ENSG00000146830,64599,57330,7,Rare Single Gene Mutation,1,0,7
+9,GIGYF2,GRB10 interacting GYF protein 2,ENSG00000204120,26058,227331,2,Rare Single Gene Mutation,1,0,7
+9,GLIS1,GLIS family zinc finger 1,ENSG00000174332,148979,230587,1,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,GLO1,glyoxalase I,ENSG00000124767,2739,109801,6,"Rare Single Gene Mutation, Genetic Association",3,0,10
+9,GLRA2,"glycine receptor, alpha 2",ENSG00000101958,2742,237213,X,"Rare Single Gene Mutation, Functional",3,0,15
+9,GNAS,GNAS complex locus,ENSG00000087460,2778,14683,20,Rare Single Gene Mutation,3,0,8
+9,GNB1L,"guanine nucleotide binding protein (G protein), beta polypeptide 1-like",ENSG00000185838,54584,13972,22,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,GPC4,glypican 4,ENSG00000076716,2239,14735,X,Rare Single Gene Mutation,2,0,2
+9,GPC6,glypican 6,ENSG00000183098,10082,23888,13,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,GPD2,glycerol-3-phosphate dehydrogenase 2,ENSG00000115159,2820,14571,2,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,GPHN,Gephyrin,ENSG00000171723,10243,268566,14,Rare Single Gene Mutation,2,0,8
+9,GPR37,G protein-coupled receptor 37,ENSG00000170775,2861,14763,7,Rare Single Gene Mutation,3,0,2
+9,GPR85,G protein-coupled receptor 85,ENSG00000164604,54329,64450,7,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,GRIA1,glutamate ionotropic receptor AMPA type subunit 1,ENSG00000155511,2890,14799,5,Rare Single Gene Mutation,2,0,6
+9,GRIA2,glutamate ionotropic receptor AMPA type subunit 2,ENSG00000120251,2891,14800,4,Rare Single Gene Mutation,2,0,3
+9,GRID1,"Glutamate receptor, ionotropic, delta 1",ENSG00000182771,2894,14803,10,"Rare Single Gene Mutation, Genetic Association",2,0,6
+9,GRID2,"glutamate receptor, ionotropic, delta 2",ENSG00000152208,2895,14804,4,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,9
+9,GRID2IP,Grid2 interacting protein,ENSG00000215045,392862,170935,7,Rare Single Gene Mutation,3,0,4
+9,GRIK2,glutamate ionotropic receptor kainate type subunit 2,ENSG00000164418,2898,14806,6,"Rare Single Gene Mutation, Genetic Association",2,0,18
+9,FBXO33,F-box protein 33,ENSG00000165355,254170,70611,14,Genetic Association,3,0,3
+9,GAS2,Growth arrest-specific 2,ENSG00000139354,2620,14453,11,Genetic Association,3,0,1
+9,GPX1,glutathione peroxidase 1,ENSG00000233276,2876,14775,3,Genetic Association,3,0,5
+9,GRIK3,glutamate ionotropic receptor kainate type subunit 3,ENSG00000163873,2899,14807,1,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,GRIK4,"Glutamate receptor, ionotropic, kainate 4",ENSG00000149403,2900,110637,11,"Rare Single Gene Mutation, Functional",3,0,4
+9,GRIK5,"Glutamate receptor, ionotropic, kainate 5",ENSG00000105737,2901,14809,19,Rare Single Gene Mutation,2,0,8
+9,GRIN1,"Glutamate receptor, ionotropic, N-methyl D-aspartate 1",ENSG00000176884,2902,14810,9,"Rare Single Gene Mutation, Functional",2,0,17
+9,GRIN2A,"glutamate receptor, ionotropic, N-methyl D-aspartate 2A",ENSG00000183454,2903,14811,16,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,39
+9,GRIN2B,"glutamate receptor, inotropic, N-methyl D-apartate 2B",ENSG00000273079,2904,14812,12,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,53
+9,GRIP1,glutamate receptor interacting protein 1,ENSG00000155974,23426,74053,12,Rare Single Gene Mutation,2,0,13
+9,GRM5,glutamate metabotropic receptor 5,ENSG00000168959,2915,108071,11,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,7
+9,GRM7,"Glutamate receptor, metabotropic 7",ENSG00000196277,2917,108073,3,"Rare Single Gene Mutation, Genetic Association",3,0,13
+9,GSTM1,glutathione S-transferase M1,ENSG00000134184,2944,14863,1,Genetic Association,3,0,3
+9,GTF2I,general transcription factor IIi,ENSG00000263001,2969,14886,7,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,GUCY1A2,guanylate cyclase 1 soluble subunit alpha 2,ENSG00000152402,2977,234889,11,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,HCFC1,host cell factor C1,ENSG00000172534,3054,15161,X,"Rare Single Gene Mutation, Syndromic",,1,9
+9,HCN1,Hyperpolarization activated cyclic nucleotide-gated potassium channel 1,ENSG00000164588,348980,15165,5,"Rare Single Gene Mutation, Genetic Association",,1,8
+9,HDAC4,histone deacetylase 4,ENSG00000068024,9759,208727,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,1,16
+9,HDAC8,histone deacetylase 8,ENSG00000147099,55869,70315,X,Syndromic,,1,6
+9,HDLBP,high density lipoprotein binding protein,ENSG00000115677,3069,110611,2,Rare Single Gene Mutation,3,0,4
+9,HECTD4,HECT domain E3 ubiquitin protein ligase 4,ENSG00000173064,283450,269700,12,Rare Single Gene Mutation,1,0,4
+9,HECW2,"HECT, C2 and WW domain containing E3 ubiquitin protein ligase 2",ENSG00000138411,57520,329152,2,"Rare Single Gene Mutation, Syndromic",2,0,7
+9,HEPACAM,hepatic and glial cell adhesion molecule,ENSG00000165478,220296,72927,11,"Rare Single Gene Mutation, Syndromic",,1,10
+9,H2BC11,H2B clustered histone 11,ENSG00000124635,8970,319190,6,Rare Single Gene Mutation,3,0,3
+9,HERC2,HECT and RLD domain containing E3 ubiquitin protein ligase 2,ENSG00000128731,8924,15204,15,Rare Single Gene Mutation,,1,8
+9,HIVEP3,human immunodeficiency virus type I enhancer binding protein 3,ENSG00000127124,59269,16656,1,"Rare Single Gene Mutation, Genetic Association",2,0,6
+9,HLA-A,"major histocompatibility complex, class I, A",ENSG00000206503,3105,14972,6,Genetic Association,3,0,10
+9,HLA-G,"major histocompatibility complex, class I, G",ENSG00000204632,3135,14991,6,Genetic Association,3,0,4
+9,HMGN1,high mobility group nucleosome binding domain 1,ENSG00000205581,3150,15312,21,Genetic Association,2,0,1
+9,HNRNPH2,heterogeneous nuclear ribonucleoprotein H2,ENSG00000126945,3188,56258,X,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,HNRNPU,heterogeneous nuclear ribonucleoprotein U,ENSG00000153187,3192,51810,1,"Rare Single Gene Mutation, Syndromic, Functional",1,0,14
+9,HOMER1,Homer homolog 1 (Drosophila),ENSG00000152413,9456,26556,5,"Rare Single Gene Mutation, Functional",3,0,5
+9,HOXA1,homeobox A1,ENSG00000105991,3198,15394,7,"Rare Single Gene Mutation, Syndromic, Genetic Association",,1,15
+9,HRAS,v-Ha-ras Harvey rat sarcoma viral oncogene homolog,ENSG00000174775,3265,15461,11,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,12
+9,HS3ST5,heparan sulfate (glucosamine) 3-O-sulfotransferase 5,ENSG00000249853,222537,319415,6,Genetic Association,3,0,7
+9,HSD11B1,hydroxysteroid (11-beta) dehydrogenase 1,ENSG00000117594,3290,15483,1,Syndromic,3,0,8
+9,HTR1B,5-hydroxytryptamine (serotonin) receptor 1B,ENSG00000135312,3351,15551,6,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,HTR3A,5-hydroxytryptamine (serotonin) receptor 3A,ENSG00000166736,3359,15561,11,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,7
+9,HUWE1,"HECT, UBA and WWE domain containing 1, E3 ubiquitin protein ligase",ENSG00000086758,10075,59026,X,"Rare Single Gene Mutation, Syndromic",,1,14
+9,HYDIN,"HYDIN, axonemal central pair apparatus protein",ENSG00000157423,54768,244653,16,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,ICA1,islet cell autoantigen 1,ENSG00000003147,3382,15893,7,Rare Single Gene Mutation,2,0,8
+9,IL1R2,"interleukin 1 receptor, type II",ENSG00000115590,7850,16178,2,Rare Single Gene Mutation,3,0,6
+9,IL1RAPL1,interleukin 1 receptor accessory protein-like 1,ENSG00000169306,11141,331461,X,Rare Single Gene Mutation,3,0,22
+9,IL1RAPL2,interleukin 1 receptor accessory protein-like 2,ENSG00000189108,26280,60367,X,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,ILF2,Interleukin enhancer binding factor 2,ENSG00000143621,3608,67781,1,Rare Single Gene Mutation,2,0,4
+9,IMMP2L,IMP2 inner mitochondrial membrane peptidase-like (S. cerevisiae),ENSG00000184903,83943,93757,7,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,14
+9,INPP1,inositol polyphosphate-1-phosphatase,ENSG00000151689,3628,16329,2,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,INTS1,integrator complex subunit 1,ENSG00000164880,26173,68510,7,"Rare Single Gene Mutation, Syndromic",,1,4
+9,INTS6,Integrator complex subunit 6,ENSG00000102786,26512,18130,13,Rare Single Gene Mutation,2,0,4
+9,IQGAP3,IQ motif containing GTPase activating protein 3,ENSG00000183856,128239,404710,1,Rare Single Gene Mutation,3,0,4
+9,IQSEC2,IQ motif and Sec7 domain 2,ENSG00000124313,23096,245666,X,"Rare Single Gene Mutation, Syndromic, Functional",1,0,25
+9,IRF2BPL,Interferon regulatory factor 2 binding protein-like,ENSG00000119669,64207,238330,14,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,ITGB3,"integrin, beta 3 (platelet glycoprotein IIIa, antigen CD61)",ENSG00000259207,3690,16416,17,"Rare Single Gene Mutation, Genetic Association",2,0,15
+9,ITPR1,"inositol 1,4,5-trisphosphate receptor type 1",ENSG00000150995,3708,16438,3,Rare Single Gene Mutation,3,0,9
+9,ITSN1,intersectin 1,ENSG00000205726,6453,16443,21,Rare Single Gene Mutation,3,0,4
+9,JARID2,jumonji and AT-rich interaction domain containing 2,ENSG00000008083,3720,16468,6,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,11
+9,JMJD1C,jumonji domain containing 1C,ENSG00000171988,221037,108829,10,Rare Single Gene Mutation,3,0,8
+9,KANK1,KN motif and ankyrin repeat domains 1,ENSG00000107104,23189,107351,9,Rare Single Gene Mutation,3,0,9
+9,KANSL1,KAT8 regulatory NSL complex subunit 1,ENSG00000120071,284058,76719,17,"Rare Single Gene Mutation, Syndromic",1,0,2
+9,KAT2B,K(lysine) acetyltransferase 2B,ENSG00000114166,8850,18519,3,Rare Single Gene Mutation,2,0,6
+9,KAT6A,K(lysine) acetyltransferase 6A,ENSG00000083168,7994,244349,8,"Rare Single Gene Mutation, Syndromic",2,1,12
+9,KATNAL1,katanin catalytic subunit A1 like 1,ENSG00000102781,84056,231912,13,"Rare Single Gene Mutation, Functional",3,0,2
+9,KATNAL2,Katanin p60 subunit A-like 2,ENSG00000167216,83473,71206,18,Rare Single Gene Mutation,1,0,11
+9,KCNB1,potassium voltage-gated channel subfamily B member 1,ENSG00000158445,3745,16500,20,"Rare Single Gene Mutation, Syndromic",1,0,9
+9,KCNC1,potassium voltage-gated channel subfamily C member 1,ENSG00000129159,3746,16502,11,Rare Single Gene Mutation,3,0,5
+9,KCND2,potassium voltage-gated channel subfamily D member 2,ENSG00000184408,3751,16508,7,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,KCND3,potassium voltage-gated channel subfamily D member 3,ENSG00000171385,3752,56543,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,8
+9,KCNJ10,potassium voltage-gated channel subfamily J member 10,ENSG00000177807,3766,16513,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,11
+9,KCNJ15,potassium voltage-gated channel subfamily J member 15,ENSG00000157551,3772,16516,21,Rare Single Gene Mutation,3,0,3
+9,KCNK7,potassium two pore domain channel subfamily K member 7,ENSG00000173338,10089,16530,11,Rare Single Gene Mutation,3,0,2
+9,KCNMA1,"potassium large conductance calcium-activated channel, subfamily M, alpha member 1",ENSG00000156113,3778,16531,10,"Rare Single Gene Mutation, Syndromic",3,0,21
+9,KCNQ2,potassium voltage-gated channel subfamily Q member 2,ENSG00000075043,3785,16536,20,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,0,24
+9,KCNQ3,potassium voltage-gated channel subfamily Q member 3,ENSG00000184156,3786,110862,8,"Rare Single Gene Mutation, Genetic Association",2,0,9
+9,KCNS3,potassium voltage-gated channel modifier subfamily S member 3,ENSG00000170745,3790,238076,2,Rare Single Gene Mutation,2,0,4
+9,KCTD13,Potassium channel tetramerisation domain containing 13,ENSG00000174943,253980,233877,16,"Rare Single Gene Mutation, Functional",3,0,7
+9,KDM4B,lysine demethylase 4B,ENSG00000127663,23030,193796,19,"Rare Single Gene Mutation, Functional",3,0,3
+9,KDM4C,lysine demethylase 4C,ENSG00000107077,23081,76804,9,Rare Single Gene Mutation,2,0,2
+9,KDM5B,Lysine (K)-specific demethylase 5B,ENSG00000117139,10765,75605,1,"Rare Single Gene Mutation, Syndromic, Functional",2,0,13
+9,KDM5C,lysine demethylase 5C,ENSG00000126012,8242,20591,X,"Rare Single Gene Mutation, Syndromic, Functional",2,0,23
+9,KDM6A,lysine demethylase 6A,ENSG00000147050,7403,22289,X,"Rare Single Gene Mutation, Syndromic",2,0,7
+9,KDM6B,Lysine (K)-specific demethylase 6B,ENSG00000132510,23135,216850,17,"Rare Single Gene Mutation, Syndromic",1,0,11
+9,KHDRBS2,"KH domain containing, RNA binding, signal transduction associated 2",ENSG00000112232,202559,170771,6,Rare Single Gene Mutation,3,0,3
+9,KIF13B,Kinesin family member 13B,ENSG00000197892,23303,16554,8,Rare Single Gene Mutation,3,0,3
+9,KIF14,kinesin family member 14,ENSG00000118193,9928,381293,1,"Rare Single Gene Mutation, Syndromic",2,0,4
+9,KIF5C,Kinesin family member 5C,ENSG00000168280,3800,16574,2,"Rare Single Gene Mutation, Syndromic",3,1,8
+9,KIRREL3,Kin of IRRE like 3 (Drosophila),ENSG00000149571,84623,67703,11,Rare Single Gene Mutation,2,0,15
+9,KMT2A,Lysine (K)-specific methyltransferase 2A,ENSG00000118058,4297,214162,11,"Rare Single Gene Mutation, Syndromic",1,0,20
+9,KMT2C,Lysine (K)-specific methyltransferase 2C,ENSG00000055609,58508,231051,7,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,KMT2E,Lysine (K)-specific methyltransferase 2E,ENSG00000005483,55904,69188,7,"Rare Single Gene Mutation, Syndromic, Genetic Association",2,1,8
+9,KPTN,"kaptin, actin binding protein",ENSG00000118162,11133,70394,19,"Rare Single Gene Mutation, Syndromic",,1,4
+9,KRR1,"KRR1, small subunit (SSU) processome component, homolog (yeast)",ENSG00000111615,11103,52705,12,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,KRT26,keratin 26,ENSG00000186393,353288,320864,17,Rare Single Gene Mutation,3,0,2
+9,LAMA1,"Laminin, alpha 1",ENSG00000101680,284217,16772,18,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,LAMB1,"laminin, beta 1",ENSG00000091136,3912,16777,7,"Rare Single Gene Mutation, Genetic Association",2,0,7
+9,LEO1,"LEO1 homolog, Paf1/RNA polymerase II complex component",ENSG00000166477,123169,235497,15,Rare Single Gene Mutation,2,0,3
+9,KMT5B,lysine methyltransferase 5B,ENSG00000110066,51111,225888,11,"Rare Single Gene Mutation, Syndromic",1,0,11
+9,LEP,Leptin,ENSG00000174697,3952,16846,7,Rare Single Gene Mutation,3,0,1
+9,LIN7B,"lin-7 homolog B, crumbs cell polarity complex component",ENSG00000104863,64130,22342,19,Rare Single Gene Mutation,3,0,2
+9,LMX1B,LIM homeobox transcription factor 1 beta,ENSG00000136944,4010,16917,9,Genetic Association,2,0,1
+9,LRBA,"LPS-responsive vesicle trafficking, beach and anchor containing",ENSG00000198589,987,80877,4,Rare Single Gene Mutation,3,0,6
+9,LRFN2,leucine rich repeat and fibronectin type III domain containing 2,ENSG00000156564,57497,70530,6,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,4
+9,LRFN5,leucine rich repeat and fibronectin type III domain containing 5,ENSG00000165379,145581,238205,14,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,LRP1,LDL receptor related protein 1,ENSG00000123384,4035,16971,12,Rare Single Gene Mutation,2,0,4
+9,LRP2,LDL receptor related protein 2,ENSG00000081479,4036,14725,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,12
+9,LRRC1,leucine rich repeat containing 1,ENSG00000137269,55227,214345,6,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,LRRC4,leucine rich repeat containing 4,ENSG00000128594,64101,192198,7,"Rare Single Gene Mutation, Functional",3,0,3
+9,LZTR1,Leucine-zipper-like transcription regulator 1,ENSG00000099949,8216,66863,22,"Rare Single Gene Mutation, Syndromic",1,0,11
+9,LZTS2,"leucine zipper, putative tumor suppressor 2",ENSG00000107816,84445,226154,10,Genetic Association,3,0,4
+9,MACROD2,MACRO domain containing 2,ENSG00000172264,140733,72899,20,"Rare Single Gene Mutation, Genetic Association",2,0,19
+9,LNPK,"lunapark, ER junction formation factor",ENSG00000144320,80856,69605,2,Syndromic,,1,1
+9,MAGEL2,MAGE-like 2,ENSG00000254585,54551,27385,15,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,MAOA,monoamine oxidase A,ENSG00000189221,4128,17161,X,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",3,0,15
+9,MAOB,monoamine oxidase B,ENSG00000069535,4129,109731,X,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,5
+9,MAPK3,mitogen-activated protein kinase 3,ENSG00000102882,5595,26417,16,"Rare Single Gene Mutation, Functional",3,0,5
+9,MARK1,microtubule affinity regulating kinase 1,ENSG00000116141,4139,226778,1,"Rare Single Gene Mutation, Genetic Association",3,0,10
+9,MBD1,methyl-CpG binding domain protein 1,ENSG00000141644,4152,17190,18,Rare Single Gene Mutation,3,0,7
+9,MBD3,methyl-CpG binding domain protein 3,ENSG00000071655,53615,17192,19,Rare Single Gene Mutation,3,0,4
+9,MBD4,methyl-CpG binding domain protein 4,ENSG00000129071,8930,17193,3,Rare Single Gene Mutation,3,0,7
+9,MBD5,Methyl-CpG binding domain protein 5,ENSG00000204406,55777,109241,2,"Rare Single Gene Mutation, Syndromic",1,0,33
+9,MBD6,Methyl-CpG binding domain protein 6,ENSG00000166987,114785,110962,12,Rare Single Gene Mutation,3,0,1
+9,MBOAT7,membrane bound O-acyltransferase domain containing 7,ENSG00000125505,79143,77582,19,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,MCM4,minichromosome maintenance complex component 4,ENSG00000104738,4173,17217,8,Rare Single Gene Mutation,3,0,2
+9,MCM6,minichromosome maintenance complex component 6,ENSG00000076003,4175,17219,2,Rare Single Gene Mutation,3,0,2
+9,MCPH1,microcephalin 1,ENSG00000147316,79648,244329,8,Rare Single Gene Mutation,3,0,16
+9,MDGA2,MAM domain containing glycosylphosphatidylinositol anchor 2,ENSG00000139915,161357,320772,14,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,MECP2,Methyl CpG binding protein 2,ENSG00000169057,4204,17257,X,"Rare Single Gene Mutation, Syndromic, Functional",1,0,81
+9,MED12L,mediator complex subunit 12L,ENSG00000144893,116931,329650,3,"Rare Single Gene Mutation, Syndromic",3,1,4
+9,MED13,mediator complex subunit 13,ENSG00000108510,9969,327987,17,"Rare Single Gene Mutation, Syndromic",1,0,4
+9,MED13L,Mediator complex subunit 13-like,ENSG00000123066,23389,76199,12,"Rare Single Gene Mutation, Syndromic",1,0,32
+9,MEF2C,myocyte enhancer factor 2C,ENSG00000081189,4208,17260,5,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",3,1,34
+9,MEGF10,multiple EGF like domains 10,ENSG00000145794,84466,70417,5,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,MEGF11,multiple EGF like domains 11,ENSG00000157890,84465,214058,15,Rare Single Gene Mutation,3,0,5
+9,MEIS2,Meis homeobox 2,ENSG00000134138,4212,17536,15,"Rare Single Gene Mutation, Syndromic",1,0,7
+9,MET,met proto-oncogene (hepatocyte growth factor receptor),ENSG00000105976,4233,17295,7,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,37
+9,MFRP,Membrane frizzled-related protein,ENSG00000235718,83552,259172,11,Rare Single Gene Mutation,2,0,6
+9,METTL26,methyltransferase like 26,ENSG00000130731,84326,68347,16,Rare Single Gene Mutation,3,0,2
+9,MIB1,Mindbomb E3 ubiquitin protein ligase 1,ENSG00000101752,57534,225164,18,Rare Single Gene Mutation,3,0,7
+9,MLANA,melan-A,ENSG00000120215,2315,77836,9,Rare Single Gene Mutation,3,0,3
+9,MNT,MAX network transcriptional repressor,ENSG00000070444,4335,17428,17,Genetic Association,3,0,1
+9,MPP6,membrane palmitoylated protein 6,ENSG00000105926,51678,56524,7,Rare Single Gene Mutation,3,0,3
+9,MSR1,macrophage scavenger receptor 1,ENSG00000038945,4481,20288,8,Rare Single Gene Mutation,3,0,3
+9,MTF1,metal-regulatory transcription factor 1,ENSG00000188786,4520,17764,1,"Syndromic, Genetic Association",3,0,4
+9,MTHFR,methylenetetrahydrofolate reductase (NAD(P)H),ENSG00000177000,4524,17769,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,16
+9,MTOR,Mechanistic target of rapamycin (serine/threonine kinase),ENSG00000198793,2475,56717,1,"Rare Single Gene Mutation, Syndromic, Functional",2,1,18
+9,MRTFB,myocardin related transcription factor B,ENSG00000186260,57496,239719,16,"Rare Single Gene Mutation, Genetic Association",3,0,10
+9,MYH10,myosin heavy chain 10,ENSG00000133026,4628,77579,17,Rare Single Gene Mutation,2,0,5
+9,MYH4,"Myosin, heavy chain 4, skeletal muscle",ENSG00000264424,4622,17884,17,Rare Single Gene Mutation,3,0,5
+9,MYO16,myosin XVI,ENSG00000041515,23026,244281,13,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,MYO1E,myosin IE,ENSG00000157483,4643,71602,15,Rare Single Gene Mutation,3,0,4
+9,MYO5A,myosin VA,ENSG00000197535,4644,17918,15,"Rare Single Gene Mutation, Genetic Association",2,0,5
+9,MYO5C,myosin VC,ENSG00000128833,55930,208943,15,Rare Single Gene Mutation,3,0,3
+9,MYO9B,Myosin IXB,ENSG00000099331,4650,17925,19,Rare Single Gene Mutation,2,0,4
+9,MYT1L,Myelin transcription factor 1-like,ENSG00000186487,23040,17933,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,18
+9,NAA15,"N(alpha)-acetyltransferase 15, NatA auxiliary subunit",ENSG00000164134,80155,74838,4,"Rare Single Gene Mutation, Syndromic",1,0,13
+9,NACC1,nucleus accumbens associated 1,ENSG00000160877,112939,66830,19,"Rare Single Gene Mutation, Syndromic",3,1,6
+9,NAV2,neuron navigator 2,ENSG00000166833,89797,78286,11,Rare Single Gene Mutation,2,0,9
+9,NBEA,neurobeachin,ENSG00000172915,26960,26422,13,"Rare Single Gene Mutation, Syndromic, Functional",1,0,19
+9,NCKAP1,NCK-associated protein 1,ENSG00000061676,10787,50884,2,Rare Single Gene Mutation,1,0,8
+9,NCKAP5,NCK-associated protein 5,ENSG00000176771,344148,210356,2,Rare Single Gene Mutation,3,0,1
+9,NCOR1,nuclear receptor corepressor 1,ENSG00000141027,9611,20185,17,"Rare Single Gene Mutation, Functional",2,0,6
+9,NEGR1,neuronal growth regulator 1,ENSG00000172260,257194,320840,1,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,6
+9,NEO1,Neogenin 1,ENSG00000067141,4756,18007,15,"",3,0,1
+9,NF1,"neurofibromin 1 (neurofibromatosis, von Recklinghausen disease, Watson disease)",ENSG00000196712,4763,18015,17,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,24
+9,NFE2L3,"nuclear factor, erythroid 2 like 3",ENSG00000050344,9603,18025,7,Rare Single Gene Mutation,2,0,3
+9,NFIA,nuclear factor I/A,ENSG00000162599,4774,18027,1,Rare Single Gene Mutation,3,0,11
+9,NFIB,nuclear factor I B,ENSG00000147862,4781,18028,9,"Rare Single Gene Mutation, Syndromic",3,1,5
+9,NFIX,nuclear factor I/X (CCAAT-binding transcription factor),ENSG00000008441,4784,18032,19,"Rare Single Gene Mutation, Syndromic",,1,10
+9,NINL,Ninein-like,ENSG00000101004,22981,78177,20,Rare Single Gene Mutation,2,0,6
+9,NIPA1,non imprinted in Prader-Willi/Angelman syndrome 1,ENSG00000170113,123606,233280,15,Rare Single Gene Mutation,3,0,5
+9,NIPA2,non imprinted in Prader-Willi/Angelman syndrome 2,ENSG00000140157,81614,93790,15,Rare Single Gene Mutation,3,0,2
+9,NIPBL,Nipped-B homolog (Drosophila),ENSG00000164190,25836,71175,5,"Rare Single Gene Mutation, Syndromic",1,0,13
+9,NLGN1,neuroligin 1,ENSG00000169760,22871,192167,3,"Rare Single Gene Mutation, Genetic Association",2,0,17
+9,NEXMIF,neurite extension and migration factor,ENSG00000050030,340533,245555,X,"Rare Single Gene Mutation, Syndromic, Functional",1,0,20
+9,NLGN2,Neuroligin 2,ENSG00000169992,57555,216856,17,"Rare Single Gene Mutation, Functional",1,0,8
+9,NLGN3,neuroligin 3,ENSG00000196338,54413,245537,X,Rare Single Gene Mutation,1,0,34
+9,NR1D1,nuclear receptor subfamily 1 group D member 1,ENSG00000126368,9572,217166,17,Rare Single Gene Mutation,3,0,3
+9,NR2F1,nuclear receptor subfamily 2 group F member 1,ENSG00000175745,7025,13865,5,"Rare Single Gene Mutation, Syndromic",3,1,12
+9,NR3C2,"Nuclear receptor subfamily 3, group C, member 2",ENSG00000151623,4306,110784,4,"Rare Single Gene Mutation, Syndromic",2,1,5
+9,NR4A2,nuclear receptor subfamily 4 group A member 2,ENSG00000153234,4929,18227,2,Rare Single Gene Mutation,1,0,7
+9,NRCAM,neuronal cell adhesion molecule,ENSG00000091129,4897,319504,7,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,NRP2,neuropilin 2,ENSG00000118257,8828,18187,2,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,NRXN1,neurexin 1,ENSG00000179915,9378,18189,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,82
+9,HIVEP2,HIVEP zinc finger 2,ENSG00000010818,3097,15273,6,"Syndromic, Functional",1,0,8
+9,KDM3B,lysine demethylase 3B,ENSG00000120733,51780,277250,5,Syndromic,1,0,1
+9,NAALADL2,N-acetylated alpha-linked acidic dipeptidase-like 2,ENSG00000177694,254827,635702,3,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,NDUFA5,"NADH dehydrogenase (ubiquinone) 1 alpha subcomplex, 5, 13kDa",ENSG00000128609,4698,68202,7,Genetic Association,3,0,3
+9,NPAS2,neuronal PAS domain protein 2,ENSG00000170485,4862,18143,2,Genetic Association,3,0,4
+9,NRXN2,neurexin 2,ENSG00000110076,9379,18190,11,"Rare Single Gene Mutation, Genetic Association",1,0,11
+9,NSD1,nuclear receptor binding SET domain protein 1,ENSG00000165671,64324,18193,5,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,NTNG1,netrin G1,ENSG00000162631,22854,80883,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,1,8
+9,NTNG2,netrin G2,ENSG00000196358,84628,171171,9,Syndromic,,1,3
+9,NTRK1,"neurotrophic tyrosine kinase, receptor, type 1",ENSG00000198400,4914,18211,1,"Rare Single Gene Mutation, Syndromic",3,0,8
+9,NTRK2,neurotrophic receptor tyrosine kinase 2,ENSG00000148053,4915,18212,9,Syndromic,,1,3
+9,NTRK3,"neurotrophic tyrosine kinase, receptor, type 3",ENSG00000140538,4916,18213,15,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,13
+9,NUAK1,"NUAK family, SNF1-like kinase, 1",ENSG00000074590,9891,77976,12,"Rare Single Gene Mutation, Functional",2,0,6
+9,NSMCE3,"NSE3 homolog, SMC5-SMC6 complex component",ENSG00000185115,56160,66647,15,Functional,3,0,3
+9,NUDCD2,NudC domain containing 2,ENSG00000170584,134492,52653,5,Rare Single Gene Mutation,2,0,3
+9,NUP133,nucleoporin 133kDa,ENSG00000069248,55746,234865,1,Rare Single Gene Mutation,3,0,4
+9,NXPH1,neurexophilin 1,ENSG00000122584,30010,18231,7,Rare Single Gene Mutation,3,0,5
+9,OCRL,oculocerebrorenal syndrome of Lowe,ENSG00000122126,4952,320634,X,"Rare Single Gene Mutation, Syndromic",,1,7
+9,ODF3L2,outer dense fiber of sperm tails 3-like 2,ENSG00000181781,284451,382384,19,Rare Single Gene Mutation,3,0,1
+9,OFD1,"OFD1, centriole and centriolar satellite protein",ENSG00000046651,8481,237222,X,Rare Single Gene Mutation,3,0,2
+9,OPHN1,oligophrenin 1,ENSG00000079482,4983,94190,X,"Rare Single Gene Mutation, Syndromic",2,0,15
+9,OR52M1,"Olfactory receptor, family 52, subfamily M, member 1",ENSG00000197790,119772,258322,11,Rare Single Gene Mutation,2,0,2
+9,OTUD7A,OTU deubiquitinase 7A,ENSG00000169918,161725,170711,15,"Rare Single Gene Mutation, Functional",2,0,4
+9,OXT,oxytocin/neurophysin I prepropeptide,ENSG00000101405,5020,18429,20,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,OXTR,oxytocin receptor,ENSG00000180914,5021,18430,3,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,44
+9,P2RX5,"Purinergic receptor P2X, ligand gated ion channel, 5",ENSG00000083454,5026,94045,17,Rare Single Gene Mutation,2,0,4
+9,P4HA2,"Prolyl 4-hydroxylase, alpha polypeptide II",ENSG00000072682,8974,18452,5,Rare Single Gene Mutation,2,0,4
+9,PACS1,phosphofurin acidic cluster sorting protein 1,ENSG00000175115,55690,107975,11,"Rare Single Gene Mutation, Syndromic",1,0,6
+9,PACS2,phosphofurin acidic cluster sorting protein 2,ENSG00000179364,23241,217893,14,"Rare Single Gene Mutation, Syndromic",,1,5
+9,PAFAH1B2,platelet activating factor acetylhydrolase 1b catalytic subunit 2,ENSG00000168092,5049,18475,11,Rare Single Gene Mutation,3,0,3
+9,PAH,Phenylalanine hydroxylase,ENSG00000171759,5053,18478,12,"Rare Single Gene Mutation, Syndromic",2,0,7
+9,PAK2,p21 (RAC1) activated kinase 2,ENSG00000180370,5062,224105,3,Rare Single Gene Mutation,2,0,4
+9,PAPOLG,poly(A) polymerase gamma,ENSG00000115421,64895,216578,2,Rare Single Gene Mutation,3,0,4
+9,PARD3B,Par-3 partitioning defective 3 homolog B (C. elegans),ENSG00000116117,117583,72823,2,"Rare Single Gene Mutation, Genetic Association",2,0,7
+9,PAX5,Paired box 5,ENSG00000196092,5079,18507,9,Rare Single Gene Mutation,2,0,6
+9,PAX6,Paired box 6,ENSG00000007372,5080,18508,11,"Rare Single Gene Mutation, Syndromic, Functional",,1,7
+9,PBX1,PBX homeobox 1,ENSG00000185630,5087,18514,1,Rare Single Gene Mutation,3,0,4
+9,PCCA,propionyl-CoA carboxylase alpha subunit,ENSG00000175198,5095,110821,13,"Rare Single Gene Mutation, Syndromic",,1,10
+9,PCCB,propionyl-CoA carboxylase beta subunit,ENSG00000114054,5096,66904,3,"Rare Single Gene Mutation, Syndromic",,1,9
+9,PCDH10,protocadherin 10,ENSG00000138650,57575,18526,4,Rare Single Gene Mutation,3,0,8
+9,PCDH11X,protocadherin 11 X-linked,ENSG00000102290,27328,245578,X,Rare Single Gene Mutation,3,0,2
+9,PCDH15,protocadherin related 15,ENSG00000150275,65217,11994,10,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,0,5
+9,PCDH19,protocadherin 19,ENSG00000165194,57526,279653,X,"Rare Single Gene Mutation, Syndromic, Functional",1,0,34
+9,PATJ,"PATJ, crumbs cell polarity complex component",ENSG00000132849,10207,12695,1,Rare Single Gene Mutation,3,0,3
+9,PCDH9,protocadherin 9,ENSG00000184226,5101,211712,13,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,PCDHA1,Protocadherin alpha 1,ENSG00000204970,56147,116731,5,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PCDHA10,Protocadherin alpha 10,ENSG00000250120,56139,192161,5,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,PCDHA11,Protocadherin alpha 11,ENSG00000249158,56138,12942,5,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,PCDHA12,Protocadherin alpha 12,ENSG00000251664,56137,12943,5,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PCDHA13,Protocadherin alpha 13,ENSG00000239389,56136,192164,5,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,PCDHA2,Protocadherin alpha 2,ENSG00000204969,56146,353234,5,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,PCDHA3,Protocadherin alpha 3,ENSG00000255408,56145,192163,5,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PCDHA4,Protocadherin alpha 4,ENSG00000204967,56144,12936,5,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,PCDHA5,Protocadherin alpha 5,ENSG00000204965,56143,12941,5,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,PCDHA6,Protocadherin alpha 6,ENSG00000081842,56142,12937,5,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PCDHA7,Protocadherin alpha 7,ENSG00000204963,56141,12939,5,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,PCDHA9,Protocadherin alpha 9,ENSG00000204961,9752,353235,5,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,PCDHAC1,"Protocadherin alpha subfamily C, 1",ENSG00000248383,56135,353236,5,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PCM1,pericentriolar material 1,ENSG00000078674,5108,18536,8,Rare Single Gene Mutation,3,0,3
+9,PDCD1,programmed cell death 1,ENSG00000188389,5133,18566,2,Rare Single Gene Mutation,3,0,3
+9,PDE1C,phosphodiesterase 1C,ENSG00000154678,5137,18575,7,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PDK2,pyruvate dehydrogenase kinase 2,ENSG00000005882,5164,18604,17,Rare Single Gene Mutation,3,0,4
+9,PER1,period homolog 1 (Drosophila),ENSG00000179094,5187,18626,17,"Rare Single Gene Mutation, Genetic Association",3,0,7
+9,PER2,period circadian clock 2,ENSG00000132326,8864,18627,2,Rare Single Gene Mutation,2,0,3
+9,PEX7,peroxisomal biogenesis factor 7,ENSG00000112357,5191,18634,6,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PHF2,PHD finger protein 2,ENSG00000197724,5253,18676,9,Rare Single Gene Mutation,2,0,5
+9,PHF21A,PHD finger protein 21A,ENSG00000135365,51317,192285,11,"Rare Single Gene Mutation, Syndromic",1,0,8
+9,PHF3,PHD finger protein 3,ENSG00000118482,23469,213109,6,Rare Single Gene Mutation,1,0,4
+9,PHF8,PHD finger protein 8,ENSG00000172943,23133,320595,X,"Rare Single Gene Mutation, Syndromic",,1,8
+9,PHIP,pleckstrin homology domain interacting protein,ENSG00000146247,55023,83946,6,"Rare Single Gene Mutation, Syndromic",1,0,11
+9,PHRF1,PHD and ring finger domains 1,ENSG00000070047,57661,101471,11,Rare Single Gene Mutation,2,0,4
+9,PIK3R2,phosphoinositide-3-kinase regulatory subunit 2,ENSG00000105647,5296,18709,19,"Rare Single Gene Mutation, Syndromic",,1,4
+9,PITX1,paired-like homeodomain 1,ENSG00000069011,5307,18740,5,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,PLAUR,"Plasminogen activator, urokinase receptor",ENSG00000011422,5329,18793,19,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,PLCB1,"phospholipase C, beta 1 (phosphoinositide-specific)",ENSG00000182621,23236,18795,20,Rare Single Gene Mutation,2,0,7
+9,PLCD4,phospholipase C delta 4,ENSG00000115556,84812,18802,2,Rare Single Gene Mutation,3,0,3
+9,PLXNA3,plexin A3,ENSG00000130827,55558,18846,X,Rare Single Gene Mutation,3,0,3
+9,PLXNA4,Plexin A4,ENSG00000221866,91584,243743,7,"Rare Single Gene Mutation, Functional",2,0,4
+9,PLXNB1,plexin B1,ENSG00000164050,5364,235611,3,Rare Single Gene Mutation,2,0,3
+9,PNPLA7,patatin like phospholipase domain containing 7,ENSG00000130653,375775,241274,9,Rare Single Gene Mutation,3,0,3
+9,POGZ,Pogo transposable element with ZNF domain,ENSG00000143442,23126,229584,1,"Rare Single Gene Mutation, Syndromic",1,0,30
+9,POLA2,"DNA polymerase alpha 2, accessory subunit",ENSG00000014138,23649,18969,11,Rare Single Gene Mutation,3,0,2
+9,POMGNT1,"protein O-linked mannose N-acetylglucosaminyltransferase 1 (beta 1,2-)",ENSG00000085998,55624,68273,1,"Rare Single Gene Mutation, Syndromic",1,0,5
+9,POMT1,protein O-mannosyltransferase 1,ENSG00000130714,10585,99011,9,Rare Single Gene Mutation,3,0,2
+9,POT1,Protection of telomeres 1 homolog (S. pombe),ENSG00000102977,25913,101185,7,Rare Single Gene Mutation,3,0,1
+9,POU3F3,POU class 3 homeobox 3,ENSG00000198914,5455,18993,2,Syndromic,,1,1
+9,PPFIA1,PTPRF interacting protein alpha 1,ENSG00000131626,8500,233977,11,Rare Single Gene Mutation,3,0,3
+9,PPM1D,"protein phosphatase, Mg2+/Mn2+ dependent 1D",ENSG00000170836,8493,53892,17,"Rare Single Gene Mutation, Syndromic",3,1,6
+9,PPP2CA,protein phosphatase 2 catalytic subunit alpha,ENSG00000113575,5515,19052,5,Syndromic,,1,1
+9,PPP2R1B,"protein phosphatase 2 regulatory subunit A, beta",ENSG00000137713,5519,73699,11,Rare Single Gene Mutation,3,0,7
+9,PPP2R5D,"Protein phosphatase 2, regulatory subunit B', delta",ENSG00000112640,5528,21770,6,"Rare Single Gene Mutation, Syndromic",1,0,14
+9,PREX1,"Phosphatidylinositol-3,4,5-trisphosphate-dependent Rac exchange factor 1",ENSG00000124126,57580,277360,20,"Rare Single Gene Mutation, Genetic Association",2,0,2
+9,PRICKLE1,Prickle homolog 1 (Drosophila),ENSG00000139174,144165,106042,12,"Rare Single Gene Mutation, Syndromic, Functional",2,0,4
+9,PRICKLE2,prickle planar cell polarity protein 2,ENSG00000163637,166336,243548,3,"Rare Single Gene Mutation, Functional",2,0,4
+9,PRKAR1B,protein kinase cAMP-dependent type I regulatory subunit beta,ENSG00000188191,5575,19085,7,Rare Single Gene Mutation,3,0,4
+9,PRKCA,protein kinase C alpha,ENSG00000154229,5578,18750,17,Rare Single Gene Mutation,3,0,4
+9,PRKCB,protein kinase C beta,ENSG00000166501,5579,18751,16,"Rare Single Gene Mutation, Genetic Association",2,0,6
+9,PRKD1,Protein kinase D1,ENSG00000184304,5587,18760,14,"Rare Single Gene Mutation, Syndromic",,1,4
+9,PRKD2,protein kinase D2,ENSG00000105287,25865,101540,19,Rare Single Gene Mutation,2,0,3
+9,PRKDC,"protein kinase, DNA-activated, catalytic polypeptide",ENSG00000253729,5591,19090,8,"Rare Single Gene Mutation, Syndromic, Functional",3,0,6
+9,PRKN,parkin RBR E3 ubiquitin protein ligase,ENSG00000185345,5071,50873,6,"Rare Single Gene Mutation, Genetic Association",2,0,15
+9,OTX1,Orthodenticle homeobox 1,ENSG00000115507,5013,18423,2,Genetic Association,3,0,3
+9,PCDHAC2,"Protocadherin alpha subfamily C, 2",ENSG00000243232,56134,353237,5,Genetic Association,3,0,3
+9,PHB,prohibitin,ENSG00000167085,5245,18673,17,Genetic Association,2,0,1
+9,PIK3CG,"phosphoinositide-3-kinase, catalytic, gamma polypeptide",ENSG00000105851,5294,30955,7,Genetic Association,3,0,4
+9,PON1,paraoxonase 1,ENSG00000005421,5444,18979,7,Genetic Association,2,0,5
+9,PPP1R1B,"Protein phosphatase 1, regulatory (inhibitor) subunit 1B",ENSG00000131771,84152,19049,17,Genetic Association,3,0,1
+9,PRODH,Proline dehydrogenase (oxidase) 1,ENSG00000100033,5625,19125,22,"Syndromic, Genetic Association",2,1,6
+9,PRPF39,pre-mRNA processing factor 39,ENSG00000185246,55015,328110,14,Rare Single Gene Mutation,3,0,3
+9,PRR12,proline rich 12,ENSG00000126464,57479,233210,19,Syndromic,,1,2
+9,PRUNE2,prune homolog 2,ENSG00000106772,158471,353211,9,"Rare Single Gene Mutation, Syndromic",3,0,8
+9,PSD3,pleckstrin and Sec7 domain containing 3,ENSG00000156011,23362,234353,8,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,PSMD12,"proteasome 26S subunit, non-ATPase 12",ENSG00000197170,5718,66997,17,Syndromic,1,0,3
+9,PTBP2,polypyrimidine tract binding protein 2,ENSG00000117569,58155,56195,1,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,PTCHD1,patched domain containing 1,ENSG00000165186,139411,211612,X,"Rare Single Gene Mutation, Genetic Association",1,0,11
+9,PTEN,phosphatase and tensin homolog (mutated in multiple advanced cancers 1),ENSG00000171862,5728,19211,10,"Rare Single Gene Mutation, Syndromic, Functional",1,0,61
+9,PTGS2,prostaglandin-endoperoxide synthase 2,ENSG00000073756,5743,19225,1,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,7
+9,PTK7,Protein tyrosine kinase 7 (inactive),ENSG00000112655,5754,71461,6,Rare Single Gene Mutation,2,0,4
+9,PTPN11,"protein tyrosine phosphatase, non-receptor type 11",ENSG00000179295,5781,19247,12,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,PTPRB,"protein tyrosine phosphatase, receptor type B",ENSG00000127329,5787,19263,12,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,PTPRC,"protein tyrosine phosphatase, receptor type, C",ENSG00000081237,5788,19264,1,"Rare Single Gene Mutation, Genetic Association",3,0,9
+9,PTPRT,"protein tyrosine phosphatase, receptor type, T",ENSG00000196090,11122,19281,20,"Rare Single Gene Mutation, Functional",3,0,9
+9,PXDN,peroxidasin,ENSG00000130508,7837,69675,2,Rare Single Gene Mutation,3,0,5
+9,QRICH1,glutamine rich 1,ENSG00000198218,54870,69232,3,Rare Single Gene Mutation,2,0,4
+9,RAB11FIP5,RAB11 family interacting protein 5,ENSG00000135631,26056,52055,2,Rare Single Gene Mutation,3,0,5
+9,RAB2A,"RAB2A, member RAS oncogene family",ENSG00000104388,5862,59021,8,Rare Single Gene Mutation,2,0,8
+9,RAB39B,"RAB39B, member RAS oncogene family",ENSG00000155961,116442,67790,X,Rare Single Gene Mutation,3,0,12
+9,RAB43,"RAB43, member RAS oncogene family",ENSG00000172780,339122,69834,3,Rare Single Gene Mutation,2,0,2
+9,RAC1,Rac family small GTPase 1,ENSG00000136238,5879,19353,7,"Syndromic, Functional",,1,5
+9,RAD21,RAD21cohesin complex component,ENSG00000164754,5885,19357,8,Syndromic,,1,3
+9,RAD21L1,RAD21 cohesin complex component like 1,ENSG00000244588,642636,668929,20,Rare Single Gene Mutation,3,0,2
+9,RAI1,retinoic acid induced 1,ENSG00000108557,10743,19377,17,"Rare Single Gene Mutation, Syndromic",1,0,21
+9,RALA,RAS like proto-oncogene A,ENSG00000006451,5898,56044,7,Syndromic,,1,2
+9,RALGAPB,Ral GTPase activating protein non-catalytic beta subunit,ENSG00000170471,57148,228850,20,Rare Single Gene Mutation,2,0,4
+9,RANBP17,RAN binding protein 17,ENSG00000204764,64901,66011,5,Rare Single Gene Mutation,2,0,6
+9,RAPGEF4,Rap guanine nucleotide exchange factor (GEF) 4,ENSG00000091428,11069,56508,2,Rare Single Gene Mutation,3,0,17
+9,RASSF5,Ras association domain family member 5,ENSG00000266094,83593,54354,1,"Rare Single Gene Mutation, Genetic Association",3,0,3
+9,RBFOX1,"RNA binding protein, fox-1 homolog (C. elegans) 1",ENSG00000078328,54715,268859,16,"Rare Single Gene Mutation, Genetic Association",2,0,34
+9,RBM27,RNA binding motif protein 27,ENSG00000091009,54439,225432,5,Rare Single Gene Mutation,2,0,3
+9,REEP3,receptor accessory protein 3,ENSG00000165476,221035,28193,10,Rare Single Gene Mutation,3,0,3
+9,RELN,Reelin,ENSG00000189056,5649,19699,7,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",1,0,52
+9,RERE,Arginine-glutamic acid dipeptide (RE) repeats,ENSG00000142599,473,68703,1,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,7
+9,RFX3,regulatory factor X3,ENSG00000080298,5991,19726,9,Rare Single Gene Mutation,1,0,6
+9,RGS7,regulator of G-protein signaling 7,ENSG00000182901,6000,24012,1,Rare Single Gene Mutation,3,0,6
+9,RHEB,"Ras homolog, mTORC1 binding",ENSG00000106615,6009,19744,7,Syndromic,,1,1
+9,RIMS1,Regulating synaptic membrane exocytosis 1,ENSG00000079841,22999,116837,6,"Rare Single Gene Mutation, Genetic Association",1,0,7
+9,RIMS3,regulating synaptic membrane exocytosis 3,ENSG00000117016,9783,242662,1,Rare Single Gene Mutation,3,0,4
+9,RIT2,Ras-like without CAAX 2,ENSG00000152214,6014,19762,18,Genetic Association,3,0,3
+9,RLIM,"Ring finger protein, LIM domain interacting",ENSG00000131263,51132,19820,X,"Rare Single Gene Mutation, Syndromic",,1,4
+9,RNF135,Ring finger protein 135,ENSG00000181481,84282,71956,17,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,1,4
+9,RNF25,ring finger protein 25,ENSG00000163481,64320,57751,2,Rare Single Gene Mutation,3,0,2
+9,RNF38,ring finger protein 38,ENSG00000137075,152006,73469,9,Rare Single Gene Mutation,3,0,2
+9,ROBO2,roundabout guidance receptor 2,ENSG00000185008,6092,268902,3,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,8
+9,RORA,RAR-related orphan receptor A,ENSG00000069667,6095,19883,15,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",,1,18
+9,RORB,RAR related orphan receptor B,ENSG00000198963,6096,225998,9,"Rare Single Gene Mutation, Syndromic, Functional",1,0,5
+9,RPL10,ribosomal protein L10,ENSG00000147403,6134,110954,X,"Rare Single Gene Mutation, Syndromic",3,0,13
+9,RPS6KA2,"ribosomal protein S6 kinase, 90kDa, polypeptide 2",ENSG00000071242,6196,20112,6,Rare Single Gene Mutation,3,0,4
+9,RPS6KA3,"Ribosomal protein S6 kinase, 90kDa, polypeptide 3",ENSG00000177189,6197,110651,X,"Rare Single Gene Mutation, Syndromic",3,1,9
+9,SAE1,SUMO1 activating enzyme subunit 1,ENSG00000142230,10055,56459,19,Rare Single Gene Mutation,2,0,3
+9,SAMD11,sterile alpha motif domain containing 11,ENSG00000187634,148398,231004,1,Rare Single Gene Mutation,3,0,2
+9,SASH1,SAM and SH3 domain containing 1,ENSG00000111961,23328,70097,6,Rare Single Gene Mutation,3,0,2
+9,SATB2,SATB homeobox 2,ENSG00000119042,23314,212712,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",3,1,28
+9,SBF1,SET binding factor 1,ENSG00000100241,6305,77980,22,Rare Single Gene Mutation,2,0,9
+9,SCFD2,sec1 family domain containing 2,ENSG00000184178,152579,212986,4,Rare Single Gene Mutation,3,0,2
+9,SCN1A,"sodium channel, voltage-gated, type I, alpha subunit",ENSG00000144285,6323,20265,2,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,59
+9,SCN2A,"sodium channel, voltage-gated, type II, alpha subunit",ENSG00000136531,6326,110876,2,"Rare Single Gene Mutation, Syndromic",1,0,62
+9,SCN4A,"Sodium channel, voltage gated, type IV alpha subunit",ENSG00000007314,6329,110880,17,Rare Single Gene Mutation,3,0,4
+9,SCN8A,"sodium channel, voltage gated, type VIII, alpha subunit",ENSG00000196876,6334,20273,12,"Rare Single Gene Mutation, Syndromic",1,0,34
+9,SCN9A,sodium voltage-gated channel alpha subunit 9,ENSG00000169432,6335,20274,2,Rare Single Gene Mutation,2,0,5
+9,SCP2,sterol carrier protein 2,ENSG00000116171,6342,20280,1,Rare Single Gene Mutation,3,0,2
+9,SDC2,"syndecan 2 (heparan sulfate proteoglycan 1, cell surface-associated, fibroglycan )",ENSG00000169439,6383,15529,8,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,SEMA5A,"sema domain, seven thrombospondin repeats (type 1 and type 1-like), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 5A",ENSG00000112902,9037,20356,5,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,17
+9,SET,SETnuclear proto-oncogene,ENSG00000152217,6418,56086,9,Rare Single Gene Mutation,2,0,4
+9,SETBP1,SET binding protein 1,ENSG00000152217,26040,240427,18,"Rare Single Gene Mutation, Syndromic",1,0,13
+9,SETD2,SET domain containing 2,ENSG00000181555,29072,235626,3,"Rare Single Gene Mutation, Syndromic",1,0,12
+9,SETD5,SET domain containing 5,ENSG00000168137,55209,72895,3,"Rare Single Gene Mutation, Syndromic",1,0,24
+9,SETDB1,"SET domain, bifurcated 1",ENSG00000143379,9869,84505,1,Rare Single Gene Mutation,3,0,3
+9,SETDB2,"SET domain, bifurcated 2",ENSG00000136169,83852,239122,13,"Rare Single Gene Mutation, Syndromic",3,0,2
+9,SEZ6L2,SEZ6L2 seizure related 6 homolog (mouse)-like 2,ENSG00000174938,26470,233878,16,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,SF3B1,splicing factor 3b subunit 1,ENSG00000115524,23451,81898,2,Rare Single Gene Mutation,3,0,4
+9,SGSH,N-sulfoglucosamine sulfohydrolase,ENSG00000181523,6448,27029,17,"Rare Single Gene Mutation, Syndromic",,1,5
+9,SGSM3,Small G protein signaling modulator 3,ENSG00000100359,27352,105835,22,Rare Single Gene Mutation,3,0,5
+9,SH3RF3,SH3 domain containing ring finger 3,ENSG00000172985,344558,237353,2,Rare Single Gene Mutation,3,0,2
+9,SHANK1,SH3 and multiple ankyrin repeat domains 1,ENSG00000161681,50944,243961,19,"Rare Single Gene Mutation, Genetic Association",2,0,8
+9,SHANK2,SH3 and multiple ankyrin repeat domains 2,ENSG00000162105,22941,210274,11,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",1,0,34
+9,SHANK3,SH3 and multiple ankyrin repeat domains 3,ENSG00000251322,85358,58234,22,"Rare Single Gene Mutation, Syndromic, Genetic Association, Functional",1,0,81
+9,SIN3A,SIN3 transcription regulator family member A,ENSG00000169375,25942,20466,15,"Rare Single Gene Mutation, Syndromic",1,0,8
+9,SLC12A5,"Solute carrier family 12 (potassium/chloride transporter), member 5",ENSG00000124140,57468,57138,20,Rare Single Gene Mutation,2,0,5
+9,SLC1A1,"solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1",ENSG00000106688,6505,20510,9,"Rare Single Gene Mutation, Genetic Association",3,0,12
+9,SLC1A2,"Solute carrier family 1 (glial high affinity glutamate transporter), member 2",ENSG00000110436,6506,20511,11,"Rare Single Gene Mutation, Genetic Association, Functional",,1,6
+9,SLC24A2,solute carrier family 24 member 2,ENSG00000155886,25769,76376,9,Rare Single Gene Mutation,3,0,3
+9,SLC25A12,"solute carrier family 25 (mitochondrial carrier, Aralar), member 12",ENSG00000115840,8604,78830,2,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,21
+9,SLC25A39,solute carrier family 25 member 39,ENSG00000013306,51629,68066,17,Rare Single Gene Mutation,3,0,3
+9,SLC27A4,"Solute carrier family 27 (fatty acid transporter), member 4",ENSG00000167114,10999,26569,9,Rare Single Gene Mutation,3,0,1
+9,SLC29A4,solute carrier family 29 member 4,ENSG00000164638,222962,243328,7,Rare Single Gene Mutation,3,0,1
+9,SLC38A10,"solute carrier family 38, member 10",ENSG00000157637,124565,72055,17,Rare Single Gene Mutation,2,0,2
+9,SLC45A1,solute carrier family 45 member 1,ENSG00000162426,50651,242773,1,"Rare Single Gene Mutation, Syndromic",,1,2
+9,SLC4A10,"solute carrier family 4, sodium bicarbonate transporter-like, member 10",ENSG00000144290,57282,94229,2,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,SLC6A1,"Solute carrier family 6 (neurotransmitter transporter), member 1",ENSG00000157103,6529,232333,3,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,24
+9,SLC6A3,"Solute carrier family 6 (neurotransmitter transporter), member 3",ENSG00000142319,6531,13162,5,"Rare Single Gene Mutation, Genetic Association, Functional",2,0,15
+9,SLC6A4,"solute carrier family 6 (neurotransmitter transporter, serotonin), member 4",ENSG00000108576,6532,15567,17,"Rare Single Gene Mutation, Genetic Association",3,0,26
+9,SLC6A8,"solute carrier family 6 (neurotransmitter transporter, creatine), member 8",ENSG00000130821,6535,102857,X,"Rare Single Gene Mutation, Syndromic",3,0,13
+9,SLC7A3,"Solute carrier family 7 (cationic amino acid transporter, y+ system), member 3",ENSG00000165349,84889,11989,X,Rare Single Gene Mutation,2,0,2
+9,SLC7A5,solute carrier family 7 member 5,ENSG00000103257,8140,20539,16,"Rare Single Gene Mutation, Functional",2,0,3
+9,SLC7A7,solute carrier family 7 member 7,ENSG00000155465,9056,20540,14,Rare Single Gene Mutation,3,0,3
+9,SLC9A6,"solute carrier family 9 (sodium/hydrogen exchanger), member 6",ENSG00000198689,10479,236794,X,"Rare Single Gene Mutation, Syndromic, Functional",1,0,15
+9,SLC9A9,"solute carrier family 9 (sodium/hydrogen exchanger), member 9",ENSG00000181804,285195,331004,3,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,12
+9,SLCO1B3,"Solute carrier organic anion transporter family, member 1B3",ENSG00000111700,28234,28253,12,Rare Single Gene Mutation,3,0,4
+9,SLITRK5,SLIT and NTRK like family member 5,ENSG00000165300,26050,75409,13,"Rare Single Gene Mutation, Functional",2,0,9
+9,SMAD4,SMAD family member 4,ENSG00000141646,4089,17128,18,Rare Single Gene Mutation,2,0,4
+9,SMARCA2,"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 2",ENSG00000080503,6595,67155,9,"Rare Single Gene Mutation, Syndromic, Genetic Association",,1,16
+9,SMARCA4,"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily a, member 4",ENSG00000127616,6597,20586,19,"Rare Single Gene Mutation, Syndromic",2,0,7
+9,SERPINE1,serpin family E member 1,ENSG00000106366,5054,18787,7,Genetic Association,3,0,2
+9,SLC22A15,"Solute carrier family 22, member 15",ENSG00000163393,55356,242126,1,Genetic Association,3,0,1
+9,SLC25A27,solute carrier family 25 member 27,ENSG00000153291,9481,74011,6,Genetic Association,3,0,1
+9,SLC35B1,solute carrier family 35 member B1,ENSG00000121073,10237,110172,17,Genetic Association,2,0,1
+9,SMARCC2,"SWI/SNF related, matrix associated, actin dependent regulator of chromatin, subfamily c, member 2",ENSG00000139613,6601,68094,12,"Rare Single Gene Mutation, Syndromic, Functional",1,0,11
+9,SMC1A,structural maintenance of chromosomes 1A,ENSG00000072501,8243,24061,X,"Rare Single Gene Mutation, Syndromic",,1,6
+9,SMC3,structural maintenance of chromosomes 3,ENSG00000108055,9126,13006,10,"Rare Single Gene Mutation, Syndromic",3,1,9
+9,SMG6,"SMG6, nonsense mediated mRNA decay factor",ENSG00000070366,23293,103677,17,Rare Single Gene Mutation,3,0,2
+9,SMURF1,SMAD specific E3 ubiquitin protein ligase 1,ENSG00000198742,57154,75788,7,Rare Single Gene Mutation,3,0,2
+9,SNAP25,"Synaptosomal-associated protein, 25kDa",ENSG00000132639,6616,20614,20,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,SND1,staphylococcal nuclease and tudor domain containing 1,ENSG00000197157,27044,56463,7,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,SNTG2,syntrophin gamma 2,ENSG00000172554,54221,268534,2,Rare Single Gene Mutation,3,0,6
+9,SNX14,Sorting nexin 14,ENSG00000135317,57231,244962,6,"Rare Single Gene Mutation, Syndromic",,1,6
+9,SNX5,sorting nexin 5,ENSG00000089006,27131,69178,20,Rare Single Gene Mutation,2,0,3
+9,SOD1,superoxide dismutase 1,ENSG00000142168,6647,20655,21,"Genetic Association, Functional",3,0,2
+9,SON,SONDNA binding protein,ENSG00000115904,6651,20658,21,"Rare Single Gene Mutation, Syndromic",1,0,4
+9,SOX5,SRY-box 5,ENSG00000134532,6660,20678,12,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,14
+9,SPARCL1,SPARC like 1,ENSG00000152583,8404,13602,4,"Rare Single Gene Mutation, Functional",2,0,3
+9,SPAST,Spastin,ENSG00000021574,6683,50850,2,Rare Single Gene Mutation,1,0,10
+9,PAK1,p21 (RAC1) activated kinase 1,ENSG00000149269,5058,18479,11,Syndromic,,1,3
+9,SPEN,spenfamily transcriptional repressor,ENSG00000065526,23013,56381,1,Rare Single Gene Mutation,2,0,7
+9,SPP2,secreted phosphoprotein 2,ENSG00000072080,6694,75396,2,Rare Single Gene Mutation,3,0,4
+9,SRCAP,Snf2 related CREBBP activator protein,ENSG00000080603,10847,100043597,16,Rare Single Gene Mutation,1,0,5
+9,SRGAP3,SLIT-ROBO Rho GTPase activating protein 3,ENSG00000196220,9901,259302,3,Rare Single Gene Mutation,3,0,5
+9,SRSF11,serine and arginine rich splicing factor 11,ENSG00000116754,9295,69207,1,Rare Single Gene Mutation,2,0,4
+9,SSPO,SCO-spondin,ENSG00000197558,23145,243369,7,Rare Single Gene Mutation,3,0,4
+9,SSRP1,structure specific recognition protein 1,ENSG00000149136,6749,20833,11,Rare Single Gene Mutation,3,0,2
+9,ST7,suppression of tumorigenicity 7,ENSG00000007341,7982,64213,7,Rare Single Gene Mutation,3,0,4
+9,ST8SIA2,"ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 2",ENSG00000140557,8128,20450,15,"Rare Single Gene Mutation, Genetic Association",2,0,9
+9,STAG1,stromal antigen 1,ENSG00000118007,10274,20842,3,"Rare Single Gene Mutation, Syndromic",,1,3
+9,STK39,"serine threonine kinase 39 (STE20/SPS1 homolog, yeast)",ENSG00000198648,27347,53416,2,Genetic Association,3,0,5
+9,STX1A,Syntaxin 1A (brain),ENSG00000106089,6804,20907,7,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,STXBP1,Syntaxin binding protein 1,ENSG00000136854,6812,20910,9,"Rare Single Gene Mutation, Syndromic, Functional",1,0,40
+9,STXBP5,Syntaxin binding protein 5 (tomosyn),ENSG00000164506,134957,78808,6,Rare Single Gene Mutation,2,0,6
+9,STYK1,Serine/threonine/tyrosine kinase 1,ENSG00000060140,55359,243659,12,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,SYAP1,Synapse associated protein 1,ENSG00000169895,94056,67043,X,Rare Single Gene Mutation,3,0,2
+9,SYN1,Synapsin 1,ENSG00000008056,6853,20964,X,"Rare Single Gene Mutation, Functional",3,0,19
+9,SYN2,Synapsin II,ENSG00000157152,6854,20965,3,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,6
+9,SYNCRIP,synaptotagmin binding cytoplasmic RNA interacting protein,ENSG00000135316,10492,56403,6,Rare Single Gene Mutation,3,0,6
+9,SYNE1,"spectrin repeat containing, nuclear envelope 1",ENSG00000131018,23345,64009,6,"Rare Single Gene Mutation, Genetic Association",3,1,16
+9,SYNGAP1,synaptic Ras GTPase activating protein 1,ENSG00000197283,8831,240057,6,"Rare Single Gene Mutation, Syndromic",1,0,54
+9,SYNJ1,synaptojanin 1,ENSG00000159082,8867,104015,21,Rare Single Gene Mutation,3,0,1
+9,SYT1,synaptotagmin 1,ENSG00000067715,6857,20979,12,"Rare Single Gene Mutation, Syndromic",,1,2
+9,SYT17,synaptotagmin XVII,ENSG00000103528,51760,110058,16,Genetic Association,3,0,2
+9,TAF1,TATA-box binding protein associated factor 1,ENSG00000147133,6872,270627,X,"Rare Single Gene Mutation, Syndromic",,1,5
+9,TAF1C,"TATA-box binding protein associated factor, RNA polymerase I subunit C",ENSG00000103168,9013,21341,16,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,TAF6,TATA-box binding protein associated factor 6,ENSG00000106290,6878,21343,7,Rare Single Gene Mutation,2,0,3
+9,TANC2,"etratricopeptide repeat, ankyrin repeat and coiled-coil containing 2",ENSG00000170921,26115,77097,17,"Rare Single Gene Mutation, Syndromic",1,0,10
+9,TAOK1,TAO kinase 1,ENSG00000160551,57551,216965,17,"Rare Single Gene Mutation, Syndromic",1,0,2
+9,TAOK2,TAO kinase 2,ENSG00000149930,9344,381921,16,"Rare Single Gene Mutation, Functional",2,0,5
+9,TBC1D23,TBC1 domain family member 23,ENSG00000036054,55773,67581,3,Syndromic,,1,2
+9,TBC1D31,"TBC1 domain family, member 31",ENSG00000156787,93594,210544,8,Rare Single Gene Mutation,2,0,4
+9,TBC1D5,"TBC1 domain family, member 5",ENSG00000131374,9779,72238,3,"Rare Single Gene Mutation, Genetic Association",3,0,8
+9,TBCK,TBC1 domain containing kinase,ENSG00000145348,93627,271981,4,Syndromic,1,0,1
+9,TBL1X,transducin (beta)-like 1X-linked,ENSG00000101849,6907,21372,X,Genetic Association,3,0,1
+9,TBL1XR1,transducin beta like 1 X-linked receptor 1,ENSG00000177565,79718,81004,3,"Rare Single Gene Mutation, Syndromic",2,0,20
+9,TBR1,"T-box, brain, 1",ENSG00000136535,10716,21375,2,"Rare Single Gene Mutation, Genetic Association, Functional",1,0,26
+9,TBX1,T-box 1,ENSG00000184058,6899,21380,22,"Syndromic, Functional",,1,5
+9,TCF20,Transcription factor 20 (AR1),ENSG00000100207,6942,21411,22,"Rare Single Gene Mutation, Syndromic",1,0,10
+9,TCF4,Transcription factor 4,ENSG00000196628,6925,21413,18,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,44
+9,TCF7L2,"Transcription factor 7-like 2 (T-cell specific, HMG-box)",ENSG00000148737,6934,21416,10,Rare Single Gene Mutation,2,0,3
+9,TDO2,"tryptophan 2,3-dioxygenase",ENSG00000151790,6999,56720,4,Genetic Association,3,0,4
+9,TECTA,tectorin alpha,ENSG00000109927,7007,21683,11,Rare Single Gene Mutation,3,0,7
+9,TERF2,Telomeric repeat binding factor 2,ENSG00000132604,7014,21750,16,Rare Single Gene Mutation,2,0,3
+9,TET2,Tet methylcytosine dioxygenase 2,ENSG00000168769,54790,214133,4,Rare Single Gene Mutation,2,0,4
+9,THBS1,Thrombospondin 1,ENSG00000137801,7057,21825,15,"Rare Single Gene Mutation, Genetic Association",3,0,4
+9,THRA,thyroid hormone receptor alpha,ENSG00000126351,7067,21833,17,"Rare Single Gene Mutation, Functional",3,0,5
+9,TLK2,tousled-like kinase 2,ENSG00000146872,11011,24086,17,"Rare Single Gene Mutation, Syndromic",1,0,14
+9,TM4SF19,transmembrane 4 L six family member 19,ENSG00000145107,116211,277203,3,Rare Single Gene Mutation,3,0,3
+9,TM4SF20,Transmembrane 4 L six family member 20,ENSG00000168955,79853,66261,2,Rare Single Gene Mutation,,1,1
+9,TMEM39B,transmembrane protein 39B,ENSG00000121775,55116,230770,1,Rare Single Gene Mutation,3,0,4
+9,TMLHE,"trimethyllysine hydroxylase, epsilon",ENSG00000185973,55217,192289,X,"Rare Single Gene Mutation, Genetic Association",2,0,5
+9,TNRC6B,Trinucleotide repeat containing 6B,ENSG00000100354,23112,213988,22,Rare Single Gene Mutation,2,0,7
+9,TOP3B,Topoisomerase (DNA) III beta,ENSG00000100038,8940,21976,22,"Rare Single Gene Mutation, Genetic Association, Functional",3,0,6
+9,TERB2,telomere repeat binding bouquet formation protein 2,ENSG00000167014,145645,74401,15,Rare Single Gene Mutation,3,0,1
+9,TRAF7,TNF receptor associated factor 7,ENSG00000131653,84231,224619,16,"Rare Single Gene Mutation, Syndromic",3,1,4
+9,TRAPPC6B,trafficking protein particle complex 6B,ENSG00000182400,122553,78232,14,"Rare Single Gene Mutation, Syndromic",,1,4
+9,TRAPPC9,trafficking protein particle complex 9,ENSG00000167632,83696,76510,8,"Rare Single Gene Mutation, Syndromic",2,0,13
+9,TRIO,Trio Rho guanine nucleotide exchange factor,ENSG00000038382,7204,223435,5,"Rare Single Gene Mutation, Syndromic",1,0,24
+9,TRIP12,Thyroid hormone receptor interactor 12,ENSG00000153827,9320,14897,2,"Rare Single Gene Mutation, Syndromic",1,0,16
+9,TRPC6,"Transient receptor potential cation channel, subfamily C, member 6",ENSG00000137672,7225,22068,11,Rare Single Gene Mutation,2,0,3
+9,TRPM1,transient receptor potential cation channel subfamily M member 1,ENSG00000134160,4308,17364,15,Rare Single Gene Mutation,2,0,4
+9,TRRAP,transformation/transcription domain associated protein,ENSG00000196367,8295,100683,7,"Rare Single Gene Mutation, Syndromic",3,1,8
+9,TSC1,tuberous sclerosis 1,ENSG00000165699,7248,64930,9,"Rare Single Gene Mutation, Syndromic",1,0,20
+9,TSC2,tuberous sclerosis 2,ENSG00000103197,7249,22084,16,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,30
+9,TSHZ3,teashirt zinc finger homeobox 3,ENSG00000121297,57616,243931,19,"Rare Single Gene Mutation, Functional",1,0,3
+9,TSPAN17,tetraspanin 17,ENSG00000048140,26262,74257,5,Rare Single Gene Mutation,3,0,3
+9,TSPAN4,tetraspanin 4,ENSG00000214063,7106,64540,11,Rare Single Gene Mutation,3,0,4
+9,TSPAN7,tetraspanin 7,ENSG00000156298,7102,21912,X,Rare Single Gene Mutation,3,0,7
+9,TTI2,TELO2 interacting protein 2,ENSG00000129696,80185,234138,8,Rare Single Gene Mutation,,1,2
+9,TTN,titin,ENSG00000155657,7273,22138,2,"Rare Single Gene Mutation, Syndromic",3,1,20
+9,TUBGCP5,"tubulin, gamma complex associated protein 5",ENSG00000275835,114791,233276,15,Rare Single Gene Mutation,3,0,4
+9,UBE3A,ubiquitin protein ligase E3A,ENSG00000114062,7337,22215,15,"Rare Single Gene Mutation, Syndromic, Genetic Association",1,0,27
+9,TSPOAP1,TSPO associated protein 1,ENSG00000005379,9256,207777,17,Rare Single Gene Mutation,3,0,5
+9,UBE3C,Ubiquitin protein ligase E3C,ENSG00000009335,9690,100763,7,Rare Single Gene Mutation,2,0,4
+9,UBN2,ubinuclein 2,ENSG00000157741,254048,320538,7,Rare Single Gene Mutation,2,0,4
+9,UBR5,ubiquitin protein ligase E3 component n-recognin 5,ENSG00000104517,51366,70790,8,Rare Single Gene Mutation,2,0,7
+9,UIMC1,ubiquitin interaction motif containing 1,ENSG00000087206,51720,20184,5,Rare Single Gene Mutation,3,0,3
+9,UNC13A,unc-13 homolog A,ENSG00000130477,23025,382018,19,"Rare Single Gene Mutation, Syndromic",3,1,6
+9,UNC79,"unc-79 homolog, NALCN channel complex subunit",ENSG00000133958,57578,217843,14,Rare Single Gene Mutation,2,0,4
+9,UNC80,"unc-80 homolog, NALCN activator",ENSG00000144406,285175,329178,2,Rare Single Gene Mutation,3,0,5
+9,UPF2,"UPF2, regulator of nonsense mediated mRNA decay",ENSG00000151461,26019,326622,10,"Rare Single Gene Mutation, Functional",3,0,8
+9,UPF3B,"UPF3B, regulator of nonsense mediated mRNA decay",ENSG00000125351,65109,68134,X,"Rare Single Gene Mutation, Syndromic",1,0,13
+9,USH2A,usherin,ENSG00000042781,7399,22283,1,Rare Single Gene Mutation,3,0,6
+9,USP15,ubiquitin specific peptidase 15,ENSG00000135655,9958,14479,12,Rare Single Gene Mutation,2,0,3
+9,USP45,Ubiquitin specific peptidase 45,ENSG00000123552,85015,77593,6,Rare Single Gene Mutation,2,0,3
+9,USP7,Ubiquitin specific peptidase 7 (herpes virus-associated),ENSG00000187555,7874,252870,16,"Rare Single Gene Mutation, Syndromic",2,1,7
+9,USP9X,ubiquitin specific peptidase 9 X-linked,ENSG00000124486,8239,22284,X,"Rare Single Gene Mutation, Syndromic, Functional",,1,7
+9,USP9Y,"ubiquitin specific peptidase 9, Y-linked",ENSG00000114374,8287,107868,Y,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,VAMP2,vesicle associated membrane protein 2,ENSG00000220205,6844,22318,17,"Rare Single Gene Mutation, Syndromic",,1,2
+9,VIL1,Villin 1,ENSG00000127831,7429,22349,2,Rare Single Gene Mutation,2,0,3
+9,VPS13B,vacuolar protein sorting 13 homolog B (yeast),ENSG00000132549,157680,666173,8,"Rare Single Gene Mutation, Syndromic",1,0,20
+9,TPO,Thyroid peroxidase,ENSG00000115705,7173,22018,2,Genetic Association,3,0,1
+9,TRIM33,Tripartite motif containing 33,ENSG00000197323,51592,94093,1,Genetic Association,3,0,1
+9,TTC25,tetratricopeptide repeat domain 25,ENSG00000204815,83538,74407,17,Genetic Association,3,0,1
+9,UBE2H,"ubiquitin-conjugating enzyme E2H (UBC8 homolog, yeast)",ENSG00000186591,7328,22214,7,Genetic Association,3,0,2
+9,VASH1,vasohibin 1,ENSG00000071246,22846,238328,14,Genetic Association,3,0,4
+9,VDR,vitamin D receptor,ENSG00000111424,7421,22337,12,"Genetic Association, Functional",3,0,7
+9,VSIG4,V-set and immunoglobulin domain containing 4,ENSG00000155659,11326,278180,X,Rare Single Gene Mutation,3,0,2
+9,WAC,WW domain containing adaptor with coiled-coil,ENSG00000095787,51322,225131,10,"Rare Single Gene Mutation, Syndromic",1,0,17
+9,WASF1,WAS protein family member 1,ENSG00000112290,8936,83767,6,Syndromic,,1,1
+9,WDFY3,WD repeat and FYVE domain containing 3,ENSG00000163625,23001,72145,4,"Rare Single Gene Mutation, Syndromic, Functional",1,0,17
+9,WDFY4,WDFY family member 4,ENSG00000128815,57705,545030,10,Rare Single Gene Mutation,2,0,6
+9,WDR26,WD repeat domain 26,ENSG00000162923,80232,226757,1,"Rare Single Gene Mutation, Syndromic",,1,5
+9,WNK3,WNK lysine deficient protein kinase 3,ENSG00000196632,65267,279561,X,Rare Single Gene Mutation,3,0,6
+9,WNT1,"Wingless-type MMTV integration site family, member 1",ENSG00000125084,7471,22408,12,Genetic Association,3,0,3
+9,WWOX,WW domain containing oxidoreductase,ENSG00000186153,51741,80707,16,"Rare Single Gene Mutation, Syndromic",2,0,9
+9,XPC,"xeroderma pigmentosum, complementation group C",ENSG00000154767,7508,22591,3,"Rare Single Gene Mutation, Syndromic",,1,11
+9,XPO1,"Exportin 1 (CRM1 homolog, yeast)",ENSG00000082898,7514,103573,2,"Rare Single Gene Mutation, Genetic Association",3,0,6
+9,YEATS2,YEATS domain containing 2,ENSG00000163872,55689,208146,3,"Rare Single Gene Mutation, Genetic Association",3,0,2
+9,YTHDC2,YTH domain containing 2,ENSG00000047188,64848,240255,5,"Rare Single Gene Mutation, Genetic Association",3,0,5
+9,YWHAE,tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activation protein epsilon,ENSG00000108953,7531,22627,17,Rare Single Gene Mutation,3,0,5
+9,YY1,YY1transcription factor,ENSG00000100811,7528,22632,14,"Rare Single Gene Mutation, Syndromic, Functional",,1,4
+9,ZBTB16,Zinc finger and BTB domain containing 16,ENSG00000109906,7704,235320,11,Genetic Association,3,0,1
+9,ZBTB20,Zinc finger and BTB domain containing 20,ENSG00000181722,26137,56490,3,"Rare Single Gene Mutation, Syndromic",1,0,22
+9,ZC3H11A,zinc finger CCCH-type containing 11A,ENSG00000058673,9877,70579,1,Rare Single Gene Mutation,3,0,3
+9,ZC3H4,zinc finger CCCH-type containing 4,ENSG00000130749,23211,330474,19,Rare Single Gene Mutation,2,0,3
+9,ZFYVE26,zinc finger FYVE-type containing 26,ENSG00000072121,23503,211978,14,Rare Single Gene Mutation,3,0,4
+9,ZMYND11,"Zinc finger, MYND-type containing 11",ENSG00000015171,10771,66505,10,"Rare Single Gene Mutation, Syndromic",2,0,10
+9,ZNF18,zinc finger protein 18,ENSG00000154957,7566,52712,17,Rare Single Gene Mutation,3,0,1
+9,ZNF292,zinc finger protein 292,ENSG00000188994,23036,30046,6,"Rare Single Gene Mutation, Syndromic",1,0,5
+9,ZNF385B,Zinc finger protein 385B,ENSG00000144331,151126,241494,2,Genetic Association,3,0,2
+9,ZNF462,Zinc finger protein 462,ENSG00000148143,58499,242466,9,"Rare Single Gene Mutation, Syndromic",1,0,9
+9,ZNF804A,Zinc finger protein 804A,ENSG00000170396,91752,241514,2,"Rare Single Gene Mutation, Genetic Association",2,0,13
+9,ZNF827,Zinc finger protein 827,ENSG00000151612,152485,622675,4,Genetic Association,3,0,1
+9,ZSWIM6,zinc finger SWIM-type containing 6,ENSG00000130449,57688,67263,5,"Syndromic, Genetic Association",,1,2
+9,ZWILCH,zwilchkinetochore protein,ENSG00000174442,55055,68014,15,Rare Single Gene Mutation,3,0,4

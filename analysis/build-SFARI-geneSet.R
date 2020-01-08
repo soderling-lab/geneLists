@@ -1,15 +1,12 @@
-
 #!/usr/bin/env Rscript
 
 ## Building a disease-associated gene GO collection for analysis with 
 # the AnRichment package.
 
-# Which DisGene dataset to download and compile.
-# Choose one of: c("Curated_Disease_Genes","All_Disease_Genes",
-# "Curated_Variants", "All_Variants")
-dataset <- "Curated_Variants"
+# Which dataset?
+dataset <- "SFARI" # SFARI or Animal
+map2mouse <- TRUE
 save_data <- TRUE
-save_GOcollection <- TRUE
 
 # Imports.
 suppressPackageStartupMessages({
@@ -24,111 +21,68 @@ here <- getwd()
 root <- dirname(here)
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
+downdir <- file.path(root,"downloads")
 
-# Download and unzip the DisgeneNet currated gene list.
-message("Downloading Disease-Gene association data from DisGeneNet.org...\n")
-base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
-datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz",
-	      All_Disease_Genes = "all_gene_disease_associations.tsv.gz",
-	      Curated_Variants = "curated_variant_disease_associations.tsv.gz",
-	      All_Variants = "all_variant_disease_associations.tsv.gz",
-	      Variant_Gene_Map = "variant_to_gene_mappings.tsv.gz")
-myurl <- file.path(base_url,datasets[dataset])
+# Which organism?
+if (map2mouse) { org <- "mouse" } else { org <- "human" }
 
-download.file(myurl,destfile=basename(myurl))
-system(command = paste("gunzip",basename(myurl)))
+# Load the data.
+datasets <- c(SFARI = "SFARI-Gene_genes",
+	      Animal = "SFARI-Gene_animal-genes")
+myfile <- list.files(downdir,pattern=datasets[dataset],full.names=TRUE)
+data <- data.table::fread(myfile)
+colnames(data) <- gsub("-","_",colnames(data))
 
-# Read the data with fread.
-myfile <- tools::file_path_sans_ext(basename(myurl))
-data <- fread(myfile)
+# Map human gene symbols to Entrez.
+genes <- data$gene_symbol
+entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
+data <- tibble::add_column(data,"entrez_id" = entrez, .after = 4)
+data <- data[entrez_id != "NA"]
 
-# Remove raw data file.
-unlink(myfile)
-
-# If working with gene variants, get mapping data.
-if (grepl("Variants",dataset)) {
-	# Download.
-	message("Downloading Variant-Gene mapping data from DisGeneNet.org...\n")
-	myurl <- file.path(base_url,datasets["Variant_Gene_Map"])
-	download.file(myurl,destfile=basename(myurl))
-	system(command = paste("gunzip",basename(myurl)))
-	# Read the data with fread.
-	myfile <- tools::file_path_sans_ext(basename(myurl))
-	varmap <- fread(myfile)
-	# Add geneID column to data.
-	entrez <- varmap$geneId[match(data$snpId,varmap$snpId)]
-	data <- tibble::add_column(data,geneId=entrez,.after=1)
-	# Remove unmapped variants.
-	data <- data[geneId != "NA"]
-	# Remove raw data file.
-	unlink(myfile)
-}
-
-# DisGeneNET is a database of human genes and their associated diseases.
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
-hsEntrez <- data$geneId
-msEntrez <- getHomologs(hsEntrez,taxid=10090)
-data <- tibble::add_column(data,msEntrez,.after=1)
-
-# Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste("Percent disease genes without mouse homology:",
-	      percent_removed))
-data <- subset(data, !is.na(data$msEntrez))
+if (map2mouse) {
+	message("Mapping human genes to their mouse homologs...\n")
+	hsEntrez <- data$entrez_id
+	msEntrez <- getHomologs(hsEntrez,taxid=10090)
+	data <- tibble::add_column(data,osEntrez=msEntrez,.after=5)
+	# Remove rows with unmapped genes.
+	n_out <- sum(is.na(msEntrez))
+	percent_removed <- round(100*(n_out/length(msEntrez)),2)
+	message(paste("Percent disease genes without mouse homology:",
+		      percent_removed))
+	data <- data[osEntrez != "NA"] 
+} else {
+	hsEntrez <- data$entrez_id
+	data <- tibble::add_column(data,osEntrez=osEntrez,.after=5)
+}
 
 # Write data to file.
 if (save_data) {
-	myfile <- file.path(tabsdir,paste0("DisGeneNet_",dataset,".csv"))
+	myfile <- file.path(tabsdir,paste0(org,"_",datasets[dataset],".csv"))
 	data.table::fwrite(data,myfile)
 }
 
-# Split data into disease groups.
-data_list <- split(data,data$diseaseId)
-nDiseases <- length(data_list)
-message(paste("Number of disease groups:",nDiseases))
-
-# Remove disease groups with less than 5 genes.
-#out <- seq_along(data_list)[sapply(data_list,function(x) dim(x)[1]<5)]
-#data_list <- data_list[-out]
-
-# Description of the data.
-data_description <- paste("Gene-disease associations from UNIPROT, CGI, 
-			  ClinGen, Genomics England, CTD (human subset), 
-			  PsyGeNET, and Orphanet.")
-
-# Loop to build gene sets:
-geneSets <- list()
-for (i in 1:length(data_list)) {
-	df <- data_list[[i]]
-	diseaseID <- names(data_list)[i]
-	entrez <- df$msEntrez
-	namen <- gsub(" ","_",unique(df$diseaseName))
-	if (length(namen) > 1) { stop() }
-	geneSets[[i]] <- newGeneSet(geneEntrez = entrez,
-				    geneEvidence = "IEA", # Inferred from Electronic Annotation
-				    geneSource = "DisGeneNET",
-				    ID = diseaseID,
-				    name = namen, # disease name
-				    description = data_description,
-				    source = myurl,
-				    organism = "mouse",
-				    internalClassification = c("PL","DisGeneNET"),
-				    groups = "PL",
-				    lastModified = "2020-01-03")
-} # Ends loop.
+# Build gene set:
+geneSet <- newGeneSet(geneEntrez = data$osEntrez,
+		      geneEvidence = "IEA", # Inferred from Electronic Annotation
+		      geneSource = datasets[dataset],
+		      ID = datasets[dataset],
+		      name = "SFARI", # disease name
+		      description = "SFARI autism genes.",
+		      source = "https://gene.sfari.org/tools/",
+		      organism = org,
+		      internalClassification = c("PL","SFARI"),
+		      groups = "PL",
+		      lastModified = Sys.Date())
 
 # Define gene collection groups.
 PLgroup <- newGroup(name = "PL", 
-		   description = "Currated gene-disease associations from DisGenNET mapped to mouse homologs.",
-		   source = "disgenenet.org")
+		   description = "SFARI autism-associated genes.",
+		   source = "sfari.org")
 
 # Combine as gene collection.
-DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
+SFARIcollection <- newCollection(dataSets = geneSet, groups = list(PLgroup))
 
 # Save as RData.
-if (save_GOcollection) {
-	myfile <- file.path(rdatdir,paste0("DisGeneNet_",dataset,"_mouse.RData"))
-	saveRDS(DisGeneNETcollection,myfile)
-}
+myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],".RData"))
+saveRDS(SFARIcollection,myfile)
