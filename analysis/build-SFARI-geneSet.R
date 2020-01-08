@@ -81,7 +81,7 @@ PLgroup <- newGroup(name = "PL",
 		   source = "sfari.org")
 
 # Combine as gene collection.
-SFARIcollection <- newCollection(dataSets = geneSet, groups = list(PLgroup))
+SFARIcollection <- newCollection(dataSets = list(geneSet), groups = list(PLgroup))
 
 # Save as RData.
 myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],".RData"))
