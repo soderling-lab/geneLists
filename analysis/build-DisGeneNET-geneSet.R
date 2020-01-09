@@ -4,12 +4,15 @@
 # the AnRichment package.
 
 # Which DisGene dataset to download and compile.
-# "Curated_Variants", "All_Variants")
 dataset <- "Curated_Variants"
-#dataset <- "All_Disease_Genes"
-#dataset <- "All_Variants"
-save_data <- TRUE # Save data to .csv?
-map2mouse <- TRUE # Map human genes to mouse? If FALSE, then human data will be saved.
+save_data <- TRUE # Save compiled data to .csv?
+map2mouse <- TRUE # Map human genes to mouse? 
+
+## Datasets:
+# [1] Curated_Disease_Genes
+# [2] All_Disease_Genes
+# [3] Curated_Variants
+# [4] All_Variants
 
 # Imports.
 suppressPackageStartupMessages({
