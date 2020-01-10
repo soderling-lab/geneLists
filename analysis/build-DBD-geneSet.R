@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 
-## Building a developmental brain disease-associated gene set 
+## Building a developmental brain disorder-associated gene set 
 # collection for analysis with the AnRichment package.
 # Data download from: 
 # http://dbd.geisingeradmi.org/#additional-information
@@ -30,7 +30,8 @@ downdir <- file.path(root,"downloads")
 # Which organism, human or mouse?
 if (map2mouse) { org <- "mouse" } else { org <- "human" }
 
-# Downoad the data.
+# Downoad the raw data.
+message("Downloading database of genes associated with developmental brain disorders... \n")
 base_url <- "http://dbd.geisingeradmi.org/downloads"
 datasets <- c(LOF = "Full-Gene-Table-Data",
 	      Missense = "Full-Missense-Table-Data",
@@ -75,25 +76,28 @@ if (map2mouse) {
 	data <- tibble::add_column(data,osEntrez=osEntrez,.after=2)
 }
 
-# Add concise disease association column.
+# Add concise disorder association column.
 da <- apply(data[,c(1:9)],1,function(x) {
 		    da <- paste(colnames(data)[grep("X",x)],collapse=";")
 		    return(da) })
-data <- tibble::add_column(data,"disease_association"=da,.after=4)
+data <- tibble::add_column(data,"disorder_association"=da,.after=4)
 
-# Fix missing disease annotation for DYRK1A (Ruaud et al., 2015; ID/DD).
-idx <- data$Gene == "DYRK1A" & data$disease_association == ""
-data$disease_association[idx] <- "ID/DD"
+# Separate rows with multiple disorder associations.
+data<- tidyr::separate_rows(data,disorder_association,sep=";")
+
+# Fix missing disorder annotation for DYRK1A (Ruaud et al., 2015; ID/DD).
+idx <- data$Gene == "DYRK1A" & data$disorder_association == ""
+data$disorder_association[idx] <- "ID/DD"
 
 # Drop unnecessary columns.
 cols_out <- colnames(data)[c(6:9)]
 data[, (cols_out):=NULL] 
 
-# Note some genes are annotated as disease_association:"Gene".
+# Note some genes are annotated as disorder_association:"Gene".
 # These genes arise from a number of studies linking them to ID/DD,
 # autism, epilepsy, and other congenital defects. We will just call 
-# these "unannoated" DBD genes.
-data$disease_association[data$disease_association == "Gene"] <- "unannotated"
+# these "misc" DBD genes.
+data$disorder_association[data$disease_association == "Gene"] <- "misc"
 
 # Write data to file.
 if (save_data) {
@@ -101,17 +105,18 @@ if (save_data) {
 	data.table::fwrite(data,myfile)
 }
 
-# Split into disease groups.
-diseases <- unique(data$disease_association)
-nDiseases <- length(diseases)
-data_list <- data %>% group_by(disease_association) %>% group_split()
-names(data_list) <- diseases
+# Split into disorder groups.
+disorders <- unique(data$disorder_association)
+nDiseases <- length(disorders)
+data_list <- data %>% group_by(disorder_association) %>% group_split()
+names(data_list) <- disorders
 
-# Check disease group sizes.
+# Check disorder group sizes.
 sizes <- sapply(data_list,function(x) length(unique(x$osEntrez)))
 
 # Build gene sets:
 geneSets <- list()
+
 for (i in seq_along(data_list)) {
 	subdat <- data_list[[i]]
 	id <- paste0("DBD-",names(data_list)[i])
@@ -119,14 +124,14 @@ for (i in seq_along(data_list)) {
 				    geneEvidence = "IEA",
 				    geneSource = datasets[dataset],
 				    ID = id,
-				    name = names(data_list)[i], # disease name
+				    name = names(data_list)[i], # disorder name
 				    description = "DBD-associated genes.",
 				    source = "http://dbd.geisingeradmi.org/",
 				    organism = org,
 				    internalClassification = c("PL","DBD"),
 				    groups = "PL",
 				    lastModified = Sys.Date())
-}
+} # Ends loop.
 
 # Define gene collection groups.
 PLgroup <- newGroup(name = "PL", 
