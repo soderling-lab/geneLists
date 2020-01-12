@@ -41,4 +41,4 @@ PLgroup = newGroup(name = "PL",
 SynGOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save.
-saveRDS(SynGOcollection,"SynGOcollection.RDS")
+saveRDS(SynGOcollection,"SynGO_geneSet.RData")

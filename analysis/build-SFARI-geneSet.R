@@ -84,5 +84,5 @@ PLgroup <- newGroup(name = "PL",
 SFARIcollection <- newCollection(dataSets = list(geneSet), groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],".RData"))
+myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],"geneSet.RData"))
 saveRDS(SFARIcollection,myfile)

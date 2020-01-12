@@ -140,5 +140,5 @@ PLgroup <- newGroup(name = "PL",
 DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_DisGeneNet_",dataset,".RData"))
+myfile <- file.path(rdatdir,paste0(org,"_DisGeneNet_",dataset,"_geneSet.RData"))
 saveRDS(DisGeneNETcollection,myfile)
