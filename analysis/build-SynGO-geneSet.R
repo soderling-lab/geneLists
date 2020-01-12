@@ -2,12 +2,12 @@
 
 ## Building Synaptic GO collection for GO analysis with the 
 # AnRichment package.
-#  SynGO downloaded from: https://www.syngoportal.org/ 
+
+##  SynGO data downloaded from: https://www.syngoportal.org/ 
 
 ## User parameters:
-release <- "20180731"
+release <- "20180731" # Most recent SynGO release.
 map2mouse <- TRUE
-save_data <- TRUE
 
 # Imports.
 suppressPackageStartupMessages({
@@ -34,80 +34,69 @@ message("Downloading Synaptic GO (SyngGO) database... \n")
 base_url <- "https://syngoportal.org/data/download.php?file=SynGO_bulk_download_release_"
 myurl <- paste0(base_url,release,".zip")
 myfile <- file.path(downdir,sapply(strsplit(basename(myurl),"file="),"[",2))
-download.file(myurl,destfile=myfile,method="curl",quiet=FALSE,extra="--insecure")
-cmd <- paste0("unzip ",myfile," -d /",tools::file_path_sans_ext(myfile))
+download.file(myurl,destfile=myfile,method="curl",quiet=TRUE,extra="--insecure")
+cmd <- paste0("unzip -oq ",myfile," -d /",tools::file_path_sans_ext(myfile))
 system(command = cmd)
 unlink(myfile)
 
 # Load SynGO data.
 mydir <- tools::file_path_sans_ext(myfile)
 myfiles <- list.files(mydir,pattern="xlsx",full.names=TRUE)
-data_list <- sapply(myfiles,read_excel)
-names(data_list) <- gsub(".xlsx","",basename(names(data_list)))  
+syngo_data <- sapply(myfiles,read_excel)
+names(syngo_data) <- gsub(".xlsx","",basename(names(syngo_data)))  
 
-
-## Map mgi_ids to entrez.
+# Get mouse Entrez IDs by mapping MGI IDs to Entrez.
+genes_df <- syngo_data$syngo_genes 
 # Seperate rows with multiple MGI ids.
 # Warning caused by missing (NA) MGI ids can be ignored.
-genes <- data_list$syngo_genes %>% separate_rows(mgi_id,sep=",")
-mgi <- paste0("MGI:",genes$mgi_id)
-entrez <- mapIDs(mgi,from="mgi",to="entrez",species="mouse")
-names(entrez) <- genes$mgi_id
-genes$mus_entrez <- entrez
+genes_df <- genes_df %>% separate_rows(mgi_id,sep=",")
+mgi <- paste0("MGI:",genes_df$mgi_id)
+msEntrez <- mapIDs(mgi,from="mgi",to="entrez",species="mouse")
+names(msEntrez) <- genes_df$mgi_id
+genes_df$msEntrez <- msEntrez
+if (map2mouse){
+	# Use mouse entrez.
+	genes_df$osEntrez <- msEntrez
+} else {
+	# Use human entrez.
+	genes_df$osEntrez <- genes_df$entrez_id
+}
 
-# Collect GO annotations.
-# Add column to syngo annotations.
-anno_df <- data_list$syngo_annotations
-idx <- match(anno_df$"human ortholog gene hgnc_id",genes$hgnc_id)
-mus_entrez <- genes$mus_entrez[idx]
-goDat <- data.frame("id" = paste0("SynGO:",anno_df$"SynGO ID"), 
-		    "domain" = anno_df$"GO domain",
-		    "pmid" = anno_df$PMID, 
-		    "name" = anno_df$"GO term name",
-		    "entrez" = mus_entrez)
-goDat$entrez <- as.character(goDat$entrez)
-goDat$domain <- as.character(goDat$domain)
-goDat$name <- as.character(goDat$name)
+# Collect GO annotations and add this column to syngo genes.
+anno_df <- syngo_data$syngo_annotations
+idx <- match(anno_df$"human ortholog gene hgnc_id",genes_df$hgnc_id)
+go_df <- data.frame("id" = as.character(anno_df$"GO term ID"), 
+		    "domain" = as.character(anno_df$"GO domain"),
+		    "pmid" = as.character(anno_df$PMID), 
+		    "name" = as.character(anno_df$"GO term name"),
+		    "osEntrez" = as.character(genes_df$osEntrez[idx]))
 
-# Split into two GO domains.
-goDomains <- goDat %>% dplyr::group_by(domain) %>% dplyr::group_split()
-names(goDomains) <- c("BP","CC")
+# Group into gene groups.
+data_list <- go_df %>% group_by(id) %>% group_split()
+names(data_list) <- as.character(sapply(data_list,function(x) unique(x$id)))
 
-# Collect BP and CC pathways into list.
-bp <- goDomains[["BP"]]
-cc <- goDomains[["CC"]]
-pathways <- list("BP" = split(bp$entrez,bp$name),
-		 "CC" = split(cc$entrez,cc$name))
-
-# Save.
-myfile <- file.path(rdatdir,"SynGO.RData")
-saveRDS(pathways,myfile)
-
-# Arbitrary names.
-data_list <- do.call(c,pathways)
-namen <- gsub(" ","_",names(data_list))
-names(data_list) <- paste0("SYNGO_",c(1:length(data_list)))
-
-# Loop to build gene setst:
+# Loop to build gene sets:
 geneSets <- list()
 for (i in 1:length(data_list)) {
 	id <- names(data_list)[i]
-	geneSets[[i]] <- newGeneSet(geneEntrez = data_list[[i]],
-				    geneEvidence = "IEA", # Inferred from Electronic Annotation
+	subdat <- data_list[[1]]
+	geneSets[[i]] <- newGeneSet(geneEntrez = subdat$osEntrez,
+				    geneEvidence = "IEA", 
 				    geneSource = "SynGO",
 				    ID = id, # diseaseId
 				    name = namen[i], # Shortened disease name
 				    description = "Synaptic gene ontology",
 				    source = myurl,
-				    organism = "mouse",
+				    organism = org,
 				    internalClassification = c("PL","syngo"),
 				    groups = "PL",
 				    lastModified = Sys.Date())
 }
 
 # Define PLgroup.
+description <- "Currated synaptic gene ontology from SynGO database."
 PLgroup = newGroup(name = "PL", 
-		   description = "Currated synaptic gene ontology from SynGO database.",
+		   description = description,
 		   source = "syngoportal.org")
 
 # Combine as gene collection.
