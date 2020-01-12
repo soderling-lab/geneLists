@@ -125,5 +125,5 @@ PLgroup <- newGroup(name = "PL",
 GOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_","Rochester_URMC_DBDB",".RData"))
+myfile <- file.path(rdatdir,paste0(org,"_URMC_DBDB_geneSet.RData"))
 saveRDS(GOcollection,myfile)
