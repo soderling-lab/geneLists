@@ -163,5 +163,5 @@ PLgroup <- newGroup(name = "PL",
 DBDcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],"_DBD",".RData"))
+myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],"_DBD_geneSet.RData"))
 saveRDS(DBDcollection,myfile)
