@@ -1,8 +1,5 @@
 #!/usr/bin/env Rscript
 
-## Parameters:
-org <- "mouse" # c(mouse or human)
-
 # Imports.
 suppressPackageStartupMessages({
 	library(anRichment)

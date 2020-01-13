@@ -48,14 +48,13 @@ if (check)  { message("Successfully mapped all human gene symbols to Entrez!") }
 
 # Add entrez IDs to data.
 idy <- "Gene" # Column after which Entrez ids will be added.
-data <- tibble::add_column(raw_data,"Entrez" = entrez[raw_data[[idy]]],.after=idy)
+data <- tibble::add_column(raw_data,"hsEntrez" = entrez[raw_data[[idy]]],.after=idy)
 
 # Map human genes in to their mouse homologs.
 message("Mapping human genes to their mouse homologs...\n")
-hsEntrez <- data$Entrez
-nHsGenes <- length(unique(hsEntrez))
+hsEntrez <- data$hsEntrez
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
-data <- tibble::add_column(data,msEntrez=msEntrez,.after="Entrez")
+data <- tibble::add_column(data,msEntrez=msEntrez,.after="hsEntrez")
 # Remove rows with unmapped genes.
 n_out <- sum(is.na(msEntrez))
 percent_removed <- round(100*(n_out/length(msEntrez)),2)
@@ -78,16 +77,20 @@ sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 # Remove groups with less than min genes.
 if (filter_groups) {
 	keep <- seq(sizes)[sizes > min_size]
+	names(keep) <- names(sizes)[sizes > min_size]
 	nout <- length(data_list) - length(keep)
 	data_list <- data_list[keep] # This limits to 15 disease groups.
-	message(paste0("Number of disease groups removed with less than ",
-		      min_size," genes: ",nout,"."))
+	data <- subset(data,data$Phenotype %in% names(keep))
 }
+
+# Save data.
+myfile <- file.path(tabsdir,paste0("mouse_URMC_DBDB_geneSet.csv"))
+fwrite(data,myfile)
 
 # Status report.
 nGenes <- length(unique(c(unlist((sapply(data_list,function(x) x$Gene))))))
 nDisorders <- length(data_list)
-message(paste("Compiled",nGenes,"(of",nHsGenes,") genes associated with",nDisorders,"DBDs!"))
+message(paste("Compiled",nGenes,"mouse genes associated with",nDisorders,"DBDs!"))
 
 # Build gene sets:
 geneSets <- list()
