@@ -30,7 +30,6 @@ rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 
 # Download, unzip, and load the DisGeneNet data.
-message("Downloading Disease-Gene associations from DisGeneNet.org...\n")
 base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
 datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz",
 	      All_Disease_Genes = "all_gene_disease_associations.tsv.gz",
@@ -38,7 +37,7 @@ datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz"
 	      All_Variants = "all_variant_disease_associations.tsv.gz",
 	      Variant_Gene_Map = "variant_to_gene_mappings.tsv.gz")
 myurl <- file.path(base_url,datasets[dataset])
-download.file(myurl,destfile=basename(myurl), quiet=FALSE)
+download.file(myurl,destfile=basename(myurl), quiet=TRUE)
 system(command = paste("gunzip",basename(myurl)))
 myfile <- tools::file_path_sans_ext(basename(myurl))
 data <- fread(myfile)
@@ -46,9 +45,8 @@ unlink(myfile) # Remove raw data file.
 
 # If working with gene variants, get mapping data from DisGeneNet.
 if (grepl("Variants",dataset)) {
-	message("Downloading Variant-Gene mapping data from DisGeneNet.org...\n")
 	myurl <- file.path(base_url,datasets["Variant_Gene_Map"])
-	download.file(myurl,destfile=basename(myurl),quiet=FALSE)
+	download.file(myurl,destfile=basename(myurl),quiet=TRUE)
 	system(command = paste("gunzip",basename(myurl)))
 	myfile <- tools::file_path_sans_ext(basename(myurl))
 	varmap <- fread(myfile)
@@ -63,35 +61,36 @@ if (grepl("Variants",dataset)) {
 
 # DisGeneNET is a database of human genes and their associated diseases.
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
 hsEntrez <- data$geneId
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
 nMsGenes <- length(unique(msEntrez))
 data <- tibble::add_column(data,msEntrez=msEntrez,.after=1)
 # Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste("Percent disease genes without mouse homology:",
-	      percent_removed))
 data <- subset(data, !is.na(data$msEntrez))
 
 # Get diseases realated to brain function.
 data <- subset(data,data$diseaseSemanticType %in% disease_types)
 
-# Write data to file.
-myfile <- file.path(tabsdir,paste0("mouse_DisGeneNet_",dataset,".csv"))
-data.table::fwrite(data,myfile)
-
 # Split data into disease groups.
 data_list <- split(data,data$diseaseId)
 
-# Remove disease groups with less than min, or more than max k genes.
-k <- sapply(data_list,function(x) dim(x)[1])
-out <- seq_along(data_list)[k < min_size | k > max_size]
-nout <- length(out)
-data_list <- data_list[-out]
-nDiseases <- length(data_list)
-message(paste("Total number of disease groups compiled from DisGeneNet:", nDiseases))
+# Check disorder group sizes.
+sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
+
+# Remove groups with less than min genes.
+keep <- names(sizes)[ sizes > min_size & sizes < max_size]
+data_list <- data_list[keep] 
+data <- subset(data,data$diseaseId %in% keep)
+
+# Status report.
+nGenes <- length(unique(data$msEntrez))
+nDisorders <- length(unique(data$diseaseId))
+message(paste0("Compiled ",nGenes," mouse genes associated with ",
+	       nDisorders," DBDs!"))
+
+# Save to file.
+myfile <- file.path(tabsdir,paste0("mouse_DisGeneNet_",dataset,"_geneSet.csv"))
+fwrite(data,myfile)
 
 # Description of the data.
 data_description <- paste("Gene-disease associations from UNIPROT, CGI, 
@@ -99,11 +98,8 @@ data_description <- paste("Gene-disease associations from UNIPROT, CGI,
 			  PsyGeNET, and Orphanet.")
 
 # Loop to build gene sets:
-message("Building disease gene sets...\n")
 geneSets <- list()
-pbar <- txtProgressBar(min=1,max=length(data_list),style=3)
 for (i in 1:length(data_list)) {
-	setTxtProgressBar(pbar,i)
 	df <- data_list[[i]]
 	diseaseID <- names(data_list)[i]
 	entrez <- df$msEntrez
@@ -119,7 +115,6 @@ for (i in 1:length(data_list)) {
 				    internalClassification = c("PL","DisGeneNET"),
 				    groups = "PL",
 				    lastModified = "2020-01-03")
-	if (i==length(data_list)) { close(pbar); message("\n") }
 } # Ends loop.
 
 # Define gene collection groups.

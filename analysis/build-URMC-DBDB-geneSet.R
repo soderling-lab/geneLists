@@ -7,8 +7,8 @@
 # "https://www.dbdb.urmc.rochester.edu/associations/list"
 
 ## User parameters:
-filter_groups <- TRUE
 min_size <- 3
+max_size <- 500
 
 # Imports.
 suppressPackageStartupMessages({
@@ -35,7 +35,6 @@ entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
 names(entrez) <- genes
 
 # Map missing Entrez IDs by hand.
-message("Manually mapping missing ids...")
 not_mapped <- genes[is.na(entrez)]
 mapping_table <- fread(file.path(downdir,"not_mapped.txt"))
 mapped_by_manual_search <- mapping_table$entrez
@@ -44,22 +43,17 @@ entrez[not_mapped] <- mapped_by_manual_search[names(entrez[not_mapped])]
 
 # Check.
 check <- sum(is.na(entrez)) == 0
-if (check)  { message("Successfully mapped all human gene symbols to Entrez!") }
+if (!check)  { stop() }
 
 # Add entrez IDs to data.
 idy <- "Gene" # Column after which Entrez ids will be added.
 data <- tibble::add_column(raw_data,"hsEntrez" = entrez[raw_data[[idy]]],.after=idy)
 
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
 hsEntrez <- data$hsEntrez
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
 data <- tibble::add_column(data,msEntrez=msEntrez,.after="hsEntrez")
 # Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste0("Genes without mouse homology: ",n_out,
-	      " (",percent_removed," %)."))
 data <- data[msEntrez != "NA"] 
 
 # Fix missing phenotype annotation for GNAQ and GNAS.
@@ -75,13 +69,9 @@ names(data_list) <- gsub(" ","_",disorders)
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
 # Remove groups with less than min genes.
-if (filter_groups) {
-	keep <- seq(sizes)[sizes > min_size]
-	names(keep) <- names(sizes)[sizes > min_size]
-	nout <- length(data_list) - length(keep)
-	data_list <- data_list[keep] # This limits to 15 disease groups.
-	data <- subset(data,data$Phenotype %in% names(keep))
-}
+keep <- names(sizes)[sizes > min_size]
+data_list <- data_list[keep] # This limits to 15 disease groups.
+data <- subset(data,data$Phenotype %in% keep)
 
 # Save data.
 myfile <- file.path(tabsdir,paste0("mouse_URMC_DBDB_geneSet.csv"))

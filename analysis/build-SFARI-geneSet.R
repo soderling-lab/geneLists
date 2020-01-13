@@ -35,16 +35,11 @@ data <- tibble::add_column(data,"entrez_id" = entrez, .after = 4)
 data <- data[entrez_id != "NA"]
 
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
 hsEntrez <- data$entrez_id
 nHsGenes <- length(unique(hsEntrez))
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
 data <- tibble::add_column(data,msEntrez=msEntrez,.after=5)
 # Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste("Percent disease genes without mouse homology:",
-	      percent_removed))
 data <- data[msEntrez != "NA"] 
 
 # Status report.

@@ -9,6 +9,8 @@
 
 ## User parameters:
 dataset <- "All" # One of c("LOF","Missense","All")
+min_size <- 3
+max_size <- 500
 
 # Imports.
 suppressPackageStartupMessages({
@@ -26,7 +28,6 @@ tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
 
 # Downoad the raw data.
-message("Downloading developmental brain disorder (DBD)-associated gene database... \n")
 base_url <- "http://dbd.geisingeradmi.org/downloads"
 datasets <- c(LOF = "Full-Gene-Table-Data",
 	      Missense = "Full-Missense-Table-Data",
@@ -43,33 +44,29 @@ entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
 names(entrez) <- genes
 
 # Map missing Entrez IDs by hand.
-message("Manually mapping missing ids...")
 not_mapped <- genes[is.na(entrez)]
 mapped_by_manual_search <- c("HIST1H1E"=3006,"HIST1H4B"=8366,"KIF1BP"=26128)
 entrez[not_mapped] <- mapped_by_manual_search[names(entrez[not_mapped])]
 
 # Check.
 check <- sum(is.na(entrez)) == 0
-if (check)  { message("Successfully mapped all human gene symbols to Entrez!") }
-nHsGenes <- length(unique(entrez))
+if (!check) { stop() }
 
 # Add human entrez IDs to data.
-data <- tibble::add_column(raw_data,"hsEntrez" = entrez[raw_data$Gene],.after="Gene")
+data <- tibble::add_column(raw_data,
+			   "hsEntrez" = entrez[raw_data$Gene], 
+			   .after="Gene")
 
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
 hsEntrez <- data$hsEntrez
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
 data <- tibble::add_column(data,msEntrez=msEntrez,.after="hsEntrez")
 # Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste0("Genes without mouse homology: ",n_out,
-	      " (",percent_removed," %)."))
 data <- data[msEntrez != "NA"] 
 
 # Add concise disorder association column.
-disorders <- c("ID/DD","Autism","Epilepsy","ADHD","Schizophrenia","Bipolar Disorder")
+disorders <- c("ID/DD","Autism","Epilepsy","ADHD",
+	       "Schizophrenia","Bipolar Disorder")
 idy <- sapply(disorders,function(x) grep(x,colnames(data)))
 da <- apply(data[,idy,with=FALSE],1,function(x) {
 		    da <- paste(disorders[grep("X",x)],collapse=";")
@@ -86,16 +83,6 @@ data$disorder_association[idx] <- "ID/DD"
 # Drop unnecessary columns.
 data[, (disorders):=NULL] 
 
-# Status report.
-nMsGenes <- length(unique(data$msEntrez))
-nDisorders <- length(unique(data$disorder_association))
-message(paste0("Compiled ",nMsGenes," mouse genes associated with ",
-	       nDisorders," DBDs!"))
-
-# Write data to file.
-myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],".csv"))
-data.table::fwrite(data,myfile)
-
 # Split into disorder groups.
 disorders <- unique(data$disorder_association)
 data_list <- data %>% group_by(disorder_association) %>% group_split()
@@ -103,6 +90,21 @@ names(data_list) <- disorders
 
 # Check disorder group sizes.
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
+
+# Remove groups with less than min genes.
+keep <- names(sizes)[ sizes > min_size & sizes < max_size]
+data_list <- data_list[keep] 
+data <- subset(data,data$disorder_association %in% keep)
+
+# Status report.
+nGenes <- length(unique(data$msEntrez))
+nDisorders <- length(unique(data$disorder_association))
+message(paste0("Compiled ",nGenes," mouse genes associated with ",
+	       nDisorders," DBDs!"))
+
+# Write data to file.
+myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],".csv"))
+data.table::fwrite(data,myfile)
 
 # Build gene sets:
 geneSets <- list()

@@ -8,7 +8,6 @@
 
 ## User parameters:
 dataset <- "DD" # One of c("Cancer","DD","Eye","Skin")
-filter_groups <- TRUE
 min_size <- 3
 max_size <- 500
 
@@ -28,7 +27,6 @@ tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
 
 # Downoad the raw data.
-message("Downloading gene to phenotype database... \n")
 base_url <- "https://www.ebi.ac.uk/gene2phenotype/downloads"
 datasets <- c(Cancer = "CancerG2P",
 	      DD = "DDG2P",
@@ -51,7 +49,6 @@ entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
 names(entrez) <- genes
 
 # Map missing Entrez IDs by hand.
-message("Manually mapping missing ids...")
 not_mapped <- genes[is.na(entrez)]
 mapped_by_manual_search <- c('KIF1BP' = 26128,
 			        'KARS' = 3735,
@@ -75,22 +72,17 @@ entrez[not_mapped] <- mapped_by_manual_search[names(entrez[not_mapped])]
 
 # Check.
 check <- sum(is.na(entrez)) == 0
-if (check)  { message("Successfully mapped all human gene symbols to Entrez!") }
+if (check)  { stop() }
 
 # Add entrez IDs to data.
 idy <- "gene_symbol" # Column after which Entrez ids will be added.
 data <- tibble::add_column(raw_data,"Entrez" = entrez[raw_data[[idy]]],.after=idy)
 
 # Map human genes in to their mouse homologs.
-message("Mapping human genes to their mouse homologs...\n")
 hsEntrez <- data$Entrez
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
 data <- tibble::add_column(data,msEntrez=msEntrez,.after="Entrez")
 # Remove rows with unmapped genes.
-n_out <- sum(is.na(msEntrez))
-percent_removed <- round(100*(n_out/length(msEntrez)),2)
-message(paste0("Genes without mouse homology: ",n_out,
-	      " (",percent_removed," %)."))
 data <- data[msEntrez != "NA"] 
 
 # Get disorders that affect the brain/cognition.
@@ -107,15 +99,14 @@ names(data_list) <- disorders
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
 # Remove groups with less than min genes.
-keep <- seq(sizes)[ sizes > min_size & sizes < max_size]
-names(keep) <- names(sizes)[ sizes > min_size & sizes < max_size]  
+keep <- names(sizes)[ sizes > min_size & sizes < max_size]
 data_list <- data_list[keep] # This limits to 15 disease groups.
-data <- subset(data,data$disease_name %in% names(keep))
+data <- subset(data,data$disease_name %in% keep)
 
 # Status report.
 nGenes <- length(unique(data$msEntrez))
 nDisorders <- length(data_list)
-message(paste("Compiled",nGenes,"genes associated with",nDisorders,"DBDs!"))
+message(paste("Compiled",nGenes,"mouse genes associated with",nDisorders,"DBDs!"))
 
 # Save data to file.
 myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],"_DBD_geneSet.csv"))
