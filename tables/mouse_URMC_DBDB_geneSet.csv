@@ -1,233 +1,400 @@
 Gene,hsEntrez,msEntrez,Inheritance,Phenotype,Syndrome,LOE
-ABCB6,10058,74104,AD/de novo,Microphthalmia,"",2
-ABCC9,10060,20928,AD/de novo,Macrocephaly,Cantu syndrome,3
-ACTB,60,11461,AD/de novo,Microphthalmia,Baraitser-Winter syndrome,2
-ACTG1,71,11465,AD/de novo,Microphthalmia,Baraitser-Winter syndrome,2
-ADSL,158,11564,AR,Epilepsy,Adenylosuccinase deficiency,2
-AKT3,10000,23797,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
-AKT3,10000,23797,AD/de novo,Hydrocephalus,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
-AKT3,10000,23797,AD/de novo,Epilepsy,"",3
-ALDH1A3,220,56847,AR,Microphthalmia,"",2
-ALDH5A1,7915,214579,AR,Epilepsy,Succinic semialdehyde dehydrogenase deficiency,2
-ALDH7A1,501,110695,AR,Epilepsy,Pyridoxine-dependent epilepsy,2
-ALG1,56052,208211,AR,Microcephaly,Congenital disorder of glycosylation type Ik,2
-ALG1,56052,208211,AR,Epilepsy,Congenital disorders of glycosylation type Ik,2
-ALG12,79087,223774,AR,Microcephaly,Congenital disorder of glycosylation type Ig,3
-ALG3,10195,208624,AR,Microcephaly,Congenital disorder of glycosylation type Id,3
-ALG3,10195,208624,AR,Epilepsy,Congenital disorder of glycosylation type Id,3
+AMPD2,271,109674,AR,Agenesis of corpus callosum,"",2
+CENPF,1063,108000,AR,Agenesis of corpus callosum,"",3
+EPG5,57724,100502841,AR,Agenesis of corpus callosum,Vici syndrome,2
+HCCS,3052,15159,XL,Agenesis of corpus callosum,Microphthalmia with linear skin defects syndrome,2
+KIF7,374654,16576,AR,Agenesis of corpus callosum,Acrocallosal syndrome,2
+NDE1,54820,67203,AR,Agenesis of corpus callosum,"",2
+RBM10,8241,236732,XL,Agenesis of corpus callosum,TARP syndrome,3
+TUBA1A,7846,22142,AD/de novo,Agenesis of corpus callosum,"",2
+AKT3,10000,23797,AD/de novo,Agenesis of the corpus callosum,"",3
+ARX,170302,11878,XL,Agenesis of the corpus callosum,Proud syndrome,1
+B3GALTL,145173,381694,AR,Agenesis of the corpus callosum,"",3
+C12orf57,113246,14790,AR,Agenesis of the corpus callosum,"",3
+CDK5RAP2,55755,214444,AR,Agenesis of the corpus callosum,"",3
+DISC1,27185,244667,AD/de novo,Agenesis of the corpus callosum,"",3
+DYNC1H1,1778,13424,AD/de  novo,Agenesis of the corpus callosum,"",3
+FOXG1,2290,15228,AD/de novo,Agenesis of the corpus callosum,"",2
+GCSH,2653,68133,AR,Agenesis of the corpus callosum,Nonketotic hyperglycinemia,2
+GLDC,2731,104174,AR,Agenesis of the corpus callosum,Nonketotic hyperglycinemia,2
+GPSM2,29899,76123,AR,Agenesis of the corpus callosum,Chudley-McCullough syndrome,2
+KIF5C,3800,16574,Postzygotic/Mosaic,Agenesis of the corpus callosum,"",3
+L1CAM,3897,16728,XL,Agenesis of the corpus callosum,X-linked hydrocephalus,1
+L1CAM,3897,16728,XL,Agenesis of the corpus callosum,MASA syndrome,1
+LRP2,4036,14725,AR,Agenesis of the corpus callosum,Facio-oculo-acoustico-renal syndrome,1
+MED12,9968,59024,XL,Agenesis of the corpus callosum,FG syndrome,1
+MID1,4281,17318,XL,Agenesis of the corpus callosum,Opitz G/BBB syndrome,2
+NFIA,4774,18027,AD/de novo,Agenesis of the corpus callosum,"",2
+OFD1,8481,237222,XL,Agenesis of the corpus callosum,Oro-facial-digital syndrome type 1,1
+PAX6,5080,18508,AD/de novo,Agenesis of the corpus callosum,"",3
+PDHB,5162,68263,AR,Agenesis of the corpus callosum,Pyruvate dehydrogenase deficiency,2
+PPP2R5D,5528,21770,AD/de novo,Agenesis of the corpus callosum,"",3
+PTCH1,5727,19206,AD/de novo,Agenesis of the corpus callosum,"",2
+RAB3GAP1,22930,226407,AR,Agenesis of the corpus callosum,Warburg Micro syndrome,3
+RAB3GAP2,25782,98732,AR,Agenesis of the corpus callosum,Warburg Micro syndrome,3
+SLC12A6,9990,107723,AR,Agenesis of the corpus callosum,Andermann syndrome,1
+SPG11,80208,214585,AR,Agenesis of the corpus callosum,Spastic paraplegia type 11,2
+SPOCK1,6695,20745,AD/de novo,Agenesis of the corpus callosum,"",3
+TBR2,8320,13813,AR,Agenesis of the corpus callosum,"",3
+TUBB2B,347733,73710,AD/de novo,Agenesis of the corpus callosum,"",3
+TUBB3,10381,22152,AR,Agenesis of the corpus callosum,"",3
+TUBB5,10382,22153,AD/de novo,Agenesis of the corpus callosum,"",3
+UPF3B,65109,68134,XL,Agenesis of the corpus callosum,"",3
+VAX1,11023,22326,AR,Agenesis of the corpus callosum,"",3
+WDR4,10785,57773,AR,Agenesis of the corpus callosum,"",3
+ZEB2,9839,24136,AD/de novo,Agenesis of the corpus callosum,Mowat-Wilson syndrome,1
+ZNF238,10472,30928,AD/de novo,Agenesis of the corpus callosum,"",3
 ALG6,29929,320438,AR,Ataxia,Congenital disorder of glycosylation type Ic,2
-ALG6,29929,320438,AR,Epilepsy,Congenital disorder of glycosylation type Ic,2
-AP1S2,8905,108012,XL,Hydrocephalus,"",2
-ARFGEF2,10564,99371,AR,Microcephaly,"",2
+ATP1A3,478,232975,AD,Ataxia,CAPOS syndrome,3
+CACNA1A,773,12286,AD,Ataxia,Episodic Ataxia type 2,2
+CHIP,10273,56424,AR,Ataxia,"",3
+COX20,116228,66359,AR,Ataxia,"",3
+CTBP1,1487,13016,AD/de novo,Ataxia,"",3
+GJB1,2705,14618,XL,Ataxia,"",3
+GRID2,2895,14804,AR,Ataxia,"",3
+KCNA2,3737,16490,AD/de novo,Ataxia,"",3
+PDHB,5162,68263,AR,Ataxia,Pyruvate dehydrogenase deficiency,2
+PMM2,5373,54128,AR,Ataxia,Congenital disorder of glycosylation type Ia,2
+PNKP,11284,59047,AR,Ataxia,"",3
+RNF216,54476,108086,AR,Ataxia,"",3
+SCN2A,6326,110876,AD/de novo,Ataxia,"",3
+SIL1,64374,81500,AR,Ataxia,Marinesco-Sjögren syndrome,3
+SLC2A1,6513,20525,AD/de novo,Ataxia,Glucose transporter type 1 deficiency syndrome,1
+SNX14,57231,244962,AR,Ataxia,"",3
+SYNE1,23345,64009,AR,Ataxia,Autosomal recessive cerebellar ataxia type 1,2
+UBA5,79876,66663,AR,Ataxia,"",3
+VLDLR,7436,22359,AR,Ataxia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+WDR81,124997,192652,AR,Ataxia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+WWOX,51741,80707,AR,Ataxia,"",3
+A2BP1,54715,268859,AD/de novo,Autism,"",2
+ADNP,23394,11538,AD/de novo,Autism,"",2
+ADSL,158,11564,AR,Autism,Adenylosuccinase deficiency,2
+ALDH1A3,220,56847,AR,Autism,"",3
+ALDH5A1,7915,214579,AR,Autism,Succinic semialdehyde dehydrogenase deficiency,3
+ASXL3,80816,211961,AD/de novo,Autism,"",3
+CACNA1A,773,12286,AD,Autism,Episodic Ataxia type 2,3
+CACNA1C,775,12288,AD/de novo,Autism,Timothy syndrome,3
+CACNA1D,776,12289,AD/de novo,Autism,"",3
+CADPS2,93664,320405,AD (maternal),Autism,"",3
+CHD8,57680,67772,AD/de novo,Autism,"",2
+CHRNA4,1137,11438,AD,Autism,Autosomal dominant nocturnal frontal lobe epilepsy,3
+CNTNAP2,26047,66797,AD or AR,Autism,"",3
+CTNND2,1501,18163,AD/de novo,Autism,"",3
+DMPK,1760,13400,AD,Autism,Myotonic dystrophy type 1,2
+DYRK1A,1859,13548,AD/de novo,Autism,"",2
+EEF1A2,1917,13628,AD/de novo,Autism,"",3
+EHMT1,79813,77683,AD/de novo,Autism,Kleefstra syndrome,3
+FMR1,2332,14265,XL,Autism,Fragile X syndrome,1
+GPHN,10243,268566,AD/de novo,Autism,"",3
+JARID1C,8242,20591,XL,Autism,"",3
+KATNAL2,83473,71206,AD/de novo,Autism,"",3
+KIAA2022,340533,245555,XL,Autism,"",3
+MEIS2,4212,17536,AD/de novo,Autism,"",3
+MLL2,8085,381022,AD,Autism,Kabuki syndrome,2
+NF1,4763,18015,AD,Autism,Neurofibromatosis type 1,2
+NLGN3,54413,245537,XL,Autism,"",3
+NRXN1,9378,18189,AD/de novo,Autism,"",2
+NRXN2,9379,18190,AD/de novo,Autism,"",3
+PEX7,5191,18634,AR,Autism,"",3
+POGZ,23126,229584,AD/de novo,Autism,"",3
+POMGNT1,55624,68273,AR,Autism,"",3
+PPP2R5D,5528,21770,AD/de novo,Autism,"",3
+PTEN,5728,19211,AD/de novo,Autism,Macrocephaly-autism syndrome,1
+RAB39B,116442,67790,XL,Autism,"",2
+RAI1,10743,19377,AD/de novo,Autism,Smith-Magenis syndrome,2
+RERE,473,68703,AD/de novo,Autism,"",2
+RIMS3,9783,242662,AD/de novo,Autism,"",3
+SCN2A,6326,110876,AD/de novo,Autism,"",3
+SETD5,55209,72895,AD/de novo,Autism,"",3
+SETD5,55209,72895,AD/de novo,Autism,"",3
+SHANK2,22941,210274,AD/de novo,Autism,"",3
+SHANK3,85358,58234,AD/de novo,Autism,Phelan-McDermid syndrome,1
+SIN3A,25942,20466,AD/de novo,Autism,"",3
+SLC9A6,10479,236794,XL,Autism,"",1
+SYN1,6853,20964,XL,Autism,"",2
+SYNE1,23345,64009,AR,Autism,"",3
+SYNGAP1,8831,240057,AD/de novo,Autism,"",3
+TRIO,7204,223435,AD/de novo,Autism,"",3
+TSC1,7248,64930,AD,Autism,Tuberous sclerosis complex,2
+TSC2,7249,22084,AD,Autism,Tuberous sclerosis complex,2
+UPF3B,65109,68134,XL,Autism,"",2
+VPS13B,157680,666173,AR,Autism,"",3
+BCAP31,10134,27061,XL,Cerebellar atrophy,"",3
+CCDC88A,55704,108686,AR,Cerebellar atrophy,PEHO syndrome,3
+EXOSC3,51010,66362,AR,Cerebellar atrophy,"",3
+GRID2,2895,14804,AR,Cerebellar atrophy,"",3
+PLA2G6,8398,53357,AR,Cerebellar atrophy,Infantile neuroaxonal dystrophy,2
+QARS,2058,107508,AR,Cerebellar atrophy,"",3
+SYNE1,23345,64009,AR,Cerebellar atrophy,Autosomal recessive cerebellar ataxia type 1,2
+TBC1D24,57465,224617,AR,Cerebellar atrophy,"",3
+BRF1,2972,72308,AR,Cerebellar hypoplasia,"",2
+CASK,8573,12361,XL,Cerebellar hypoplasia,"",1
+CDK5,1020,12568,AR,Cerebellar hypoplasia,"",3
+DAB1,1600,13131,AR,Cerebellar hypoplasia,"",2
+OPHN1,4983,94190,XL,Cerebellar hypoplasia,"",1
+PI4KA,5297,224020,AR,Cerebellar hypoplasia,"",3
+PITX2,5308,18741,AD/de novo,Cerebellar hypoplasia,Axenfeld-Rieger syndrome,3
+PMM2,5373,54128,AR,Cerebellar hypoplasia,Congenital disorder of glycosylation type Ia,1
+PTF1A,256297,19213,AR,Cerebellar hypoplasia,"",3
+RBM10,8241,236732,XL,Cerebellar hypoplasia,TARP syndrome,3
+RELN,5649,19699,AR,Cerebellar hypoplasia,"",1
+RPL10,6134,110954,XL,Cerebellar hypoplasia,"",3
+TMTC3,160418,237500,AR,Cerebellar hypoplasia,"",3
+TUBA1A,7846,22142,AD/de novo,Cerebellar hypoplasia,"",1
+VLDLR,7436,22359,AR,Cerebellar hypoplasia,"",1
+VLDLR,7436,22359,AR,Cerebellar hypoplasia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+WDR81,124997,192652,AR,Cerebellar hypoplasia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+ZIC4,84107,22774,AD/de novo,Cerebellar hypoplasia,"",1
+BRAF,673,109880,AD,Cerebellar tonsillar ectopia,Cardiofaciocutaneous syndrome,3
+BRAF,673,109880,AD,Cerebellar tonsillar ectopia,Noonan syndrome,3
+HRAS,3265,15461,AD/de novo,Cerebellar tonsillar ectopia,Costello syndrome,1
+PIK3CA,5290,18706,"Postzygotic/Mosaic (most), AD/de novo (rare)",Cerebellar tonsillar ectopia,Megalencephaly capillary malformation syndrome,2
+PTPN11,5781,19247,AD/de novo,Cerebellar tonsillar ectopia,Noonan syndrome,1
+SHOC2,8036,56392,AD,Cerebellar tonsillar ectopia,Noonan syndrome,3
+CC2D2A,57545,231214,AR,Cerebellar vermis hypoplasia,COACH syndrome,2
+FOXC1,2296,17300,AD/de novo,Cerebellar vermis hypoplasia,Axenfeld-Rieger syndrome,1
+KPNA7,402569,381686,AR,Cerebellar vermis hypoplasia,"",3
+OPHN1,4983,94190,XL,Cerebellar vermis hypoplasia,"",1
+RERE,473,68703,AD/de novo,Cerebellar vermis hypoplasia,"",3
+RPGRIP1L,23322,244585,AR,Cerebellar vermis hypoplasia,COACH syndrome,2
+TMEM67,91147,329795,AR,Cerebellar vermis hypoplasia,COACH syndrome,1
+ZIC1,7545,22771,AD/de novo,Cerebellar vermis hypoplasia,"",1
+ZIC4,84107,22774,AD/de novo,Cerebellar vermis hypoplasia,"",1
+AP1S2,8905,108012,XL,Cerebral calcifications,"",2
+COL4A1,1282,12826,AD/de novo,Cerebral calcifications,"",3
+ERCC6,2074,319955,AR,Cerebral calcifications,Cockayne syndrome,2
+ERCC8,1161,71991,AR,Cerebral calcifications,Cockayne syndrome,2
+QDPR,5860,110391,AR,Cerebral calcifications,Quinoid dihydropteridine reductase deficiency,3
+RNASEH2A,10535,69724,AR,Cerebral calcifications,Aicardi-Goutières syndrome,2
+RNASEH2B,79621,67153,AR,Cerebral calcifications,Aicardi-Goutières syndrome,2
+RNASEH2C,84153,68209,AR,Cerebral calcifications,Aicardi-Goutières syndrome,2
+SAMHD1,25939,56045,AR,Cerebral calcifications,Aicardi-Goutières syndrome,2
+TREX1,11277,22040,AD/de novo,Cerebral calcifications,Aicardi-Goutières syndrome,2
+AP4B1,10717,67489,AR,Cerebral palsy (familial),"",3
+AP4E1,23431,108011,AR,Cerebral palsy (familial),"",3
+AP4M1,9179,11781,AR,Cerebral palsy (familial),"",3
+AP4S1,11154,11782,AR,Cerebral palsy (familial),"",3
+KANK1,23189,107351,IMPR,Cerebral palsy (familial),"",2
+HTT,3064,15194,AD,Chorea,Huntington disease,1
+NKX2-1,7080,21869,AD,Chorea,Benign hereditary chorea,1
+PRRT2,112476,69017,AD,Chorea,Familial paroxysmal kinesigenic dyskinesia,2
+SLC2A1,6513,20525,AD/de novo,Chorea,Glucose transporter type 1 deficiency syndrome,1
+VPS13A,23230,271564,AR,Chorea,Chorea-acanthocytosis syndrome,1
+ATP6V0A2,23545,21871,AR,Cobblestone malformation,Congenital disorder of glycosylation type II,1
+B3GALNT2,148789,97884,AR,Cobblestone malformation,Walker-Warburg syndrome,3
+B3GALNT2,148789,97884,AR,Cobblestone malformation,Muscle-eye-brain syndrome,3
+B3GNT1,11041,108902,AR,Cobblestone malformation,Walker-Warburg syndrome,3
+B3GNT1,11041,108902,AR,Cobblestone malformation,Muscle-eye-brain syndrome,3
+COG7,91949,233824,AR,Cobblestone malformation,Congenital disorder of glycosylation type II,2
+COG8,84342,97484,AR,Cobblestone malformation,Congenital disorder of glycosylation type IIh,2
+DAG1,1605,13138,AR,Cobblestone malformation,"",2
+FKRP,79147,243853,AR,Cobblestone malformation,Walker-Warburg syndrome,1
+FKRP,79147,243853,AR,Cobblestone malformation,Muscle-eye-brain syndrome,1
+FKTN,2218,246179,AR,Cobblestone malformation,Walker-Warburg syndrome,1
+FKTN,2218,246179,AR,Cobblestone malformation,Fukuyama Congenital Muscular Dystrophy,1
+GPR56,9289,14766,AR,Cobblestone malformation,"",1
+GTDC2,84892,215494,AR,Cobblestone malformation,Walker-Warburg syndrome,3
+ISPD,729920,75847,AR,Cobblestone malformation,Walker-Warburg syndrome,2
+LAMB1,3912,16777,AR,Cobblestone malformation,"",2
+LAMC3,10319,23928,AR,Cobblestone malformation,"",2
+LARGE,9215,16795,AR,Cobblestone malformation,Walker-Warburg syndrome,2
+LARGE,9215,16795,AR,Cobblestone malformation,Muscle-eye-brain syndrome,2
+LARGE,9215,16795,AR,Cobblestone malformation,Fukuyama congenital muscular dystrophy,2
+POMGNT1,55624,68273,AR,Cobblestone malformation,Muscle-eye-brain syndrome,1
+POMT1,10585,99011,AR,Cobblestone malformation,Walker-Warburg syndrome,1
+POMT1,10585,99011,AR,Cobblestone malformation,Muscle-eye-brain syndrome,1
+POMT2,29954,217734,AR,Cobblestone malformation,Walker-Warburg syndrome,1
+POMT2,29954,217734,AR,Cobblestone malformation,Muscle-eye-brain syndrome,1
+SNAP29,9342,67474,AR,Cobblestone malformation,"Cerebral dysgenesis, neuropathy, ichthyosis and keratoderma syndrome   ",2
+TMEM5,10329,216395,AR,Cobblestone malformation,Walker-Warburg syndrome,2
+TMTC3,160418,237500,AR,Cobblestone malformation,"",3
+ASNS,440,27053,AR,Congenital microcephaly,"",3
+ASPM,259266,12316,AR,Congenital microcephaly,"",1
+ATR,545,245000,AR,Congenital microcephaly,Seckel syndrome,2
+CASC5,57082,76464,AR,Congenital microcephaly,"",3
+CDK5RAP2,55755,214444,AR,Congenital microcephaly,"",1
+CDK6,1021,12571,AR,Congenital microcephaly,"",2
+CENPF,1063,108000,AR,Congenital microcephaly,"",3
+CENPJ,55835,219103,AR,Congenital microcephaly,Seckel syndrome,2
+CEP135,9662,381644,AR,Congenital microcephaly,"",2
+CEP152,22995,99100,AR,Congenital microcephaly,"",2
+CEP63,80254,28135,AR,Congenital microcephaly,Seckel syndrome,3
+CIT,11113,12704,AR,Congenital microcephaly,"",3
+DKC1,1736,245474,XL,Congenital microcephaly,Hoyeraal-Hreidarsson syndrome,3
+KAT6A,7994,244349,AD/de novo,Congenital microcephaly,"",2
+KATNB1,10300,74187,AR,Congenital microcephaly,"",2
+KIF14,9928,381293,AR,Congenital microcephaly,"",3
+MCPH1,79648,244329,AR,Congenital microcephaly,"",1
+NDE1,54820,67203,AR,Congenital microcephaly,"",2
+PNKP,11284,59047,AR,Congenital microcephaly,"",2
+RGS6,9628,50779,AR,Congenital microcephaly,"",3
+RTTN,25914,246102,AR,Congenital microcephaly,"",3
+SLC25A19,60386,67283,AR,Congenital microcephaly,Amish microcephaly,2
+SPOCK1,6695,20745,AD/de novo,Congenital microcephaly,"",3
+SSR4,6748,20832,XL,Congenital microcephaly,"",3
+STAMBP,10617,70527,AR,Congenital microcephaly,Microcephaly-capillary malformation syndrome,2
+STIL,6491,20460,AR,Congenital microcephaly,"",1
+TRMT10A,93587,108943,AR,Congenital microcephaly,"",3
+WDR4,10785,57773,AR,Congenital microcephaly,"",3
+WDR62,284403,233064,AR,Congenital microcephaly,"",1
+WWOX,51741,80707,AR,Congenital microcephaly,"",3
+AP1S2,8905,108012,XL,Dandy-Walker malformation,"",3
+FOXC1,2296,17300,AD/de novo,Dandy-Walker malformation,"",2
+LAMC1,3915,226519,AD,Dandy-Walker malformation,"",3
+NID1,4811,18073,AD,Dandy-Walker malformation,"",3
+ZIC1,7545,22771,AD/de novo,Dandy-Walker malformation,"",1
+ZIC4,84107,22774,AD/de novo,Dandy-Walker malformation,"",1
+CDKL5,6792,382253,XL,Developmental encephalopathy,"",1
+EHMT1,79813,77683,AD/de novo,Developmental encephalopathy,Kleefstra syndrome,3
+FOXG1,2290,15228,AD/de novo,Developmental encephalopathy,"",2
+GPT2,84706,108682,AR,Developmental encephalopathy,"",3
+MECP2,4204,17257,XL,Developmental encephalopathy,Rett syndrome,1
+MEF2C,4208,17260,AD/de novo,Developmental encephalopathy,"",1
+PURA,5813,19290,AD/De novo,Developmental encephalopathy,"",3
+SLC9A6,10479,236794,XL,Developmental encephalopathy,"",1
+TCF4,6925,21413,AD/de novo,Developmental encephalopathy,Pitt-Hopkins syndrome,1
+UBE3A,7337,22215,IMPR,Developmental encephalopathy,Angelman syndrome,1
+AMT,275,434437,AR,Developmental epilepsy,Nonketotic hyperglycinemia,1
+ARX,170302,11878,XL,Developmental epilepsy,"",1
+ATP7A,538,11977,XL,Developmental epilepsy,Menkes disease,2
+BRAT1,221927,231841,AR,Developmental epilepsy,"",3
+CCDC88A,55704,108686,AR,Developmental epilepsy,PEHO syndrome,3
+CDKL5,6792,382253,XL,Developmental epilepsy,"",1
+DCX,1641,13193,XL,Developmental epilepsy,"",3
+DNM1,1759,13429,AD/De novo,Developmental epilepsy,"",3
+EPG5,57724,100502841,AR,Developmental epilepsy,Vici syndrome,2
+FOXG1,2290,15228,AD/de novo,Developmental epilepsy,"",2
+GABRB3,2562,14402,AD/de novo,Developmental epilepsy,"",3
+GCSH,2653,68133,AR,Developmental epilepsy,Nonketotic hyperglycinemia,1
+GLDC,2731,104174,AR,Developmental epilepsy,Nonketotic hyperglycinemia,1
+GNAO1,2775,14681,AD/de novo and Postzygotic/Mosaic,Developmental epilepsy,"",3
+GPR56,9289,14766,AR,Developmental epilepsy,"",2
+GRIN1,2902,14810,AD/de novo,Developmental epilepsy,"",3
+KCNA2,3737,16490,AD/de novo,Developmental epilepsy,"",2
+KCNB1,3745,16500,AD/de novo,Developmental epilepsy,"",3
+KCNJ11,3767,16514,AD/de novo,Developmental epilepsy,"Developmental delay, epilepsy, neonatal diabetes   ",1
+KCNQ2,3785,16536,AD/de novo,Developmental epilepsy,"",3
+KPNA7,402569,381686,AR,Developmental epilepsy,"",3
+MEF2C,4208,17260,AD/de novo,Developmental epilepsy,"",2
+NECAP1,25977,67602,AR,Developmental epilepsy,"",3
+QDPR,5860,110391,AR,Developmental epilepsy,Quinoid dihydropteridine reductase deficiency,3
+RARS2,57038,109093,AR,Developmental epilepsy,"",3
+SCN1A,6323,20265,AD/de novo,Developmental epilepsy,Dravet syndrome,2
+SCN2A,6326,110876,AD/de novo,Developmental epilepsy,"",3
+SLC25A12,8604,78830,AR,Developmental epilepsy,AGC1 deficiency syndrome,3
+SLC25A22,79751,68267,AR,Developmental epilepsy,"",3
+SPTAN1,6709,20740,AD/de novo,Developmental epilepsy,"",3
+ST3GAL3,6487,20441,AR,Developmental epilepsy,"",3
+STAMBP,10617,70527,AR,Developmental epilepsy,Microcephaly-capillary malformation syndrome,2
+STXBP1,6812,20910,AD/de novo,Developmental epilepsy,"",1
+TSC1,7248,64930,AD,Developmental epilepsy,Tuberous sclerosis complex,1
+TSC2,7249,22084,AD,Developmental epilepsy,Tuberous sclerosis complex,1
+UBA5,79876,66663,AR,Developmental epilepsy,"",3
+UBE3A,7337,22215,IMPR,Developmental epilepsy,Angelman syndrome,1
+UNC80,285175,329178,AR,Developmental epilepsy,"",3
+WDR4,10785,57773,AR,Developmental epilepsy,"",3
 ARFGEF2,10564,99371,AR,Dystonia,"",3
-ARNT2,9915,11864,AR,Microcephaly,"",3
-ARX,170302,11878,XL,Epilepsy,"",1
-ASNS,440,27053,AR,Microcephaly,"",3
-ASNS,440,27053,AR,Epilepsy,"",3
-ASPM,259266,12316,AR,Microcephaly,"",1
-ASXL2,55252,75302,AD/de novo,Macrocephaly,"",3
-ASXL3,80816,211961,AD/de novo,Microcephaly,"",3
-ATM,472,11920,AR,Microcephaly,Ataxia-Telangiectasia,1
-ATP13A2,23400,74772,AR,Parkinsonism,Kufor-Rakeb syndrome,2
 ATP13A2,23400,74772,AR,Dystonia,Kufor-Rakeb syndrome,3
 ATP1A3,478,232975,AD,Dystonia,Rapid-onset dystonia-Parkinsonism,1
-ATP1A3,478,232975,AD,Parkinsonism,Rapid-onset dystonia-Parkinsonism,1
-ATP1A3,478,232975,AD,Ataxia,CAPOS syndrome,3
-ATP7A,538,11977,XL,Epilepsy,Menkes disease,1
-ATR,545,245000,AR,Microcephaly,Seckel syndrome,2
-B3GALTL,145173,381694,AR,Hydrocephalus,"",3
-B9D2,80776,232987,AR,Encephalocele,Meckel-Gruber syndrome,3
 BCAP31,10134,27061,XL,Dystonia,"",2
-BCOR,54880,71458,XL,Microphthalmia,Lenz syndrome,1
-BCOR,54880,71458,XL,Microcephaly,Lenz syndrome,2
-BMP4,652,12159,AD/de novo,Microphthalmia,"",2
-BRAT1,221927,231841,AR,Epilepsy,"",3
-BRF1,2972,72308,AR,Microcephaly,"",2
-BRWD3,254065,382236,XL,Macrocephaly,"",3
-C12orf57,113246,14790,AR,Microphthalmia,"",3
 C2orf37,80067,75763,AR,Dystonia,Woodhouse-Sakati syndrome,3
-CACNA1A,773,12286,AD,Ataxia,Episodic Ataxia type 2,2
+COX20,116228,66359,AR,Dystonia,"",3
+HPCA,3208,15444,AR,Dystonia,"",3
+PLA2G6,8398,53357,AR,Dystonia,"",3
+PRRT2,112476,69017,AD,Dystonia,Familial paroxysmal kinesigenic dyskinesia,2
+SLC16A2,6567,20502,XL,Dystonia,"",1
+SLC2A1,6513,20525,AD/de novo,Dystonia,Glucose transporter type 1 deficiency syndrome,1
+STXBP1,6812,20910,AD/de novo,Dystonia,"",2
+TIMM8A,1678,30058,XL,Dystonia,Mohr-Tranebjaerg syndrome,3
+TUBB4A,10382,22153,AD/de novo,Dystonia,"",3
+AMT,275,434437,AR,Early infantile epileptic encephalopathy,Nonketotic hyperglycinemia,1
+ARX,170302,11878,XL,Early infantile epileptic encephalopathy,"",1
+CDKL5,6792,382253,XL,Early infantile epileptic encephalopathy,"",1
+GCSH,2653,68133,AR,Early infantile epileptic encephalopathy,Nonketotic hyperglycinemia,1
+GLDC,2731,104174,AR,Early infantile epileptic encephalopathy,Nonketotic hyperglycinemia,1
+KCNQ2,3785,16536,AD/de novo,Early infantile epileptic encephalopathy,"",3
+SCN2A,6326,110876,AD/de novo,Early infantile epileptic encephalopathy,"",3
+SLC25A22,79751,68267,AR,Early infantile epileptic encephalopathy,"",3
+STXBP1,6812,20910,AD/de novo,Early infantile epileptic encephalopathy,"",1
+B9D2,80776,232987,AR,Encephalocele,Meckel-Gruber syndrome,3
+COL18A1,80781,12822,AD/de novo,Encephalocele,Knobloch syndrome,1
+LAMB1,3912,16777,AR,Encephalocele,"",2
+LAMC1,3915,226519,AD,Encephalocele,"",3
+MKS1,54903,380718,AR,Encephalocele,Meckel-Gruber syndrome,1
+NID1,4811,18073,AD,Encephalocele,"",3
+TMEM231,79583,234740,AR,Encephalocele,Meckel-Gruber syndrome,3
+TMEM67,91147,329795,AR,Encephalocele,Meckel-Gruber syndrome,1
+ADSL,158,11564,AR,Epilepsy,Adenylosuccinase deficiency,2
+AKT3,10000,23797,AD/de novo,Epilepsy,"",3
+ALDH5A1,7915,214579,AR,Epilepsy,Succinic semialdehyde dehydrogenase deficiency,2
+ALDH7A1,501,110695,AR,Epilepsy,Pyridoxine-dependent epilepsy,2
+ALG1,56052,208211,AR,Epilepsy,Congenital disorders of glycosylation type Ik,2
+ALG3,10195,208624,AR,Epilepsy,Congenital disorder of glycosylation type Id,3
+ALG6,29929,320438,AR,Epilepsy,Congenital disorder of glycosylation type Ic,2
+ARX,170302,11878,XL,Epilepsy,"",1
+ASNS,440,27053,AR,Epilepsy,"",3
+ATP7A,538,11977,XL,Epilepsy,Menkes disease,1
+BRAT1,221927,231841,AR,Epilepsy,"",3
 CACNA1A,773,12286,AD,Epilepsy,Episodic Ataxia type 2,3
 CACNA2D2,9254,56808,AR,Epilepsy,"",1
 CADPS2,93664,320405,AD (maternal),Epilepsy,"",3
-CASC5,57082,76464,AR,Microcephaly,"",3
-CASK,8573,12361,XL,Microcephaly,"",1
 CASK,8573,12361,XL,Epilepsy,"",2
 CCDC88A,55704,108686,AR,Epilepsy,PEHO syndrome,3
-CCDC88A,55704,108686,AR,Microcephaly,PEHO syndrome,3
-CCDC88C,440193,68339,AR,Hydrocephalus,"",2
-CCND2,894,12444,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
-CDC6,990,23834,AR,Microcephaly,Meier-Gorlin syndrome,3
-CDK5RAP2,55755,214444,AR,Microcephaly,"",1
-CDK6,1021,12571,AR,Microcephaly,"",2
 CDKL5,6792,382253,XL,Epilepsy,"",1
-CDT1,81620,67177,AR,Microcephaly,Meier-Gorlin syndrome,3
-CENPE,1062,229841,AR,Microcephaly,Microcephalic osteodysplastic primordial dwarfism,2
-CENPF,1063,108000,AR,Microcephaly,"",3
-CENPJ,55835,219103,AR,Microcephaly,Seckel syndrome,2
-CEP135,9662,381644,AR,Microcephaly,"",2
-CEP152,22995,99100,AR,Microcephaly,Seckel syndrome,2
-CEP63,80254,28135,AR,Microcephaly,Seckel syndrome,3
 CHD2,1106,244059,AD/de novo,Epilepsy,"",3
-CHD7,55636,320790,AD,Microphthalmia,CHARGE syndrome,1
-CHD8,57680,67772,AD/de novo,Macrocephaly,"",2
-CHIP,10273,56424,AR,Ataxia,"",3
 CHRNA7,1139,11441,AD/de novo,Epilepsy,"",3
-CIT,11113,12704,AR,Microcephaly,"",3
 CNTN2,6900,21367,AR,Epilepsy,"",3
 CNTNAP2,26047,66797,AD or AR,Epilepsy,"",3
-COG7,91949,233824,AR,Microcephaly,Congenital disorder of glycosylation type II,3
-COL18A1,80781,12822,AD/de novo,Encephalocele,Knobloch syndrome,1
-COL4A1,1282,12826,AD/de novo,Schizcencephaly,"",2
-COX20,116228,66359,AR,Dystonia,"",3
-COX20,116228,66359,AR,Ataxia,"",3
-CRADD,8738,12905,AR,Pachygyria,"",3
-CRADD,8738,12905,AR,Megalencephaly,"",3
 CRADD,8738,12905,AR,Epilepsy,"",3
-CREBBP,1387,12914,AD/de novo,Microcephaly,Rubinstein-Taybi syndrome,2
-CSNK2A1,1457,12995,AD/de novo,Microcephaly,"",3
-CTBP1,1487,13016,AD/de novo,Ataxia,"",3
-CTCF,10664,13018,AD/de novo,Microcephaly,"",3
-CTNNB1,1499,12387,AD/de novo,Microcephaly,"",3
-CUL4B,8450,72584,XL,Macrocephaly,"",3
 CYFIP1,23191,20430,AD/de novo,Epilepsy,"",3
 DCX,1641,13193,XL,Epilepsy,"",2
-DCX,1641,13193,XL,Pachygyria,"",1
-DDB2,1643,107986,AR,Microcephaly,Xeroderma Pigmentosum,1
-DHCR7,1717,13360,AR,Microcephaly,Smith-Lemli-Opitz syndrome,1
-DKC1,1736,245474,XL,Microcephaly,Hoyeraal-Hreidarsson syndrome,3
 DNM1,1759,13429,AD/De novo,Epilepsy,"",3
-DNM1L,10059,74006,AD/de novo,Microcephaly,"",3
 DOCK7,85440,67299,AR,Epilepsy,"",3
 DPAGT1,1798,13478,AR,Epilepsy,Congenital disorder of glycosylation type Ij,3
-DPAGT1,1798,13478,AR,Microcephaly,Congenital disorder of glycosylation type Ij,3
-DPM1,8813,13480,AR,Microcephaly,Congenital disorder of glycosylation type Ie,3
 DPM1,8813,13480,AR,Epilepsy,Congenital disorder of glycosylation type Ie,3
-DYM,54808,69190,AR,Microcephaly,Dyggve-Melchior-Clausen syndrome,3
-DYNC1H1,1778,13424,AD/de novo,Microcephaly,"",3
-DYRK1A,1859,13548,AD/de novo,Microcephaly,"",1
 EEF1A2,1917,13628,AD/de novo,Epilepsy,"",3
-EFTUD2,9343,20624,AD/de novo,Microcephaly,Mandibulofacial dysostosis with microcephaly,3
 EHMT1,79813,77683,AD/de novo,Epilepsy,Kleefstra syndrome,3
-EIF2AK3,9451,13666,AD/de novo,Microcephaly,"",3
-EP300,2033,328572,AD/de novo,Microcephaly,Rubinstein-Taybi syndrome,3
 EPG5,57724,100502841,AR,Epilepsy,Vici syndrome,2
-ERCC1,2067,13870,AR,Microcephaly,Xeroderma Pigmentosum,1
-ERCC2,2068,13871,AR,Microcephaly,Xeroderma Pigmentosum,1
-ERCC3,2071,13872,AR,Microcephaly,Xeroderma Pigmentosum,1
-ERCC4,2072,50505,AR,Microcephaly,Xeroderma Pigmentosum,1
-ERCC5,2073,22592,AR,Microcephaly,Xeroderma Pigmentosum,1
-ERCC6,2074,319955,AR,Microcephaly,Cerebro-Oculo-Facio-Skeletal syndrome,2
-ERCC6,2074,319955,AR,Microphthalmia,Cerebro-Oculo-Facio-Skeletal syndrome,2
-ERCC6,2074,319955,AR,Microcephaly,Cockayne syndrome,1
-ERCC8,1161,71991,AR,Microcephaly,Cockayne syndrome,1
-FGFR1,2260,14182,AD and AR,Holoprosencephaly,Hartsfield syndrome,1
 FGFR1,2260,14182,AD and AR,Epilepsy,Hartsfield syndrome,2
-FGFR1,2260,14182,AD and AR,Microcephaly,Hartsfield syndrome,2
 FIG4,9896,103199,AR,Epilepsy,"",3
-FMR1,2332,14265,XL,Macrocephaly,Fragile X syndrome,1
 FOXG1,2290,15228,AD/de novo,Epilepsy,"",2
-FOXG1,2290,15228,AD/de novo,Pachygyria,"",2
-FOXG1,2290,15228,AD/de novo,Microcephaly,"",2
-FOXH1,8928,14106,AD/de novo,Holoprosencephaly,"",2
 GABRA1,2554,14394,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
 GABRA1,2554,14394,AD/de novo,Epilepsy,Dravet syndrome,3
 GABRB1,2560,14400,AD/de novo,Epilepsy,"",3
 GABRB3,2562,14402,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
 GABRD,2563,14403,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
 GABRG2,2566,14406,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
-GDF3,9573,14562,AD/de novo,Microphthalmia,"",3
-GJA1,2697,14609,AD?,Microphthalmia,Hallermann-Streiff syndrome,3
-GJB1,2705,14618,XL,Ataxia,"",3
-GLI2,2736,14633,AD/de novo,Holoprosencephaly,"",2
-GLI3,2737,14634,AD/de novo,Megalencephaly,Greig Cephalosyndactyly,1
-GLI3,2737,14634,AD/de novo,Megalencephaly,Acrocallosal syndrome,1
 GNAO1,2775,14681,AD/de novo and Postzygotic/Mosaic,Epilepsy,"",3
 GPR56,9289,14766,AR,Epilepsy,"",2
-GPSM2,29899,76123,AR,Hydrocephalus,Chudley McCullough syndrome,2
-GRID2,2895,14804,AR,Ataxia,"",3
 GRIN1,2902,14810,AD/de novo,Epilepsy,"",3
 GRIN2A,2903,14811,AD/de novo,Epilepsy,"",3
 GRIN2B,2904,14812,AD/de novo,Epilepsy,"",3
-HCCS,3052,15159,XL,Microphthalmia,Microphthalmia with linear skin defects syndrome,2
-HCCS,3052,15159,XL,Microcephaly,Microphthalmia with linear skin defects syndrome,2
 HCN1,348980,15165,AD/de novo,Epilepsy,"",3
-HEPACAM,220296,72927,AR,Megalencephaly,Megalencephalic Leukoncephalopathy with Subcortical Cysts,1
 HNRNPU,3192,51810,AD/de novo,Epilepsy,"",3
-HPCA,3208,15444,AR,Dystonia,"",3
 HRAS,3265,15461,Postzygotic/Mosaic,Epilepsy,Sebaceous nevus syndrome,3
-HYLS1,219844,76832,AR,Hydrocephalus,Hydrolethalus syndrome,2
 IER3IP1,51124,66191,AR,Epilepsy,"",3
-IER3IP1,51124,66191,AR,Microcephaly,"",3
-IQSEC2,23096,245666,XL,Microcephaly,"",3
 IQSEC2,23096,245666,XL,Epilepsy,"",3
-JARID1C,8242,20591,XL,Microcephaly,"",3
-KAT6A,7994,244349,AD/de novo,Microcephaly,"",2
-KATNB1,10300,74187,AR,Microcephaly,"",2
 KCNA2,3737,16490,AD/de novo,Epilepsy,"",2
-KCNA2,3737,16490,AD/de novo,Ataxia,"",3
 KCNB1,3745,16500,AD/de novo,Epilepsy,"",3
 KCNH1,3756,16510,AD/De novo and Postzygotic/Mosaic,Epilepsy,Temple-Baraitser syndrome,2
 KCNJ11,3767,16514,AD/de novo,Epilepsy,"Developmental delay, epilepsy, neonatal diabetes   ",1
-KCNJ6,3763,16522,AD/De novo,Microcephaly,Keppen-Lubinsky syndrome,3
-KCNJ8,3764,16523,AD/de novo,Macrocephaly,Cantu syndrome,3
 KCNQ2,3785,16536,AD/de novo,Epilepsy,Benign familial neonatal seizures,2
 KCNQ3,3786,110862,AD/de novo,Epilepsy,Benign familial neonatal seizures,2
 KCNT1,57582,227632,AD,Epilepsy,"",2
-KIF11,3832,16551,AD,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
-KIF14,9928,381293,AR,Microcephaly,"",3
 KIF4A,24137,16571,XL,Epilepsy,"",3
-KIF5C,3800,16574,Postzygotic/Mosaic,Microcephaly,"",3
 KIF5C,3800,16574,AD/de novo,Epilepsy,"",3
-KIF7,374654,16576,AR,Macrocephaly,Acrocallosal syndrome,2
 KPNA7,402569,381686,AR,Epilepsy,"",3
-KPTN,11133,70394,AR,Megalencephaly,"",3
 KPTN,11133,70394,AR,Epilepsy,"",3
 KRAS,3845,16653,Postzygotic/Mosaic,Epilepsy,Sebaceous nevus syndrome,3
-L1CAM,3897,16728,XL,Hydrocephalus,X-linked hydrocephalus,1
 LAMA2,3908,16773,AR,Epilepsy,"",3
-LAMB1,3912,16777,AR,Encephalocele,"",2
-LAMC1,3915,226519,AD,Encephalocele,"",3
 LGI1,9211,56839,AD,Epilepsy,Autosomal dominant partial epilepsy with auditory features,2
-LIG4,3981,319583,AR,Microcephaly,LIG4 syndrome,1
-MAP2K1,5604,26395,AD/de novo,Hydrocephalus,Cardiofaciocutaneous syndrome,1
-MAP2K2,5605,26396,AD/de novo,Hydrocephalus,Cardiofaciocutaneous syndrome,1
 MBD5,55777,109241,AD/de novo,Epilepsy,"",3
-MCPH1,79648,244329,AR,Microcephaly,"",1
-MED25,81857,75613,AR,Microcephaly,"",3
 MEF2C,4208,17260,AD/de novo,Epilepsy,"",2
-MKS1,54903,380718,AR,Encephalocele,Meckel-Gruber syndrome,1
-MLC1,23209,170790,AR,Megalencephaly,Megalencephalic Leukoncephalopathy with Subcortical Cysts,1
 MLL2,8085,381022,AD,Epilepsy,Kabuki syndrome,2
 MTOR,2475,56717,Postzygotic/Mosaic,Epilepsy,"",2
-MYCN,4613,18109,AD,Microcephaly,Feingold syndrome,2
-MYO18B,84700,74376,AR,Microcephaly,"",3
-NAA10,8260,56292,XL,Microcephaly,"",3
-NBN,4683,27354,AR,Microcephaly,Nijmegen breakage syndrome,1
-NDE1,54820,67203,AR,Microcephaly,"",2
 NECAP1,25977,67602,AR,Epilepsy,"",3
-NF1,4763,18015,AD,Megalencephaly,Neurofibromatosis type 1,1
-NFIA,4774,18027,AD/de novo,Hydrocephalus,"",2
-NFIA,4774,18027,AD/de novo,Megalencephaly,"",2
-NFIX,4784,18032,AD/de novo,Megalencephaly,Malan Syndrome,2
-NGLY1,55768,59007,AR,Microcephaly,"",3
-NHEJ1,79840,75570,AD/de novo,Microcephaly,"",3
-NID1,4811,18073,AD,Encephalocele,"",3
-NIPBL,25836,71175,AD/de novo,Microcephaly,Cornelia de Lange syndrome,2
-NSD1,64324,18193,AD/de novo,Megalencephaly,Sotos syndrome,1
-NSDHL,50814,18194,XL,Microcephaly,CK syndrome,3
 NSDHL,50814,18194,XL,Epilepsy,CK syndrome,3
-NSUN2,54888,28114,AR,ID,"",3
-OCLN,100506658,18260,AR,Microcephaly,Pseudo-TORCH syndrome,3
-ORC1,4998,18392,AR,Microcephaly,Seckel syndrome,3
-ORC4,5000,26428,AR,Microcephaly,Meier-Gorlin syndrome,3
-ORC6,23594,56452,AR,Microcephaly,Meier-Gorlin syndrome,3
-OTX2,5015,18424,AD/de novo,Microphthalmia,"",3
-PAFAH1B1,5048,18472,AD/de novo,Microcephaly,Miller-Dieker syndrome,1
-PAFAH1B1,5048,18472,AD/De novo,Pachygyria,"",1
-PAX6,5080,18508,AD/de novo,Microphthalmia,"",3
 PCDH19,57526,279653,XL,Epilepsy,"",3
-PDHB,5162,68263,AR,Ataxia,Pyruvate dehydrogenase deficiency,2
 PEX1,5189,71382,AR,Epilepsy,Zellweger syndrome,1
 PEX10,5192,668173,AR,Epilepsy,Zellweger syndrome,2
 PEX12,5193,103737,AR,Epilepsy,Zellweger syndrome,2
@@ -240,157 +407,782 @@ PEX26,55670,74043,AR,Epilepsy,Zellweger syndrome,2
 PEX3,8504,56535,AR,Epilepsy,Zellweger syndrome,2
 PEX5,5830,19305,AR,Epilepsy,Zellweger syndrome,2
 PEX6,5190,224824,AR,Epilepsy,Zellweger syndrome,2
-PGAP3,93210,320655,AR,Microcephaly,"",3
-PIGA,5277,18700,XL,Microcephaly,Ferro-Cerebro-Cutaneous syndrome,3
 PIGA,5277,18700,XL,Epilepsy,Ferro-Cerebro-Cutaneous syndrome,3
 PIGC,5279,67292,AR,Epilepsy,"",3
 PIGN,23556,27392,AR,Epilepsy,"",3
 PIGT,51604,78928,AR,Epilepsy,"",3
-PIK3CA,5290,18706,"Postzygotic/Mosaic (most), AD/de novo (rare)",Megalencephaly,Megalencephaly capillary malformation syndrome,2
-PIK3R2,5296,18709,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
-PIK3R2,5296,18709,AD/de novo,Hydrocephalus,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
-PLA2G6,8398,53357,AR,Dystonia,"",3
-PLA2G6,8398,53357,AR,Parkinsonism,"",3
 PLCB1,23236,18795,AR,Epilepsy,"",2
-PLK4,10733,20873,AR,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
-PMM2,5373,54128,AR,Ataxia,Congenital disorder of glycosylation type Ia,2
-PNKP,11284,59047,AR,Microcephaly,"",2
-PNKP,11284,59047,AR,Ataxia,"",3
 PNPO,55163,103711,AR,Epilepsy,Pyridoxine 5-phosphate oxidase deficiency,2
-POLH,5429,80905,AR,Microcephaly,Xeroderma Pigmentosum,1
-PORCN,64840,53627,XL,Microphthalmia,Goltz syndrome,2
-PPP2R5D,5528,21770,AD/de novo,Macrocephaly,"",3
-PPP2R5D,5528,21770,AD/de novo,Hydrocephalus,"",3
-PQBP1,10084,54633,XL,Microcephaly,Renpenning syndrome,2
 PRICKLE1,144165,106042,AD/de novo,Epilepsy,"",2
 PRICKLE2,166336,243548,AD/de novo,Epilepsy,"",2
-PRRT2,112476,69017,AD,Dystonia,Familial paroxysmal kinesigenic dyskinesia,2
 PRRT2,112476,69017,AD,Epilepsy,Familial paroxysmal kinesigenic dyskinesia,3
-PTCH1,5727,19206,AD/de novo,Holoprosencephaly,"",2
-PTEN,5728,19211,AD/de novo,Megalencephaly,PTEN-hamartoma tumor syndrome,1
-PTEN,5728,19211,AD/de novo,Megalencephaly,Macrocephaly-autism syndrome,1
 PURA,5813,19290,AD/De novo,Epilepsy,"",3
-PYCR2,29920,69051,AR,Microcephaly,"",3
-QARS,2058,107508,AR,Microcephaly,"",3
 QARS,2058,107508,AR,Epilepsy,"",3
 QDPR,5860,110391,AR,Epilepsy,Quinoid dihydropteridine reductase deficiency,3
-RAB18,22931,19330,AR,Microphthalmia,Warburg Micro syndrome,3
-RAB39B,116442,67790,XL,Macrocephaly,"",2
 RAB39B,116442,67790,XL,Epilepsy,"",2
-RAB3GAP1,22930,226407,AR,Microphthalmia,Warburg Micro syndrome,3
-RAB3GAP2,25782,98732,AR,Microphthalmia,Warburg Micro syndrome,3
-RAD50,10111,19360,AR,Microcephaly,Nijmegen breakage syndrome-like,3
-RARS2,57038,109093,AR,Microcephaly,"",3
 RARS2,57038,109093,AR,Epilepsy,"",3
-RBBP8,5932,225182,AR,Microcephaly,Seckel syndrome,3
-RELN,5649,19699,AR,Pachygyria,"",1
 RERE,473,68703,AD/de novo,Epilepsy,"",2
-RGS6,9628,50779,AR,Microcephaly,"",3
-RIMS3,9783,242662,AD/de novo,Microcephaly,"",3
-RIN2,54453,74030,AR,Megalencephaly,"Macrocephaly, alopecia, cutis laxa, and scoliosis syndrome   ",2
 RMND1,55005,66084,AR,Epilepsy,"",3
-RNF216,54476,108086,AR,Ataxia,"",3
-RPS6KA3,6197,110651,XL,Microcephaly,Coffin-Lowry syndrome,2
-RTTN,25914,246102,AR,Microcephaly,"",3
 SCN1A,6323,20265,AD/de novo,Epilepsy,Dravet syndrome,1
 SCN1A,6323,20265,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,1
 SCN1B,6324,20266,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
 SCN2A,6326,110876,AD/de novo,Epilepsy,Dravet syndrome,2
 SCN2A,6326,110876,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
-SCN2A,6326,110876,AD/de novo,Ataxia,"",3
 SCN8A,6334,20273,AD/de novo,Epilepsy,"",3
 SCN9A,6335,20274,AD/de novo,Epilepsy,Generalized epilepsy with febrile seizures plus,2
-SHH,6469,20423,AD/de novo,Microcephaly,"",1
-SHH,6469,20423,AD/de novo,Holoprosencephaly,"",1
-SHOC2,8036,56392,AD,Megalencephaly,Noonan syndrome,3
-SIL1,64374,81500,AR,Ataxia,Marinesco-Sjögren syndrome,3
-SIN3A,25942,20466,AD/de novo,Microcephaly,"",3
-SIX3,6496,20473,AD/de novo,Microphthalmia,"",1
-SIX3,6496,20473,AD/de novo,Holoprosencephaly,"",1
-SLC16A2,6567,20502,XL,Dystonia,"",1
-SLC1A4,6509,55963,AR,Microcephaly,"",3
 SLC25A12,8604,78830,AR,Epilepsy,AGC1 deficiency syndrome,3
-SLC25A19,60386,67283,AR,Microcephaly,Amish microcephaly,2
-SLC25A22,79751,68267,AR,Microcephaly,"",3
 SLC2A1,6513,20525,AD/de novo,Epilepsy,Glucose transporter type 1 deficiency syndrome,1
-SLC2A1,6513,20525,AD/de novo,Dystonia,Glucose transporter type 1 deficiency syndrome,1
-SLC2A1,6513,20525,AD/de novo,Ataxia,Glucose transporter type 1 deficiency syndrome,1
 SLC6A1,6529,232333,AD/de novo,Epilepsy,Myoclonic atonic epilepsy,2
-SMAD2,4087,17126,AD/de novo,Holoprosencephaly,"",2
-SMC1A,8243,24061,XL,Microcephaly,Cornelia de Lange syndrome,2
 SMC1A,8243,24061,XL,Epilepsy,"",3
-SMC3,9126,13006,AD/de novo,Microcephaly,Cornelia de Lange syndrome,2
 SMS,6611,20603,XL,Epilepsy,Snyder-Robinson syndrome,3
-SNAP29,9342,67474,AR,Microcephaly,"Cerebral dysgenesis, neuropathy, ichthyosis and keratoderma syndrome   ",2
-SNX14,57231,244962,AR,Ataxia,"",3
 SON,6651,20658,AD/de novo,Epilepsy,"",3
-SOX2,6657,20674,AD/de novo,Microphthalmia,"",1
-SPOCK1,6695,20745,AD/de novo,Microcephaly,"",3
 SPTAN1,6709,20740,AD/de novo,Epilepsy,"",3
 SRPX2,27286,68792,XL,Epilepsy,Rolandic epilepsy with speech impairment,3
-SSR4,6748,20832,XL,Microcephaly,"",3
 ST3GAL3,6487,20441,AR,Epilepsy,"",3
 STAMBP,10617,70527,AR,Epilepsy,Microcephaly capillary malformation syndrome,2
-STIL,6491,20460,AR,Microcephaly,"",1
-STRA6,64220,20897,AR,Microphthalmia,Matthew-Wood syndrome,2
 STRADA,92335,72149,AR,Epilepsy,"Polyhydramnios, megalencephaly and symptomatic epilepsy syndrome   ",2
-STRADA,92335,72149,AR,Megalencephaly,"Polyhydramnios, megalencephaly and symptomatic epilepsy syndrome   ",2
 STX1B,112755,56216,AD/De novo,Epilepsy,"",2
 STXBP1,6812,20910,AD/de novo,Epilepsy,"",1
-STXBP1,6812,20910,AD/de novo,Dystonia,"",2
 STXBP1,6812,20910,AD/de novo,Epilepsy,Dravet syndrome,3
 SYN1,6853,20964,XL,Epilepsy,"",2
-SYNE1,23345,64009,AR,Ataxia,Autosomal recessive cerebellar ataxia type 1,2
 SYNGAP1,8831,240057,AD/de novo,Epilepsy,"",3
 SZT2,23334,230676,AR,Epilepsy,"",3
-TAF2,6873,319944,AD/de novo or AR,Microcephaly,"",3
 TBC1D24,57465,224617,AR,Epilepsy,"",3
-TBC1D7,51256,67046,AR,Megalencephaly,"",3
 TBCD,6904,108903,AR,Epilepsy,"",3
-TBCD,6904,108903,AR,Microcephaly,"",3
 TBCK,93627,271981,AR,Epilepsy,"",3
-TBR2,8320,13813,AR,Microcephaly,"",3
-TDGF1,6997,21667,AD/de novo,Holoprosencephaly,"",1
-TGIF1,7050,21815,AD/de novo,Holoprosencephaly,"",1
-TIMM8A,1678,30058,XL,Dystonia,Mohr-Tranebjaerg syndrome,3
-TMEM231,79583,234740,AR,Encephalocele,Meckel-Gruber syndrome,3
-TMEM67,91147,329795,AR,Encephalocele,Meckel-Gruber syndrome,1
 TNSALP,249,11647,AR,Epilepsy,Pyridoxine-dependent epilepsy,3
-TRIO,7204,223435,AD/de novo,Microcephaly,"",3
-TRMT10A,93587,108943,AR,Microcephaly,"",3
-TUBA1A,7846,22142,AD/de novo,Pachygyria,"",1
-TUBA1A,7846,22142,AD/de novo,Microphthalmia,"",3
 TUBB2A,7280,22151,AD/de novo,Epilepsy,"",3
-TUBB2B,347733,73710,AD/de novo,Microcephaly,"",3
-TUBB2B,347733,73710,AD/de novo,Pachygyria,"",3
-TUBB2B,347733,73710,AD/de novo,Schizcencephaly,"",3
-TUBB4A,10382,22153,AD/de novo,Dystonia,"",3
-TUBB5,10382,22153,AD/de novo,Microcephaly,"",3
-TUBG1,7283,103733,AD/de novo,Microcephaly,"",3
-TUBG1,7283,103733,AD/de novo,Pachygyria,"",3
-TUBGCP6,85378,328580,AR,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
 UBA5,79876,66663,AR,Epilepsy,"",3
-UBA5,79876,66663,AR,Ataxia,"",3
 UBE2A,7319,22209,XL,Epilepsy,"",2
 UBE3A,7337,22215,IMPR,Epilepsy,Angelman syndrome,1
 UNC80,285175,329178,AR,Epilepsy,"",3
 USP9X,8239,22284,XL,Epilepsy,"",3
-VAX1,11023,22326,AR,Microphthalmia,"",3
-VLDLR,7436,22359,AR,Ataxia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
-VLDLR,7436,22359,AR,Pachygyria,"",1
-VPS13A,23230,271564,AR,Parkinsonism,Chorea-acanthocytosis syndrome,2
+WDR4,10785,57773,AR,Epilepsy,"",3
+WWOX,51741,80707,AR,Epilepsy,"",3
+AKT3,10000,23797,Postzygotic/Mosaic,Focal cortical dysplasia,"",2
+COL4A1,1282,12826,AD/de novo,Focal cortical dysplasia,"",3
+DEPDC5,9681,277854,AD,Focal cortical dysplasia,"",3
+MTOR,2475,56717,Postzygotic/Mosaic,Focal cortical dysplasia,"",1
+NPRL3,8131,17168,AD,Focal cortical dysplasia,"",3
+PIK3CA,5290,18706,Postzygotic/Mosaic,Focal cortical dysplasia,"",2
+PTEN,5728,19211,AD/de novo,Focal cortical dysplasia,PTEN-hamartoma tumor syndrome,3
+STXBP1,6812,20910,AD/de novo,Focal cortical dysplasia,"",3
+TSC1,7248,64930,AD,Focal cortical dysplasia,Tuberous sclerosis complex,1
+TSC2,7249,22084,AD,Focal cortical dysplasia,Tuberous sclerosis complex,1
+CHRNA2,1135,110902,AD,Frontal lobe epilepsy,Autosomal dominant nocturnal frontal lobe epilepsy,2
+CHRNA4,1137,11438,AD,Frontal lobe epilepsy,Autosomal dominant nocturnal frontal lobe epilepsy,2
+CHRNB2,1141,11444,AD,Frontal lobe epilepsy,Autosomal dominant nocturnal frontal lobe epilepsy,2
+KCNT1,57582,227632,AD,Frontal lobe epilepsy,Autosomal dominant nocturnal frontal lobe epilepsy,2
+NPRL3,8131,17168,AD,Frontal lobe epilepsy,Autosomal dominant nocturnal frontal lobe epilepsy,3
+ARFGEF2,10564,99371,AR,Generalized polymicrogyria,"",2
+KIAA1279,26128,72320,AR,Generalized polymicrogyria,Goldberg-Shprintzen syndrome,2
+OCLN,100506658,18260,AR,Generalized polymicrogyria,Pseudo-TORCH syndrome,3
+RAB3GAP1,22930,226407,AR,Generalized polymicrogyria,Warburg Micro syndrome,3
+WDR62,284403,233064,AR,Generalized polymicrogyria,"",2
+AKT3,10000,23797,Postzygotic/Mosaic,Hemimegalencephaly,"",2
+MTOR,2475,56717,AD/de novo and Postzygotic/Mosaic,Hemimegalencephaly,"",3
+PIK3CA,5290,18706,Postzygotic/Mosaic,Hemimegalencephaly,"",3
+PTEN,5728,19211,AD/de novo,Hemimegalencephaly,"",3
+ARFGEF2,10564,99371,AR,Heterotopia,"",2
+DCHS1,8642,233651,AR,Heterotopia,"",2
+FAT4,79633,329628,AR,Heterotopia,"",2
+FLNA,2316,192176,XL,Heterotopia,X-linked periventricular nodular heterotopia syndrome,1
+SHOC2,8036,56392,AD,Heterotopia,"",3
+FGFR1,2260,14182,AD and AR,Holoprosencephaly,Hartsfield syndrome,1
+FOXH1,8928,14106,AD/de novo,Holoprosencephaly,"",2
+GLI2,2736,14633,AD/de novo,Holoprosencephaly,"",2
+PTCH1,5727,19206,AD/de novo,Holoprosencephaly,"",2
+SHH,6469,20423,AD/de novo,Holoprosencephaly,"",1
+SIX3,6496,20473,AD/de novo,Holoprosencephaly,"",1
+SMAD2,4087,17126,AD/de novo,Holoprosencephaly,"",2
+TDGF1,6997,21667,AD/de novo,Holoprosencephaly,"",1
+TGIF1,7050,21815,AD/de novo,Holoprosencephaly,"",1
+ZIC2,7546,22772,AD/de novo,Holoprosencephaly,"",1
+AKT3,10000,23797,AD/de novo,Hydrocephalus,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+AP1S2,8905,108012,XL,Hydrocephalus,"",2
+B3GALTL,145173,381694,AR,Hydrocephalus,"",3
+CCDC88C,440193,68339,AR,Hydrocephalus,"",2
+GPSM2,29899,76123,AR,Hydrocephalus,Chudley McCullough syndrome,2
+HYLS1,219844,76832,AR,Hydrocephalus,Hydrolethalus syndrome,2
+L1CAM,3897,16728,XL,Hydrocephalus,X-linked hydrocephalus,1
+MAP2K1,5604,26395,AD/de novo,Hydrocephalus,Cardiofaciocutaneous syndrome,1
+MAP2K2,5605,26396,AD/de novo,Hydrocephalus,Cardiofaciocutaneous syndrome,1
+NFIA,4774,18027,AD/de novo,Hydrocephalus,"",2
+PIK3R2,5296,18709,AD/de novo,Hydrocephalus,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+PPP2R5D,5528,21770,AD/de novo,Hydrocephalus,"",3
+ARHGEF9,23229,236915,XL,Hyperekplexia,"",2
+CTNNB1,1499,12387,AD/de novo,Hyperekplexia,"",3
+GLRA1,2741,14654,AD and AR,Hyperekplexia,"",1
+GLRB,2743,14658,AR,Hyperekplexia,"",3
+GPHN,10243,268566,AD/de novo,Hyperekplexia,"",3
+SLC6A5,9152,104245,AR,Hyperekplexia,"",2
+AKT3,10000,23797,AD/de novo,Infantile spasms,"",3
+AMT,275,434437,AR,Infantile spasms,Nonketotic hyperglycinemia,1
+ARX,170302,11878,XL,Infantile spasms,"",1
+ATP7A,538,11977,XL,Infantile spasms,Menkes disease,2
+CCDC88A,55704,108686,AR,Infantile spasms,PEHO syndrome,3
+CDKL5,6792,382253,XL,Infantile spasms,"",1
+EPG5,57724,100502841,AR,Infantile spasms,Vici syndrome,2
+FOXG1,2290,15228,AD/de novo,Infantile spasms,"",2
+GABRB3,2562,14402,AD/de novo,Infantile spasms,"",3
+GCSH,2653,68133,AR,Infantile spasms,Nonketotic hyperglycinemia,1
+GLDC,2731,104174,AR,Infantile spasms,Nonketotic hyperglycinemia,1
+GNAO1,2775,14681,AD/de novo and Postzygotic/Mosaic,Infantile spasms,"",3
+GRIN1,2902,14810,AD/de novo,Infantile spasms,"",3
+KCNJ11,3767,16514,AD/de novo,Infantile spasms,"Developmental delay, epilepsy, neonatal diabetes   ",1
+KPNA7,402569,381686,AR,Infantile spasms,"",3
+MEF2C,4208,17260,AD/de novo,Infantile spasms,"",2
+PNPO,55163,103711,AR,Infantile spasms,Pyridoxine 5-phosphate oxidase deficiency,3
+SPTAN1,6709,20740,AD/de novo,Infantile spasms,"",3
+ST3GAL3,6487,20441,AR,Infantile spasms,"",3
+STXBP1,6812,20910,AD/de novo,Infantile spasms,"",1
+TBC1D24,57465,224617,AR,Infantile spasms,"",3
+TSC1,7248,64930,AD,Infantile spasms,Tuberous sclerosis complex,1
+TSC2,7249,22084,AD,Infantile spasms,Tuberous sclerosis complex,1
+ACSL4,2182,50790,XL,Intellectual disability,"",3
+ADNP,23394,11538,AD/de novo,Intellectual disability,"",2
+ADSL,158,11564,AR,Intellectual disability,Adenylosuccinase deficiency,2
+AKT1,207,11651,Postzygotic/Mosaic,Intellectual disability,Proteus syndrome,2
+ALDH5A1,7915,214579,AR,Intellectual disability,Succinic semialdehyde dehydrogenase deficiency,2
+ALG12,79087,223774,AR,Intellectual disability,Congenital disorder of glycosylation type Ig,3
+ALG6,29929,320438,AR,Intellectual disability,Congenital disorder of glycosylation type Ic,2
+ANKRD11,29123,77087,AD,Intellectual disability,KBG syndrome,2
+AP1S2,8905,108012,XL,Intellectual disability,"",2
+AP4B1,10717,67489,AR,Intellectual disability,"",3
+AP4E1,23431,108011,AR,Intellectual disability,"",3
+AP4M1,9179,11781,AR,Intellectual disability,"",3
+AP4S1,11154,11782,AR,Intellectual disability,"",3
+APC2,10297,23805,AR,Intellectual disability,"",3
+ARHGEF6,9459,73341,XL,Intellectual disability,Borjeson-Forssman-Lehmann syndrome,2
+ARHGEF9,23229,236915,XL,Intellectual disability,"",2
+ARID1A,8289,93760,AD/de novo and Postzygotic/Mosaic,Intellectual disability,Coffin-Siris syndrome,2
+ARID1B,57492,239985,AD/de novo,Intellectual disability,Coffin-Siris syndrome,2
+ARL6,84100,56297,AR,Intellectual disability,Bardet-Biedl syndrome,2
+ARX,170302,11878,XL,Intellectual disability,Proud syndrome,1
+ASNS,440,27053,AR,Intellectual disability,"",3
+ASXL2,55252,75302,AD/de novo,Intellectual disability,"",3
+ASXL3,80816,211961,AD/de novo,Intellectual disability,"",3
+ATP6AP2,10159,70495,XL,Intellectual disability,"",3
+ATRX,546,22589,XL,Intellectual disability,Alpha-Thalassemia X-Linked Intellectual Disability syndrome,1
+BBS1,582,52028,AR,Intellectual disability,Bardet-Biedl syndromee,1
+BBS10,79738,71769,AR,Intellectual disability,Bardet-Biedl syndrome,2
+BBS12,166379,241950,AR,Intellectual disability,Bardet-Biedl syndrome,2
+BBS2,583,67378,AR,Intellectual disability,Bardet-Biedl syndrome,1
+BBS4,585,102774,AR,Intellectual disability,Bardet-Biedl syndrome,2
+BBS5,129880,72569,AR,Intellectual disability,Bardet-Biedl syndrome,2
+BBS7,55212,71492,AR,Intellectual disability,Bardet-Biedl syndrome,1
+BBS9,27241,319845,AR,Intellectual disability,Bardet-Biedl syndrome,2
+BCAP31,10134,27061,XL,Intellectual disability,"",2
+BCL11A,53335,14025,AD/de novo,Intellectual disability,"",3
+BRAF,673,109880,AD/de novo,Intellectual disability,Cardiofaciocutaneous syndrome,1
+BRAF,673,109880,AD,Intellectual disability,Noonan syndrome,2
+BRF1,2972,72308,AR,Intellectual disability,"",2
+BRWD3,254065,382236,XL,Intellectual disability,"",3
+C2orf37,80067,75763,AR,Intellectual disability,Woodhouse-Sakati syndrome,3
+CA8,767,12319,AR,Intellectual disability,"",3
+CACNA1A,773,12286,AD,Intellectual disability,Episodic Ataxia type 2,3
+CC2D1A,54862,212139,AR,Intellectual disability,"",2
+CCBE1,147372,320924,AR,Intellectual disability,Hennekam syndrome,3
+CCDC88A,55704,108686,AR,Intellectual disability,PEHO syndrome,3
+CDH15,1013,12555,AD/de novo,Intellectual disability,"",3
+CEP290,80184,216274,AR,Intellectual disability,Bardet-Biedl syndrome,3
+CHAMP1,283489,101994,AD/de novo,Intellectual disability,"",3
+CHD2,1106,244059,AD/de novo,Intellectual disability,"",3
+CHRNA7,1139,11441,AD/de novo,Intellectual disability,"",3
+CRADD,8738,12905,AR,Intellectual disability,"",3
+CRBN,51185,58799,AR,Intellectual disability,"",2
+CREBBP,1387,12914,AD/de novo,Intellectual disability,Rubinstein-Taybi syndrome,2
+CSNK2A1,1457,12995,AD/de novo,Intellectual disability,"",3
+CTBP1,1487,13016,AD/de novo,Intellectual disability,"",3
+CTCF,10664,13018,AD/de novo,Intellectual disability,"",3
+CTNNB1,1499,12387,AD/de novo,Intellectual disability,"",3
+CUL4B,8450,72584,XL,Intellectual disability,"",2
+CYFIP1,23191,20430,AD/de novo,Intellectual disability,"",3
+DHCR7,1717,13360,AR,Intellectual disability,Smith-Lemli-Opitz syndrome,1
+DKC1,1736,245474,XL,Intellectual disability,Hoyeraal-Hreidarsson syndrome,3
+DLG3,1741,53310,XL,Intellectual disability,"",2
+DMD,1756,13405,XL,Intellectual disability,Duchenne muscular dystrophy,1
+DMPK,1760,13400,AD,Intellectual disability,Myotonic dystrophy type 1,2
+DNM1L,10059,74006,AD/de novo,Intellectual disability,"",3
+DNMT3A,1788,13435,AD/de novo,Intellectual disability,"",3
+DOCK7,85440,67299,AR,Intellectual disability,"",3
+DPAGT1,1798,13478,AR,Intellectual disability,Congenital disorder of glycosylation type Ij,3
+DPM1,8813,13480,AR,Intellectual disability,Congenital disorder of glycosylation type Ie,3
+DYM,54808,69190,AR,Intellectual disability,Dyggve-Melchior-Clausen syndrome,3
+DYRK1A,1859,13548,AD/de novo,Intellectual disability,"",2
+EEF1A2,1917,13628,AD/de novo,Intellectual disability,"",3
+EHMT1,79813,77683,AD/de novo,Intellectual disability,Kleefstra syndrome,2
+EP300,2033,328572,AD/de novo,Intellectual disability,Rubinstein-Taybi syndrome,3
+EPG5,57724,100502841,AR,Intellectual disability,Vici syndrome,2
+ERCC6,2074,319955,AR,Intellectual disability,Cerebro-Oculo-Facio-Skeletal syndrome,2
+ERCC6,2074,319955,AR,Intellectual disability,Cockayne syndrome,1
+ERCC8,1161,71991,AR,Intellectual disability,Cockayne syndrome,1
+ERLIN2,11160,244373,AR,Intellectual disability,"",3
+EXOSC3,51010,66362,AR,Intellectual disability,"",3
+EZH2,2146,14056,AD/de novo,Intellectual disability,Weaver syndrome,3
+FBXO31,79791,76454,AR,Intellectual disability,"",3
+FMR1,2332,14265,XL,Intellectual disability,Fragile X syndrome,1
+FRAS1,80144,231470,AR,Intellectual disability,Fraser syndrome,2
+FREM2,341640,242022,AR,Intellectual disability,Fraser syndrome,3
+FTSJ1,24140,54632,XL,Intellectual disability,"",2
+GDI1,2664,14567,XL,Intellectual disability,"",1
+GPC3,2719,14734,XL,Intellectual disability,Simpson-Golabi-Behmel syndrome,1
+GPC4,2239,14735,XL,Intellectual disability,Simpson-Golabi-Behmel syndrome,2
+GPT2,84706,108682,AR,Intellectual disability,"",3
+GRIA3,2892,53623,XL,Intellectual disability,"",3
+GRIK2,2898,14806,AR,Intellectual disability,"",3
+GRIP1,23426,74053,AR,Intellectual disability,Fraser syndrome,3
+HCN1,348980,15165,AD/de novo,Intellectual disability,"",3
+HSD17B10,3028,15108,XL,Intellectual disability,"",2
+HUWE1,10075,59026,XL,Intellectual disability,"",3
+IER3IP1,51124,66191,AR,Intellectual disability,"",3
+IL1RAPL1,11141,331461,XL,Intellectual disability,"",2
+IQSEC2,23096,245666,XL,Intellectual disability,"",3
+ITGB6,3694,16420,AR,Intellectual disability,Alopecia with mental retardation,3
+JARID1C,8242,20591,XL,Intellectual disability,"",2
+KANK1,23189,107351,IMPR,Intellectual disability,"",2
+KANSL1,284058,76719,AD/de novo,Intellectual disability,"",3
+KAT6A,7994,244349,AD/de novo,Intellectual disability,"",2
+KCNA2,3737,16490,AD/de novo,Intellectual disability,"",2
+KCNH1,3756,16510,AD/De novo and Postzygotic/Mosaic,Intellectual disability,Temple-Baraitser syndrome,2
+KCNJ6,3763,16522,AD/De novo,Intellectual disability,Keppen-Lubinsky syndrome,3
+KDM5C,8242,20591,XL,Intellectual disability,"",2
+KDM6A,7403,22289,AD/de novo,Intellectual disability,Kabuki syndrome,3
+KIAA2022,340533,245555,XL,Intellectual disability,"",3
+KIF4A,24137,16571,XL,Intellectual disability,"",3
+KIF7,374654,16576,AR,Intellectual disability,Acrocallosal syndrome,2
+KIRREL3,84623,67703,AD/de novo,Intellectual disability,"",3
+KMT2A,4297,214162,AD/de novo,Intellectual disability,Wiedemann-Steiner syndrome,2
+KPTN,11133,70394,AR,Intellectual disability,"",3
+KRAS,3845,16653,AD/de novo,Intellectual disability,Costello syndrome,1
+KRAS,3845,16653,AD/de novo,Intellectual disability,Noonan syndrome,1
+KRAS,3845,16653,AD/de novo,Intellectual disability,Cardiofaciocutaneous syndrome,1
+L1CAM,3897,16728,XL,Intellectual disability,X-linked hydrocephalus,1
+L1CAM,3897,16728,XL,Intellectual disability,MASA syndrome,1
+LONP1,9361,74142,AR,Intellectual disability,CODAS syndrome,3
+LRP2,4036,14725,AR,Intellectual disability,Facio-oculo-acoustico-renal syndrome,1
+MAGT1,84061,67075,XL,Intellectual disability,Congenital disorder of glycosylation,3
+MAP2K1,5604,26395,AD/de novo,Intellectual disability,Cardiofaciocutaneous syndrome,1
+MAP2K1,5604,26395,AD/de novo,Intellectual disability,Noonan syndrome,2
+MAP2K2,5605,26396,AD/de novo,Intellectual disability,Cardiofaciocutaneous syndrome,1
+MBD5,55777,109241,AD/de novo,Intellectual disability,"",3
+MED12,9968,59024,XL,Intellectual disability,FG syndrome,1
+MED13L,23389,76199,AD/de novo,Intellectual disability,"",3
+MED23,9439,70208,AR,Intellectual disability,"",3
+MED25,81857,75613,AR,Intellectual disability,"",3
+MEIS2,4212,17536,AD/de novo,Intellectual disability,"",3
+METTL23,124512,74319,AR,Intellectual disability,"",3
+MID1,4281,17318,XL,Intellectual disability,Opitz G/BBB syndrome,1
+MKKS,8195,59030,AR,Intellectual disability,Bardet-Biedl syndrome,2
+MKS1,54903,380718,AR,Intellectual disability,Bardet-Biedl syndrome,3
+MLL2,8085,381022,AD,Intellectual disability,Kabuki syndrome,1
+MPDU1,9526,24070,AR,Intellectual disability,Congenital disorder of glycosylation type If,3
+NAA10,8260,56292,XL,Intellectual disability,"",3
+NFIA,4774,18027,AD/de novo,Intellectual disability,"",2
+NGLY1,55768,59007,AR,Intellectual disability,"",3
+NHS,4810,195727,XL,Intellectual disability,Nance-Horan syndrome,3
+NIPBL,25836,71175,AD/de novo,Intellectual disability,Cornelia de Lange syndrome,2
+NLGN3,54413,245537,XL,Intellectual disability,"",3
+NRAS,4893,18176,AD,Intellectual disability,Noonan syndrome,2
+NSD1,64324,18193,AD/de novo,Intellectual disability,Sotos syndrome,1
+NSDHL,50814,18194,XL,Intellectual disability,"",3
+NSDHL,50814,18194,XL,Intellectual disability,CK syndrome,3
+OCRL,4952,320634,XL,Intellectual disability,Lowe syndrome,3
+OPHN1,4983,94190,XL,Intellectual disability,"",1
+PAK3,5063,18481,XL,Intellectual disability,"",2
+PAX2,5076,18504,AD/de novo,Intellectual disability,Renal-Coloboma syndrome,3
+PCDH19,57526,279653,XL,Intellectual disability,"",3
+PGAP3,93210,320655,AR,Intellectual disability,"",3
+PHF6,84295,70998,XL,Intellectual disability,Börjeson-Forssman-Lehman syndrome,2
+PHF8,23133,320595,XL,Intellectual disability,"",2
+PIGC,5279,67292,AR,Intellectual disability,"",3
+PIGM,93183,67556,AR,Intellectual disability,Mabry syndrome,3
+PIGN,23556,27392,AR,Intellectual disability,"",3
+PIGO,84720,56703,AR,Intellectual disability,Mabry syndrome,3
+PIGT,51604,78928,AR,Intellectual disability,"",3
+PIGV,55650,230801,AR,Intellectual disability,Mabry syndrome,3
+PMM2,5373,54128,AR,Intellectual disability,Congenital disorder of glycosylation type Ia,1
+POGZ,23126,229584,AD/de novo,Intellectual disability,"",3
+PPP2R5D,5528,21770,AD/de novo,Intellectual disability,"",3
+PQBP1,10084,54633,XL,Intellectual disability,Renpenning syndrome,1
+PRKAR1A,5573,19084,AD,Intellectual disability,Acrodysostosis,3
+PRPS1,5631,19139,XL,Intellectual disability,"",3
+PTDSS1,9791,19210,AD/de novo,Intellectual disability,Lenz-Majewski syndrome,3
+PTPN11,5781,19247,AD/de novo,Intellectual disability,Noonan syndrome,1
+PURA,5813,19290,AD/De novo,Intellectual disability,"",3
+QDPR,5860,110391,AR,Intellectual disability,Quinoid dihydropteridine reductase deficiency,2
+RAB39B,116442,67790,XL,Intellectual disability,"",2
+RAF1,5894,110157,AD/de novo,Intellectual disability,Noonan syndrome,1
+RAI1,10743,19377,AD/de novo,Intellectual disability,Smith-Magenis syndrome,1
+RBM10,8241,236732,XL,Intellectual disability,TARP syndrome,3
+RERE,473,68703,AD/de novo,Intellectual disability,"",2
+RGS6,9628,50779,AR,Intellectual disability,"",3
+RGS6,9628,50779,AR,Intellectual disability,"",3
+RPL10,6134,110954,XL,Intellectual disability,"",3
+RPS6KA3,6197,110651,XL,Intellectual disability,Coffin-Lowry syndrome,1
+SATB2,23314,212712,AD/de novo,Intellectual disability,"",3
+SCN8A,6334,20273,AD/de novo,Intellectual disability,"",3
+SDCCAG8,10806,76816,AR,Intellectual disability,Bardet-Biedl syndrome,3
+SETD5,55209,72895,AD/de novo,Intellectual disability,"",3
+SHANK3,85358,58234,AD/de novo,Intellectual disability,Phelan-McDermid syndrome,1
+SIL1,64374,81500,AR,Intellectual disability,Marinesco-Sjögren syndrome,3
+SIN3A,25942,20466,AD/de novo,Intellectual disability,"",3
+SLC16A2,6567,20502,XL,Intellectual disability,Allen-Herndon-Dudley syndrome,1
+SLC1A4,6509,55963,AR,Intellectual disability,"",3
+SLC6A8,6535,102857,XL,Intellectual disability,"",3
+SLC9A6,10479,236794,XL,Intellectual disability,"",2
+SMARCA2,6595,67155,AD/de novo,Intellectual disability,Coffin-Siris syndrome,3
+SMARCA4,6597,20586,AD/de novo,Intellectual disability,Coffin-Siris syndrome,3
+SMARCB1,6598,20587,AD/de novo,Intellectual disability,Coffin-Siris syndrome,3
+SMARCE1,6605,57376,AD/de novo,Intellectual disability,Coffin-Siris syndrome,3
+SMC1A,8243,24061,XL,Intellectual disability,"",3
+SMS,6611,20603,XL,Intellectual disability,Snyder-Robinson syndrome,3
+SNRPB,6628,20638,AD/De novo,Intellectual disability,Cerebrocostomandibular syndrome,3
+SNX14,57231,244962,AR,Intellectual disability,"",3
+SOBP,55084,109205,AR,Intellectual disability,"",2
+SON,6651,20658,AD/de novo,Intellectual disability,"",3
+SOS1,6654,20662,AD,Intellectual disability,Noonan syndrome,1
+SPG11,80208,214585,AR,Intellectual disability,Spastic paraplegia type 11,2
+SPOCK1,6695,20745,AD/de novo,Intellectual disability,"",3
+SRCAP,10847,100043597,AD/de novo,Intellectual disability,Floating-Harbor syndrome,2
+SSR4,6748,20832,XL,Intellectual disability,"",3
+ST3GAL3,6487,20441,AR,Intellectual disability,"",3
+STT3A,3703,16430,AR,Intellectual disability,"",3
+STT3B,201595,68292,AR,Intellectual disability,"",3
+SYN1,6853,20964,XL,Intellectual disability,"",2
+SYNGAP1,8831,240057,AD/de novo,Intellectual disability,"",3
+SYP,6855,20977,XL,Intellectual disability,"",3
+SZT2,23334,230676,AR,Intellectual disability,"",3
+TAF2,6873,319944,AD/de novo or AR,Intellectual disability,"",3
+TBC1D24,57465,224617,AR,Intellectual disability,"",2
+TBC1D7,51256,67046,AR,Intellectual disability,"",3
+TBCD,6904,108903,AR,Intellectual disability,"",3
+TBCK,93627,271981,AR,Intellectual disability,"",3
+TCF4,6925,21413,AD/de novo,Intellectual disability,Pitt-Hopkins syndrome,1
+TECR,9524,106529,AR,Intellectual disability,"",3
+THOC6,79228,386612,AR,Intellectual disability,"",3
+TNIK,23043,665113,AR,Intellectual disability,"",3
+TPO,7173,22018,AR,Intellectual disability,"",3
+TRAPPC9,83696,76510,AR,Intellectual disability,"",2
+TRIM32,22954,69807,AR,Intellectual disability,Bardet-Biedl syndrome,2
+TRIO,7204,223435,AD/de novo,Intellectual disability,"",3
+TRMT10A,93587,108943,AR,Intellectual disability,"",3
+TTC8,123016,76260,AR,Intellectual disability,Bardet-Biedl syndrome,2
+TUBB4A,10382,22153,AD/de novo,Intellectual disability,"",3
+TUSC3,7991,80286,AR,Intellectual disability,"",2
+UBA5,79876,66663,AR,Intellectual disability,"",3
+UBE2A,7319,22209,XL,Intellectual disability,"",2
+UBR1,197131,22222,AR,Intellectual disability,Johanson-Blizzard syndrome,3
+UNC80,285175,329178,AR,Intellectual disability,"",3
+UPF3B,65109,68134,XL,Intellectual disability,"",2
+VLDLR,7436,22359,AR,Intellectual disability,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+VPS13B,157680,666173,AR,Intellectual disability,Cohen syndrome,2
+WAC,51322,225131,AD/de novo,Intellectual disability,"",3
+WDR73,84942,71968,AR,Intellectual disability,Galloway-Mowat syndrome,2
+WDR81,124997,192652,AR,Intellectual disability,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
+WWOX,51741,80707,AR,Intellectual disability,"",3
+ZBTB18,10472,30928,AD/de novo,Intellectual disability,"",3
+ZC4H2,55906,245522,XL,Intellectual disability,"",3
+ZDHHC9,51114,208884,XL,Intellectual disability,"",3
+ZNF711,7552,245595,XL,Intellectual disability,"",3
+ARX,170302,11878,XL,Lennox-Gastaut syndrome,"",2
+CDKL5,6792,382253,XL,Lennox-Gastaut syndrome,"",2
+CHD2,1106,244059,AD/de novo,Lennox-Gastaut syndrome,"",3
+DCX,1641,13193,XL,Lennox-Gastaut syndrome,"",3
+GABRB3,2562,14402,AD/de novo,Lennox-Gastaut syndrome,"",3
+GPR56,9289,14766,AR,Lennox-Gastaut syndrome,"",2
+KPNA7,402569,381686,AR,Lennox-Gastaut syndrome,"",3
+QDPR,5860,110391,AR,Lennox-Gastaut syndrome,Quinoid dihydropteridine reductase deficiency,3
+SCN1A,6323,20265,AD/de novo,Lennox-Gastaut syndrome,Dravet syndrome,2
+ST3GAL3,6487,20441,AR,Lennox-Gastaut syndrome,"",3
+STXBP1,6812,20910,AD/de novo,Lennox-Gastaut syndrome,"",2
+UBE3A,7337,22215,IMPR,Lennox-Gastaut syndrome,Angelman syndrome,1
+ACTB,60,11461,AD/de novo,Lissencephaly,Baraitser-Winter syndrome,2
+ACTG1,71,11465,AD/de novo,Lissencephaly,Baraitser-Winter syndrome,2
+ARX,170302,11878,XL,Lissencephaly,X-linked lissencephaly abnormal genitalia syndrome,1
+CDK5,1020,12568,AR,Lissencephaly,"",3
+CRADD,8738,12905,AR,Lissencephaly,"",3
+DCX,1641,13193,XL,Lissencephaly,"",1
+DYNC1H1,1778,13424,AD/de novo,Lissencephaly,"",3
+KIF2A,3796,16563,AD/de novo,Lissencephaly,"",3
+PAFAH1B1,5048,18472,AD/de novo,Lissencephaly,Miller-Dieker syndrome,1
+RELN,5649,19699,AR,Lissencephaly,"",1
+TUBA1A,7846,22142,AD/de novo,Lissencephaly,"",1
+TUBB2B,347733,73710,AD/de novo,Lissencephaly,"",3
+TUBG1,7283,103733,AD/de novo,Lissencephaly,"",3
+VLDLR,7436,22359,AR,Lissencephaly,"",1
+ABCC9,10060,20928,AD/de novo,Macrocephaly,Cantu syndrome,3
+ASXL2,55252,75302,AD/de novo,Macrocephaly,"",3
+BRWD3,254065,382236,XL,Macrocephaly,"",3
+CHD8,57680,67772,AD/de novo,Macrocephaly,"",2
+CUL4B,8450,72584,XL,Macrocephaly,"",3
+FMR1,2332,14265,XL,Macrocephaly,Fragile X syndrome,1
+KCNJ8,3764,16523,AD/de novo,Macrocephaly,Cantu syndrome,3
+KIF7,374654,16576,AR,Macrocephaly,Acrocallosal syndrome,2
+PPP2R5D,5528,21770,AD/de novo,Macrocephaly,"",3
+RAB39B,116442,67790,XL,Macrocephaly,"",2
+KCNT1,57582,227632,AD,Malignant migrating partial seizures of infancy,"",3
+PLCB1,23236,18795,AR,Malignant migrating partial seizures of infancy,"",2
+SCN1A,6323,20265,AD/de novo,Malignant migrating partial seizures of infancy,"",2
+SLC25A22,79751,68267,AR,Malignant migrating partial seizures of infancy,"",3
+AKT3,10000,23797,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+CCND2,894,12444,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+CRADD,8738,12905,AR,Megalencephaly,"",3
+GLI3,2737,14634,AD/de novo,Megalencephaly,Greig Cephalosyndactyly,1
+GLI3,2737,14634,AD/de novo,Megalencephaly,Acrocallosal syndrome,1
+HEPACAM,220296,72927,AR,Megalencephaly,Megalencephalic Leukoncephalopathy with Subcortical Cysts,1
+KPTN,11133,70394,AR,Megalencephaly,"",3
+MLC1,23209,170790,AR,Megalencephaly,Megalencephalic Leukoncephalopathy with Subcortical Cysts,1
+NF1,4763,18015,AD,Megalencephaly,Neurofibromatosis type 1,1
+NFIA,4774,18027,AD/de novo,Megalencephaly,"",2
+NFIX,4784,18032,AD/de novo,Megalencephaly,Malan Syndrome,2
+NSD1,64324,18193,AD/de novo,Megalencephaly,Sotos syndrome,1
+PIK3CA,5290,18706,"Postzygotic/Mosaic (most), AD/de novo (rare)",Megalencephaly,Megalencephaly capillary malformation syndrome,2
+PIK3R2,5296,18709,AD/de novo,Megalencephaly,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+PTEN,5728,19211,AD/de novo,Megalencephaly,PTEN-hamartoma tumor syndrome,1
+PTEN,5728,19211,AD/de novo,Megalencephaly,Macrocephaly-autism syndrome,1
+RIN2,54453,74030,AR,Megalencephaly,"Macrocephaly, alopecia, cutis laxa, and scoliosis syndrome   ",2
+SHOC2,8036,56392,AD,Megalencephaly,Noonan syndrome,3
+STRADA,92335,72149,AR,Megalencephaly,"Polyhydramnios, megalencephaly and symptomatic epilepsy syndrome   ",2
+TBC1D7,51256,67046,AR,Megalencephaly,"",3
+ALG1,56052,208211,AR,Microcephaly,Congenital disorder of glycosylation type Ik,2
+ALG12,79087,223774,AR,Microcephaly,Congenital disorder of glycosylation type Ig,3
+ALG3,10195,208624,AR,Microcephaly,Congenital disorder of glycosylation type Id,3
+ARFGEF2,10564,99371,AR,Microcephaly,"",2
+ARNT2,9915,11864,AR,Microcephaly,"",3
+ASNS,440,27053,AR,Microcephaly,"",3
+ASPM,259266,12316,AR,Microcephaly,"",1
+ASXL3,80816,211961,AD/de novo,Microcephaly,"",3
+ATM,472,11920,AR,Microcephaly,Ataxia-Telangiectasia,1
+ATR,545,245000,AR,Microcephaly,Seckel syndrome,2
+BCOR,54880,71458,XL,Microcephaly,Lenz syndrome,2
+BRF1,2972,72308,AR,Microcephaly,"",2
+CASC5,57082,76464,AR,Microcephaly,"",3
+CASK,8573,12361,XL,Microcephaly,"",1
+CCDC88A,55704,108686,AR,Microcephaly,PEHO syndrome,3
+CDC6,990,23834,AR,Microcephaly,Meier-Gorlin syndrome,3
+CDK5RAP2,55755,214444,AR,Microcephaly,"",1
+CDK6,1021,12571,AR,Microcephaly,"",2
+CDT1,81620,67177,AR,Microcephaly,Meier-Gorlin syndrome,3
+CENPE,1062,229841,AR,Microcephaly,Microcephalic osteodysplastic primordial dwarfism,2
+CENPF,1063,108000,AR,Microcephaly,"",3
+CENPJ,55835,219103,AR,Microcephaly,Seckel syndrome,2
+CEP135,9662,381644,AR,Microcephaly,"",2
+CEP152,22995,99100,AR,Microcephaly,Seckel syndrome,2
+CEP63,80254,28135,AR,Microcephaly,Seckel syndrome,3
+CIT,11113,12704,AR,Microcephaly,"",3
+COG7,91949,233824,AR,Microcephaly,Congenital disorder of glycosylation type II,3
+CREBBP,1387,12914,AD/de novo,Microcephaly,Rubinstein-Taybi syndrome,2
+CSNK2A1,1457,12995,AD/de novo,Microcephaly,"",3
+CTCF,10664,13018,AD/de novo,Microcephaly,"",3
+CTNNB1,1499,12387,AD/de novo,Microcephaly,"",3
+DDB2,1643,107986,AR,Microcephaly,Xeroderma Pigmentosum,1
+DHCR7,1717,13360,AR,Microcephaly,Smith-Lemli-Opitz syndrome,1
+DKC1,1736,245474,XL,Microcephaly,Hoyeraal-Hreidarsson syndrome,3
+DNM1L,10059,74006,AD/de novo,Microcephaly,"",3
+DPAGT1,1798,13478,AR,Microcephaly,Congenital disorder of glycosylation type Ij,3
+DPM1,8813,13480,AR,Microcephaly,Congenital disorder of glycosylation type Ie,3
+DYM,54808,69190,AR,Microcephaly,Dyggve-Melchior-Clausen syndrome,3
+DYNC1H1,1778,13424,AD/de novo,Microcephaly,"",3
+DYRK1A,1859,13548,AD/de novo,Microcephaly,"",1
+EFTUD2,9343,20624,AD/de novo,Microcephaly,Mandibulofacial dysostosis with microcephaly,3
+EIF2AK3,9451,13666,AD/de novo,Microcephaly,"",3
+EP300,2033,328572,AD/de novo,Microcephaly,Rubinstein-Taybi syndrome,3
+ERCC1,2067,13870,AR,Microcephaly,Xeroderma Pigmentosum,1
+ERCC2,2068,13871,AR,Microcephaly,Xeroderma Pigmentosum,1
+ERCC3,2071,13872,AR,Microcephaly,Xeroderma Pigmentosum,1
+ERCC4,2072,50505,AR,Microcephaly,Xeroderma Pigmentosum,1
+ERCC5,2073,22592,AR,Microcephaly,Xeroderma Pigmentosum,1
+ERCC6,2074,319955,AR,Microcephaly,Cerebro-Oculo-Facio-Skeletal syndrome,2
+ERCC6,2074,319955,AR,Microcephaly,Cockayne syndrome,1
+ERCC8,1161,71991,AR,Microcephaly,Cockayne syndrome,1
+FGFR1,2260,14182,AD and AR,Microcephaly,Hartsfield syndrome,2
+FOXG1,2290,15228,AD/de novo,Microcephaly,"",2
+HCCS,3052,15159,XL,Microcephaly,Microphthalmia with linear skin defects syndrome,2
+IER3IP1,51124,66191,AR,Microcephaly,"",3
+IQSEC2,23096,245666,XL,Microcephaly,"",3
+JARID1C,8242,20591,XL,Microcephaly,"",3
+KAT6A,7994,244349,AD/de novo,Microcephaly,"",2
+KATNB1,10300,74187,AR,Microcephaly,"",2
+KCNJ6,3763,16522,AD/De novo,Microcephaly,Keppen-Lubinsky syndrome,3
+KIF11,3832,16551,AD,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
+KIF14,9928,381293,AR,Microcephaly,"",3
+KIF5C,3800,16574,Postzygotic/Mosaic,Microcephaly,"",3
+LIG4,3981,319583,AR,Microcephaly,LIG4 syndrome,1
+MCPH1,79648,244329,AR,Microcephaly,"",1
+MED25,81857,75613,AR,Microcephaly,"",3
+MYCN,4613,18109,AD,Microcephaly,Feingold syndrome,2
+MYO18B,84700,74376,AR,Microcephaly,"",3
+NAA10,8260,56292,XL,Microcephaly,"",3
+NBN,4683,27354,AR,Microcephaly,Nijmegen breakage syndrome,1
+NDE1,54820,67203,AR,Microcephaly,"",2
+NGLY1,55768,59007,AR,Microcephaly,"",3
+NHEJ1,79840,75570,AD/de novo,Microcephaly,"",3
+NIPBL,25836,71175,AD/de novo,Microcephaly,Cornelia de Lange syndrome,2
+NSDHL,50814,18194,XL,Microcephaly,CK syndrome,3
+OCLN,100506658,18260,AR,Microcephaly,Pseudo-TORCH syndrome,3
+ORC1,4998,18392,AR,Microcephaly,Seckel syndrome,3
+ORC4,5000,26428,AR,Microcephaly,Meier-Gorlin syndrome,3
+ORC6,23594,56452,AR,Microcephaly,Meier-Gorlin syndrome,3
+PAFAH1B1,5048,18472,AD/de novo,Microcephaly,Miller-Dieker syndrome,1
+PGAP3,93210,320655,AR,Microcephaly,"",3
+PIGA,5277,18700,XL,Microcephaly,Ferro-Cerebro-Cutaneous syndrome,3
+PLK4,10733,20873,AR,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
+PNKP,11284,59047,AR,Microcephaly,"",2
+POLH,5429,80905,AR,Microcephaly,Xeroderma Pigmentosum,1
+PQBP1,10084,54633,XL,Microcephaly,Renpenning syndrome,2
+PYCR2,29920,69051,AR,Microcephaly,"",3
+QARS,2058,107508,AR,Microcephaly,"",3
+RAD50,10111,19360,AR,Microcephaly,Nijmegen breakage syndrome-like,3
+RARS2,57038,109093,AR,Microcephaly,"",3
+RBBP8,5932,225182,AR,Microcephaly,Seckel syndrome,3
+RGS6,9628,50779,AR,Microcephaly,"",3
+RIMS3,9783,242662,AD/de novo,Microcephaly,"",3
+RPS6KA3,6197,110651,XL,Microcephaly,Coffin-Lowry syndrome,2
+RTTN,25914,246102,AR,Microcephaly,"",3
+SHH,6469,20423,AD/de novo,Microcephaly,"",1
+SIN3A,25942,20466,AD/de novo,Microcephaly,"",3
+SLC1A4,6509,55963,AR,Microcephaly,"",3
+SLC25A19,60386,67283,AR,Microcephaly,Amish microcephaly,2
+SLC25A22,79751,68267,AR,Microcephaly,"",3
+SMC1A,8243,24061,XL,Microcephaly,Cornelia de Lange syndrome,2
+SMC3,9126,13006,AD/de novo,Microcephaly,Cornelia de Lange syndrome,2
+SNAP29,9342,67474,AR,Microcephaly,"Cerebral dysgenesis, neuropathy, ichthyosis and keratoderma syndrome   ",2
+SPOCK1,6695,20745,AD/de novo,Microcephaly,"",3
+SSR4,6748,20832,XL,Microcephaly,"",3
+STIL,6491,20460,AR,Microcephaly,"",1
+TAF2,6873,319944,AD/de novo or AR,Microcephaly,"",3
+TBCD,6904,108903,AR,Microcephaly,"",3
+TBR2,8320,13813,AR,Microcephaly,"",3
+TRIO,7204,223435,AD/de novo,Microcephaly,"",3
+TRMT10A,93587,108943,AR,Microcephaly,"",3
+TUBB2B,347733,73710,AD/de novo,Microcephaly,"",3
+TUBB5,10382,22153,AD/de novo,Microcephaly,"",3
+TUBG1,7283,103733,AD/de novo,Microcephaly,"",3
+TUBGCP6,85378,328580,AR,Microcephaly,Microcephaly with lymphedema and chorioretinopathy,2
 VRK1,7443,22367,AR,Microcephaly,"",3
 WDR4,10785,57773,AR,Microcephaly,"",3
-WDR4,10785,57773,AR,Epilepsy,"",3
 WDR62,284403,233064,AR,Microcephaly,"",1
-WDR62,284403,233064,AR,Pachygyria,"",3
 WDR73,84942,71968,AR,Microcephaly,Galloway-Mowat syndrome,2
-WDR81,124997,192652,AR,Ataxia,"Cerebellar ataxia, mental retardation and disequilibrium syndrome   ",3
-WWOX,51741,80707,AR,Ataxia,"",3
-WWOX,51741,80707,AR,Epilepsy,"",3
 WWOX,51741,80707,AR,Microcephaly,"",3
 XPA,7507,22590,AR,Microcephaly,Xeroderma Pigmentosum,1
 XPC,7508,22591,AR,Microcephaly,Xeroderma Pigmentosum,1
 ZBTB18,10472,30928,AD/de novo,Microcephaly,"",3
 ZEB2,9839,24136,AD/de novo,Microcephaly,Mowat-Wilson syndrome,1
-ZIC2,7546,22772,AD/de novo,Holoprosencephaly,"",1
+ASPM,259266,12316,AR,Microcephaly with simplified gyral pattern,"",1
+ATR,545,245000,AR,Microcephaly with simplified gyral pattern,Seckel syndrome,2
+CDK5RAP2,55755,214444,AR,Microcephaly with simplified gyral pattern,"",1
+CENPJ,55835,219103,AR,Microcephaly with simplified gyral pattern,Seckel syndrome,2
+CEP152,22995,99100,AR,Microcephaly with simplified gyral pattern,"",2
+MCPH1,79648,244329,AR,Microcephaly with simplified gyral pattern,"",1
+NDE1,54820,67203,AR,Microcephaly with simplified gyral pattern,"",2
+PNKP,11284,59047,AR,Microcephaly with simplified gyral pattern,"",2
+SLC25A19,60386,67283,AR,Microcephaly with simplified gyral pattern,Amish microcephaly,2
+STAMBP,10617,70527,AR,Microcephaly with simplified gyral pattern,Microcephaly-capillary malformation syndrome,2
+STIL,6491,20460,AR,Microcephaly with simplified gyral pattern,"",1
+WDR62,284403,233064,AR,Microcephaly with simplified gyral pattern,"",1
+ABCB6,10058,74104,AD/de novo,Microphthalmia,"",2
+ACTB,60,11461,AD/de novo,Microphthalmia,Baraitser-Winter syndrome,2
+ACTG1,71,11465,AD/de novo,Microphthalmia,Baraitser-Winter syndrome,2
+ALDH1A3,220,56847,AR,Microphthalmia,"",2
+BCOR,54880,71458,XL,Microphthalmia,Lenz syndrome,1
+BMP4,652,12159,AD/de novo,Microphthalmia,"",2
+C12orf57,113246,14790,AR,Microphthalmia,"",3
+CHD7,55636,320790,AD,Microphthalmia,CHARGE syndrome,1
+ERCC6,2074,319955,AR,Microphthalmia,Cerebro-Oculo-Facio-Skeletal syndrome,2
+GDF3,9573,14562,AD/de novo,Microphthalmia,"",3
+GJA1,2697,14609,AD?,Microphthalmia,Hallermann-Streiff syndrome,3
+HCCS,3052,15159,XL,Microphthalmia,Microphthalmia with linear skin defects syndrome,2
+OTX2,5015,18424,AD/de novo,Microphthalmia,"",3
+PAX6,5080,18508,AD/de novo,Microphthalmia,"",3
+PORCN,64840,53627,XL,Microphthalmia,Goltz syndrome,2
+RAB18,22931,19330,AR,Microphthalmia,Warburg Micro syndrome,3
+RAB3GAP1,22930,226407,AR,Microphthalmia,Warburg Micro syndrome,3
+RAB3GAP2,25782,98732,AR,Microphthalmia,Warburg Micro syndrome,3
+SIX3,6496,20473,AD/de novo,Microphthalmia,"",1
+SOX2,6657,20674,AD/de novo,Microphthalmia,"",1
+STRA6,64220,20897,AR,Microphthalmia,Matthew-Wood syndrome,2
+TUBA1A,7846,22142,AD/de novo,Microphthalmia,"",3
+VAX1,11023,22326,AR,Microphthalmia,"",3
+AHI1,54806,52906,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+ARL13B,200894,68146,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+B9D1,27077,27078,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+C5orf42,65250,73692,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+CC2D2A,57545,231214,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+CEP120,153241,225523,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+CEP290,80184,216274,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+CEP41,95681,83922,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+INPP5E,56623,64436,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+KIAA0586,9786,76967,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+KIF7,374654,16576,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+MKS1,54903,380718,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+NPHP1,4867,53885,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+OFD1,8481,237222,XL,Molar tooth malformation,Joubert syndrome related disorders,3
+PDE6D,5147,18582,AR,Molar tooth malformation,Joubert syndrome,3
+RPGRIP1L,23322,244585,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+TCTN1,79600,654470,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+TCTN2,79867,67978,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+TCTN3,26123,67590,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+TMEM138,51524,72982,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+TMEM216,51259,68642,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+TMEM231,79583,234740,AR,Molar tooth malformation,Joubert syndrome related disorders,3
+TMEM237,65062,381259,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+TMEM67,91147,329795,AR,Molar tooth malformation,Joubert syndrome related disorders,1
+TTC21B,79809,73668,AR,Molar tooth malformation,Joubert syndrome related disorders,2
+ALDH1A3,220,56847,AR,Optic nerve hypoplasia,"",2
+CASK,8573,12361,XL,Optic nerve hypoplasia,"",2
+HESX1,8820,15209,AD/de novo,Optic nerve hypoplasia,Septooptic dysplasia,1
+PAX6,5080,18508,AD,Optic nerve hypoplasia,"",3
+TUBA8,51807,53857,AR,Optic nerve hypoplasia,"",3
+CRADD,8738,12905,AR,Pachygyria,"",3
+DCX,1641,13193,XL,Pachygyria,"",1
+FOXG1,2290,15228,AD/de novo,Pachygyria,"",2
+PAFAH1B1,5048,18472,AD/De novo,Pachygyria,"",1
+RELN,5649,19699,AR,Pachygyria,"",1
+TUBA1A,7846,22142,AD/de novo,Pachygyria,"",1
+TUBB2B,347733,73710,AD/de novo,Pachygyria,"",3
+TUBG1,7283,103733,AD/de novo,Pachygyria,"",3
+VLDLR,7436,22359,AR,Pachygyria,"",1
+WDR62,284403,233064,AR,Pachygyria,"",3
+ATP13A2,23400,74772,AR,Parkinsonism,Kufor-Rakeb syndrome,2
+ATP1A3,478,232975,AD,Parkinsonism,Rapid-onset dystonia-Parkinsonism,1
+PLA2G6,8398,53357,AR,Parkinsonism,"",3
+VPS13A,23230,271564,AR,Parkinsonism,Chorea-acanthocytosis syndrome,2
+ARFGEF2,10564,99371,AR,Periventricular nodular heterotopia,"",2
+DCHS1,8642,233651,AR,Periventricular nodular heterotopia,"",2
+FAT4,79633,329628,AR,Periventricular nodular heterotopia,"",2
+FLNA,2316,192176,XL,Periventricular nodular heterotopia,X-linked periventricular nodular heterotopia syndrome,1
+RTTN,25914,246102,AR,Periventricular nodular heterotopia,"",3
+SHOC2,8036,56392,AD,Periventricular nodular heterotopia,Noonan syndrome,3
+AKT3,10000,23797,AD/de novo,Polymicrogyria,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+CCND2,894,12444,AD/de novo,Polymicrogyria,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+COL18A1,80781,12822,AD/de novo,Polymicrogyria,"",3
+DYNC1H1,1778,13424,AD/de novo,Polymicrogyria,"",3
+FH,2271,14194,AR,Polymicrogyria,Fumarate hydratase deficiency,3
+FIG4,9896,103199,AR,Polymicrogyria,"",3
+GPSM2,29899,76123,AR,Polymicrogyria,Chudley-McCullough syndrome,2
+KIAA1279,26128,72320,AR,Polymicrogyria,Goldberg-Shprintzen syndrome,2
+KIF5C,3800,16574,Postzygotic/Mosaic,Polymicrogyria,"",3
+NSDHL,50814,18194,XL,Polymicrogyria,"",3
+PAX6,5080,18508,AD/de novo,Polymicrogyria,"",1
+PEX1,5189,71382,AR,Polymicrogyria,Zellweger syndrome,3
+PI4KA,5297,224020,AR,Polymicrogyria,"",3
+PIK3R2,5296,18709,AD/de novo,Polymicrogyria,Megalencephaly polymicrogyria polydactyly hydrocephalus syndrome,2
+POLR3B,55703,70428,AR,Polymicrogyria,"",3
+RAB3GAP1,22930,226407,AR,Polymicrogyria,Warburg Micro syndrome,3
+RAB3GAP2,25782,98732,AR,Polymicrogyria,Warburg Micro syndrome,3
+RTTN,25914,246102,AR,Polymicrogyria,"",2
+SRPX2,27286,68792,XL,Polymicrogyria,"",3
+TBR2,8320,13813,AR,Polymicrogyria,"",3
+TUBA8,51807,53857,AR,Polymicrogyria,"",3
+TUBB2B,347733,73710,AD/de novo,Polymicrogyria,"",3
+TUBB3,10381,22152,AR,Polymicrogyria,"",2
+TUBB5,10382,22153,AD/de novo,Polymicrogyria,"",3
+WDR62,284403,233064,AR,Polymicrogyria,"",2
+AMPD2,271,109674,AR,Pontocerebellar hypoplasia,"",2
+CHMP1A,5119,234852,AR,Pontocerebellar hypoplasia,"",3
+DKC1,1736,245474,XL,Pontocerebellar hypoplasia,Hoyeraal-Hreidarsson syndrome,3
+EXOSC3,51010,66362,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 1,2
+PCLO,27445,26875,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 3,3
+RARS2,57038,109093,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplaia type 6,2
+TSEN15,116461,66637,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 2,3
+TSEN2,80746,381802,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 2,2
+TSEN34,79042,66078,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 2,2
+TSEN54,283989,76265,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 2,2
+TSEN54,283989,76265,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 1,3
+TSEN54,283989,76265,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 4,2
+TUBB3,10381,22152,AR,Pontocerebellar hypoplasia,"",3
+VRK1,7443,22367,AR,Pontocerebellar hypoplasia,Pontocerebellar hypoplasia type 1,3
+AKT3,10000,23797,AD/de novo,Postnatal microcephaly,"",3
+ALG1,56052,208211,AR,Postnatal microcephaly,Congenital disorder of glycosylation type Ik,2
+ALG12,79087,223774,AR,Postnatal microcephaly,Congenital disorder of glycosylation type Ig,3
+ARFGEF2,10564,99371,AR,Postnatal microcephaly,"",2
+ARNT2,9915,11864,AR,Postnatal microcephaly,"",3
+CASK,8573,12361,XL,Postnatal microcephaly,"",1
+CREBBP,1387,12914,AD/de novo,Postnatal microcephaly,Rubinstein-Taybi syndrome,2
+DNM1L,10059,74006,AD/de novo,Postnatal microcephaly,"",3
+EEF1A2,1917,13628,AD/de novo,Postnatal microcephaly,"",3
+EP300,2033,328572,AD/de novo,Postnatal microcephaly,Rubinstein-Taybi syndrome,3
+ERCC6,2074,319955,AR,Postnatal microcephaly,Cockayne syndrome,1
+ERCC8,1161,71991,AR,Postnatal microcephaly,Cockayne syndrome,1
+FOXG1,2290,15228,AD/de novo,Postnatal microcephaly,"",2
+IQSEC2,23096,245666,XL,Postnatal microcephaly,"",3
+MECP2,4204,17257,XL,Postnatal microcephaly,Rett syndrome,1
+MED17,9440,234959,AR,Postnatal microcephaly,"",3
+PGAP3,93210,320655,AR,Postnatal microcephaly,"",3
+PYCR2,29920,69051,AR,Postnatal microcephaly,"",3
+RAB18,22931,19330,AR,Postnatal microcephaly,Warburg Micro syndrome,3
+RAB3GAP1,22930,226407,AR,Postnatal microcephaly,Warburg Micro syndrome,3
+RAB3GAP2,25782,98732,AR,Postnatal microcephaly,Warburg Micro syndrome,3
+RARS2,57038,109093,AR,Postnatal microcephaly,"",3
+TRAPPC9,83696,76510,AR,Postnatal microcephaly,"",2
+UBE3A,7337,22215,IMPR,Postnatal microcephaly,Angelman syndrome,1
+VPS13B,157680,666173,AR,Postnatal microcephaly,Cohen syndrome,2
+WDR73,84942,71968,AR,Postnatal microcephaly,Galloway-Mowat syndrome,2
+AIPL1,23746,114230,AR,Retinal dystrophy,Leber amaurosis,1
+ALG6,29929,320438,AR,Retinal dystrophy,Congenital disorder of glycosylation type Ic,3
+ARL6,84100,56297,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+BBS1,582,52028,AR,Retinal dystrophy,Bardet-Biedl syndrome,1
+BBS10,79738,71769,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+BBS12,166379,241950,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+BBS2,583,67378,AR,Retinal dystrophy,Bardet-Biedl syndrome,1
+BBS4,585,102774,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+BBS5,129880,72569,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+BBS7,55212,71492,AR,Retinal dystrophy,Bardet-Biedl syndrome,1
+BBS9,27241,319845,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+C8ORF37,157657,67157,AR,Retinal dystrophy,"",3
+CC2D1A,54862,212139,AR,Retinal dystrophy,"",2
+CEP290,80184,216274,AR,Retinal dystrophy,Leber amaurosis,1
+CEP290,80184,216274,AR,Retinal dystrophy,Bardet-Biedl syndrome,3
+CRB1,23418,170788,AR,Retinal dystrophy,Leber amaurosis,1
+CRX,1406,12951,AD,Retinal dystrophy,Leber amaurosis,1
+GUCY2D,3000,14919,AR,Retinal dystrophy,Leber amaurosis,1
+IMPDH1,3614,23917,AR,Retinal dystrophy,Leber amaurosis,1
+KCNJ13,3769,100040591,AR,Retinal dystrophy,Leber amaurosis,1
+KIF11,3832,16551,AD,Retinal dystrophy,Microcephaly with lymphedema and chorioretinopathy,2
+LCA5,167691,75782,AR,Retinal dystrophy,Leber amaurosis,1
+LRAT,9227,79235,AR,Retinal dystrophy,Leber amaurosis,1
+MKKS,8195,59030,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+MKS1,54903,380718,AR,Retinal dystrophy,Bardet-Biedl syndrome,3
+NDP,4693,17986,XL,Retinal dystrophy,Norrie disease,1
+NMNAT1,64802,66454,AR,Retinal dystrophy,Leber amaurosis,1
+PEX1,5189,71382,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX10,5192,668173,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX12,5193,103737,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX13,5194,72129,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX14,5195,56273,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX16,9409,18633,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX19,5824,19298,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX2,5828,19302,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX26,55670,74043,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX3,8504,56535,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX5,5830,19305,AR,Retinal dystrophy,Zellweger syndrome,2
+PEX6,5190,224824,AR,Retinal dystrophy,Zellweger syndrome,2
+RD3,343035,74023,AR,Retinal dystrophy,Leber amaurosis,1
+RDH12,145226,77974,AR,Retinal dystrophy,Leber amaurosis,1
+RPE65,6121,19892,AR,Retinal dystrophy,Leber amaurosis,1
+RPGRIP1,57096,77945,AR,Retinal dystrophy,Leber amaurosis,1
+SDCCAG8,10806,76816,AR,Retinal dystrophy,Bardet-Biedl syndrome,3
+SPATA7,55812,104871,AR,Retinal dystrophy,Leber amaurosis,1
+TRIM32,22954,69807,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+TTC8,123016,76260,AR,Retinal dystrophy,Bardet-Biedl syndrome,2
+TULP1,7287,22157,AR,Retinal dystrophy,Leber amaurosis,1
+VPS13B,157680,666173,AR,Retinal dystrophy,Cohen syndrome,2
+ACTB,60,11461,AD/de novo,Sensorineural deafness,Baraitser-Winter syndrome,2
+ACTG1,71,11465,AD/de novo,Sensorineural deafness,Baraitser-Winter syndrome,2
+ATP1A3,478,232975,AD,Sensorineural deafness,CAPOS syndrome,3
+BCAP31,10134,27061,XL,Sensorineural deafness,"",2
+C2orf37,80067,75763,AR,Sensorineural deafness,Woodhouse-Sakati syndrome,3
+GJB2,2706,14619,AR,Sensorineural deafness,Nonsyndromic hearing loss and deafness,1
+GJB6,10804,14623,AR,Sensorineural deafness,Nonsyndromic hearing loss and deafness,1
+GPSM2,29899,76123,AR,Sensorineural deafness,Chudley-McCullough syndrome,2
+PEX1,5189,71382,AR,Sensorineural deafness,Zellweger syndrome,3
+RBM10,8241,236732,XL,Sensorineural deafness,TARP syndrome,3
+TBC1D24,57465,224617,AR,Sensorineural deafness,"",3
+TIMM8A,1678,30058,XL,Sensorineural deafness,Mohr-Tranebjaerg syndrome,3
+UBR1,197131,22222,AR,Sensorineural deafness,Johanson-Blizzard syndrome,3
+AP4B1,10717,67489,AR,Spastic tetraplegia,"",3
+AP4E1,23431,108011,AR,Spastic tetraplegia,"",3
+AP4M1,9179,11781,AR,Spastic tetraplegia,"",3
+AP4S1,11154,11782,AR,Spastic tetraplegia,"",3
+KANK1,23189,107351,IMPR,Spastic tetraplegia,"",2

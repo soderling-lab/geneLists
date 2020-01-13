@@ -71,7 +71,7 @@ sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 # Remove groups with less than min genes.
 keep <- names(sizes)[sizes > min_size]
 data_list <- data_list[keep] # This limits to 15 disease groups.
-data <- subset(data,data$Phenotype %in% keep)
+data <- do.call(rbind,data_list)
 
 # Save data.
 myfile <- file.path(tabsdir,paste0("mouse_URMC_DBDB_geneSet.csv"))

@@ -101,7 +101,7 @@ sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 # Remove groups with less than min genes.
 keep <- names(sizes)[ sizes > min_size & sizes < max_size]
 data_list <- data_list[keep] # This limits to 15 disease groups.
-data <- subset(data,data$disease_name %in% keep)
+data <- do.call(rbind,data_list)
 
 # Status report.
 nGenes <- length(unique(data$msEntrez))
