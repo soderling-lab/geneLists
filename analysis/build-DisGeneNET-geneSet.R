@@ -4,9 +4,10 @@
 # the AnRichment package.
 
 # Which DisGene dataset to download and compile.
-dataset <- "Curated_Variants"
-save_data <- TRUE # Save compiled data to .csv?
-map2mouse <- TRUE # Map human genes to mouse? 
+dataset <- "All_Disease_Genes"
+disease_types <- c("Mental or Behavioral Dysfunction", "Mental Process")
+min_size <- 3
+max_size <- 500
 
 ## Datasets:
 # [1] Curated_Disease_Genes
@@ -27,9 +28,6 @@ here <- getwd()
 root <- dirname(here)
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
-
-# Which organism?
-if (map2mouse) {org <- "mouse" } else { org = "human" }
 
 # Download, unzip, and load the DisGeneNet data.
 message("Downloading Disease-Gene associations from DisGeneNet.org...\n")
@@ -64,42 +62,35 @@ if (grepl("Variants",dataset)) {
 }
 
 # DisGeneNET is a database of human genes and their associated diseases.
-if (map2mouse) {
-	# Map human genes in to their mouse homologs.
-	message("Mapping human genes to their mouse homologs...\n")
-	hsEntrez <- data$geneId
-	msEntrez <- getHomologs(hsEntrez,taxid=10090)
-	data <- tibble::add_column(data,osEntrez=msEntrez,.after=1)
-	# Remove rows with unmapped genes.
-	n_out <- sum(is.na(msEntrez))
-	percent_removed <- round(100*(n_out/length(msEntrez)),2)
-	message(paste("Percent disease genes without mouse homology:",
-		      percent_removed))
-	data <- subset(data, !is.na(data$osEntrez))
-} else {
-	# Work with human genes.
-	hsEntrez <- data$geneId
-	data <- tibble::add_column(data,osEntrez=osEntrez,.after=1)
-}
+# Map human genes in to their mouse homologs.
+message("Mapping human genes to their mouse homologs...\n")
+hsEntrez <- data$geneId
+msEntrez <- getHomologs(hsEntrez,taxid=10090)
+nMsGenes <- length(unique(msEntrez))
+data <- tibble::add_column(data,msEntrez=msEntrez,.after=1)
+# Remove rows with unmapped genes.
+n_out <- sum(is.na(msEntrez))
+percent_removed <- round(100*(n_out/length(msEntrez)),2)
+message(paste("Percent disease genes without mouse homology:",
+	      percent_removed))
+data <- subset(data, !is.na(data$msEntrez))
+
+# Get diseases realated to brain function.
+data <- subset(data,data$diseaseSemanticType %in% disease_types)
 
 # Write data to file.
-if (save_data) {
-	myfile <- file.path(tabsdir,paste0(org,"_DisGeneNet_",dataset,".csv"))
-	data.table::fwrite(data,myfile)
-}
+myfile <- file.path(tabsdir,paste0("mouse_DisGeneNet_",dataset,".csv"))
+data.table::fwrite(data,myfile)
 
 # Split data into disease groups.
 data_list <- split(data,data$diseaseId)
 
 # Remove disease groups with less than min, or more than max k genes.
-min_size <- 3
-max_size <- 500
 k <- sapply(data_list,function(x) dim(x)[1])
 out <- seq_along(data_list)[k < min_size | k > max_size]
 nout <- length(out)
 data_list <- data_list[-out]
 nDiseases <- length(data_list)
-message(paste("Number of disease groups removed:", nout))
 message(paste("Total number of disease groups compiled from DisGeneNet:", nDiseases))
 
 # Description of the data.
@@ -115,7 +106,7 @@ for (i in 1:length(data_list)) {
 	setTxtProgressBar(pbar,i)
 	df <- data_list[[i]]
 	diseaseID <- names(data_list)[i]
-	entrez <- df$osEntrez
+	entrez <- df$msEntrez
 	namen <- gsub(" ","_",unique(df$diseaseName))
 	geneSets[[i]] <- newGeneSet(geneEntrez = entrez,
 				    geneEvidence = "IEA", # Inferred from Electronic Annotation
@@ -124,7 +115,7 @@ for (i in 1:length(data_list)) {
 				    name = namen, # disease name
 				    description = data_description,
 				    source = myurl,
-				    organism = org,
+				    organism = "mouse",
 				    internalClassification = c("PL","DisGeneNET"),
 				    groups = "PL",
 				    lastModified = "2020-01-03")
@@ -140,5 +131,5 @@ PLgroup <- newGroup(name = "PL",
 DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_DisGeneNet_",dataset,"_geneSet.RData"))
+myfile <- file.path(rdatdir,paste0("mouse_DisGeneNet_",dataset,"_geneSet.RData"))
 saveRDS(DisGeneNETcollection,myfile)

@@ -1,4 +1,4 @@
-status,gene_symbol,gene_name,ensembl_id,entrez_id,osEntrez,chromosome,genetic_category,gene_score,syndromic,number_of_reports
+status,gene_symbol,gene_name,ensembl_id,entrez_id,msEntrez,chromosome,genetic_category,gene_score,syndromic,number_of_reports
 9,ABAT,4-aminobutyrate aminotransferase,ENSG00000183044,18,268860,16,"Rare Single Gene Mutation, Genetic Association",3,0,5
 9,ABCA13,ATP binding cassette subfamily A member 13,ENSG00000179869,154664,268379,7,"Rare Single Gene Mutation, Functional",3,0,6
 9,ABCA7,"ATP-binding cassette, sub-family A (ABC1), member 7",ENSG00000064687,10347,27403,19,Rare Single Gene Mutation,3,0,4

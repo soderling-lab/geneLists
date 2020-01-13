@@ -9,8 +9,6 @@
 
 ## User parameters:
 dataset <- "All" # One of c("LOF","Missense","All")
-map2mouse <- TRUE
-save_data <- TRUE
 
 # Imports.
 suppressPackageStartupMessages({
@@ -26,9 +24,6 @@ root <- dirname(here)
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
-
-# Which organism, human or mouse?
-if (map2mouse) { org <- "mouse" } else { org <- "human" }
 
 # Downoad the raw data.
 message("Downloading developmental brain disorder (DBD)-associated gene database... \n")
@@ -56,25 +51,22 @@ entrez[not_mapped] <- mapped_by_manual_search[names(entrez[not_mapped])]
 # Check.
 check <- sum(is.na(entrez)) == 0
 if (check)  { message("Successfully mapped all human gene symbols to Entrez!") }
+nHsGenes <- length(unique(entrez))
 
-# Add entrez IDs to data.
-data <- tibble::add_column(raw_data,"Entrez" = entrez[raw_data$Gene],.after="Gene")
+# Add human entrez IDs to data.
+data <- tibble::add_column(raw_data,"hsEntrez" = entrez[raw_data$Gene],.after="Gene")
+
 # Map human genes in to their mouse homologs.
-if (map2mouse) {
-	message("Mapping human genes to their mouse homologs...\n")
-	hsEntrez <- data$Entrez
-	msEntrez <- getHomologs(hsEntrez,taxid=10090)
-	data <- tibble::add_column(data,osEntrez=msEntrez,.after="Entrez")
-	# Remove rows with unmapped genes.
-	n_out <- sum(is.na(msEntrez))
-	percent_removed <- round(100*(n_out/length(msEntrez)),2)
-	message(paste0("Genes without mouse homology: ",n_out,
-		      " (",percent_removed," %)."))
-	data <- data[osEntrez != "NA"] 
-} else {
-	hsEntrez <- data$entrez_id
-	data <- tibble::add_column(data,osEntrez=osEntrez,.after="Entrez")
-}
+message("Mapping human genes to their mouse homologs...\n")
+hsEntrez <- data$hsEntrez
+msEntrez <- getHomologs(hsEntrez,taxid=10090)
+data <- tibble::add_column(data,msEntrez=msEntrez,.after="hsEntrez")
+# Remove rows with unmapped genes.
+n_out <- sum(is.na(msEntrez))
+percent_removed <- round(100*(n_out/length(msEntrez)),2)
+message(paste0("Genes without mouse homology: ",n_out,
+	      " (",percent_removed," %)."))
+data <- data[msEntrez != "NA"] 
 
 # Add concise disorder association column.
 disorders <- c("ID/DD","Autism","Epilepsy","ADHD","Schizophrenia","Bipolar Disorder")
@@ -82,7 +74,7 @@ idy <- sapply(disorders,function(x) grep(x,colnames(data)))
 da <- apply(data[,idy,with=FALSE],1,function(x) {
 		    da <- paste(disorders[grep("X",x)],collapse=";")
 		    return(da) })
-data <- tibble::add_column(data,"disorder_association"=da,.after="osEntrez")
+data <- tibble::add_column(data,"disorder_association"=da,.after="msEntrez")
 
 # Separate rows with multiple disorder associations.
 data <- tidyr::separate_rows(data,disorder_association,sep=";")
@@ -95,15 +87,14 @@ data$disorder_association[idx] <- "ID/DD"
 data[, (disorders):=NULL] 
 
 # Status report.
-nGenes <- length(unique(data$osEntrez))
+nMsGenes <- length(unique(data$msEntrez))
 nDisorders <- length(unique(data$disorder_association))
-message(paste("Compiled",nGenes,"genes associated with",nDisorders,"DBDs!"))
+message(paste0("Compiled ",nMsGenes," mouse genes associated with ",
+	       nDisorders," DBDs!"))
 
 # Write data to file.
-if (save_data) {
-	myfile <- file.path(tabsdir,paste0(org,"_",datasets[dataset]))
-	data.table::fwrite(data,myfile)
-}
+myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],".csv"))
+data.table::fwrite(data,myfile)
 
 # Split into disorder groups.
 disorders <- unique(data$disorder_association)
@@ -111,21 +102,21 @@ data_list <- data %>% group_by(disorder_association) %>% group_split()
 names(data_list) <- disorders
 
 # Check disorder group sizes.
-sizes <- sapply(data_list,function(x) length(unique(x$osEntrez)))
+sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
 # Build gene sets:
 geneSets <- list()
 for (i in seq_along(data_list)) {
 	subdat <- data_list[[i]]
 	id <- paste0("DBD-",names(data_list)[i])
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$osEntrez),
+	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
 				    geneEvidence = "IEA",
 				    geneSource = datasets[dataset],
 				    ID = id,
 				    name = names(data_list)[i], # disorder name
 				    description = "DBD-associated genes.",
 				    source = "http://dbd.geisingeradmi.org/",
-				    organism = org,
+				    organism = "mouse",
 				    internalClassification = c("PL","DBD"),
 				    groups = "PL",
 				    lastModified = Sys.Date())
@@ -140,5 +131,5 @@ PLgroup <- newGroup(name = "PL",
 DBDcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_",datasets[dataset],"_geneSet.RData"))
+myfile <- file.path(rdatdir,paste0("mouse_",datasets[dataset],"_geneSet.RData"))
 saveRDS(DBDcollection,myfile)

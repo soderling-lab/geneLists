@@ -7,10 +7,8 @@
 # "https://www.dbdb.urmc.rochester.edu/associations/list"
 
 ## User parameters:
-map2mouse <- TRUE
-save_data <- TRUE
-filter_groups = TRUE
-min_size = 3
+filter_groups <- TRUE
+min_size <- 3
 
 # Imports.
 suppressPackageStartupMessages({
@@ -26,9 +24,6 @@ root <- dirname(here)
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
-
-# Which organism, human or mouse?
-if (map2mouse) { org <- "mouse" } else { org <- "human" }
 
 # Load the raw data.
 myfile <- file.path(downdir,"rochester-dbdb-associations.csv")
@@ -56,21 +51,17 @@ idy <- "Gene" # Column after which Entrez ids will be added.
 data <- tibble::add_column(raw_data,"Entrez" = entrez[raw_data[[idy]]],.after=idy)
 
 # Map human genes in to their mouse homologs.
-if (map2mouse) {
-	message("Mapping human genes to their mouse homologs...\n")
-	hsEntrez <- data$Entrez
-	msEntrez <- getHomologs(hsEntrez,taxid=10090)
-	data <- tibble::add_column(data,osEntrez=msEntrez,.after="Entrez")
-	# Remove rows with unmapped genes.
-	n_out <- sum(is.na(msEntrez))
-	percent_removed <- round(100*(n_out/length(msEntrez)),2)
-	message(paste0("Genes without mouse homology: ",n_out,
-		      " (",percent_removed," %)."))
-	data <- data[osEntrez != "NA"] 
-} else {
-	hsEntrez <- data$entrez_id
-	data <- tibble::add_column(data,osEntrez=osEntrez,.after="Entrez")
-}
+message("Mapping human genes to their mouse homologs...\n")
+hsEntrez <- data$Entrez
+nHsGenes <- length(unique(hsEntrez))
+msEntrez <- getHomologs(hsEntrez,taxid=10090)
+data <- tibble::add_column(data,msEntrez=msEntrez,.after="Entrez")
+# Remove rows with unmapped genes.
+n_out <- sum(is.na(msEntrez))
+percent_removed <- round(100*(n_out/length(msEntrez)),2)
+message(paste0("Genes without mouse homology: ",n_out,
+	      " (",percent_removed," %)."))
+data <- data[msEntrez != "NA"] 
 
 # Fix missing phenotype annotation for GNAQ and GNAS.
 data$Phenotype[data$Gene=="GNAQ"] <- "Epilepsy;Intellectual disability"
@@ -82,7 +73,7 @@ data_list <- data %>% group_by(Phenotype) %>% group_split()
 names(data_list) <- gsub(" ","_",disorders)
 
 # Check disorder group sizes.
-sizes <- sapply(data_list,function(x) length(unique(x$osEntrez)))
+sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
 # Remove groups with less than min genes.
 if (filter_groups) {
@@ -96,21 +87,21 @@ if (filter_groups) {
 # Status report.
 nGenes <- length(unique(c(unlist((sapply(data_list,function(x) x$Gene))))))
 nDisorders <- length(data_list)
-message(paste("Compiled",nGenes,"genes associated with",nDisorders,"DBDs!"))
+message(paste("Compiled",nGenes,"(of",nHsGenes,") genes associated with",nDisorders,"DBDs!"))
 
 # Build gene sets:
 geneSets <- list()
 for (i in seq_along(data_list)) {
 	subdat <- data_list[[i]]
 	id <- paste0("DBDB-",names(data_list)[i])
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$osEntrez),
+	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
 				    geneEvidence = "IEA",
 				    geneSource = "URMC-DBDB",
 				    ID = id,
 				    name = subdat$Phenotype[1], # disorder name
 				    description = "URMC-DBD-associated genes.",
 				    source = "https://www.dbdb.urmc.rochester.edu/associations/list",
-				    organism = org,
+				    organism = "mouse",
 				    internalClassification = c("PL","URMC-DBDB"),
 				    groups = "PL",
 				    lastModified = Sys.Date())
@@ -125,5 +116,5 @@ PLgroup <- newGroup(name = "PL",
 GOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0(org,"_URMC_DBDB_geneSet.RData"))
+myfile <- file.path(rdatdir,paste0("mouse_URMC_DBDB_geneSet.RData"))
 saveRDS(GOcollection,myfile)
