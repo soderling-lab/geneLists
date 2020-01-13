@@ -72,7 +72,7 @@ entrez[not_mapped] <- mapped_by_manual_search[names(entrez[not_mapped])]
 
 # Check.
 check <- sum(is.na(entrez)) == 0
-if (check)  { stop() }
+if (!check)  { stop() }
 
 # Add entrez IDs to data.
 idy <- "gene_symbol" # Column after which Entrez ids will be added.
