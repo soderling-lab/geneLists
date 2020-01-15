@@ -90,7 +90,7 @@ getDisGeneNetData <- function(dataset,disease_types,data_sources,base_url){
 # Get all DisGeneNet datasets.
 datasets <- c("Curated_Disease_Genes","All_Disease_Genes","Curated_Variants","All_Variants")
 disease_types <- c("Mental or Behavioral Dysfunction", "Mental Process")
-all_data <- lapply(datasets,function(x) getDisGeneNetData(x,disease_types,data_sources))
+all_data <- lapply(datasets,function(x) getDisGeneNetData(x,disease_types,data_sources,base_url))
 names(all_data) <- datasets
 backup_data <- all_data
 
