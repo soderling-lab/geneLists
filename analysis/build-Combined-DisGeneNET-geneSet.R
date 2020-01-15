@@ -98,8 +98,8 @@ backup_data <- all_data
 colNames <- intersect(colnames(all_data[[1]]),colnames(all_data[[4]]))
 allNames <- union(colnames(all_data[[1]]),colnames(all_data[[4]]))
 
-# The following columns will be dropped:
-allNames[allNames %notin% colNames]
+# Note: The following columns will be dropped:
+#allNames[allNames %notin% colNames]
 
 # Merge dataframes.
 data <- all_data %>% purrr::reduce(full_join,by=colNames)
