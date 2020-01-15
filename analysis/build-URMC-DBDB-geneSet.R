@@ -73,10 +73,6 @@ keep <- names(sizes)[sizes > min_size]
 data_list <- data_list[keep] # This limits to 15 disease groups.
 data <- do.call(rbind,data_list)
 
-# Save data.
-myfile <- file.path(tabsdir,paste0("mouse_URMC_DBDB_geneSet.csv"))
-fwrite(data,myfile)
-
 # Status report.
 nGenes <- length(unique(c(unlist((sapply(data_list,function(x) x$Gene))))))
 nDisorders <- length(data_list)
