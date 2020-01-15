@@ -4,7 +4,7 @@
 # the AnRichment package.
 
 # Which dataset?
-dataset <- "SFARI" # SFARI or Animal
+dataset <- "Animal" # SFARI or Animal
 
 # Imports.
 suppressPackageStartupMessages({

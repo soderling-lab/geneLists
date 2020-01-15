@@ -3,8 +3,9 @@
 ## Building a developmental brain disorder gene set
 # collection for analysis with the AnRichment package.
 
-# Data download from: 
+# Data were scraped from: 
 # "https://www.dbdb.urmc.rochester.edu/associations/list"
+# To scrape the data, run ./scrape-UMRC-DBDB.py
 
 ## User parameters:
 min_size <- 3

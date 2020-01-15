@@ -38,10 +38,12 @@ tabsdir <- file.path(root,"tables")
 # Notin function.
 `%notin%` <- Negate(`%in%`)
 
+# Url for downloads.
+base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
+
 # Define a function that gets DisGeneNet data:
-getDisGeneNetData <- function(dataset,disease_types,data_sources){
+getDisGeneNetData <- function(dataset,disease_types,data_sources,base_url){
 	# Download, unzip, and load the DisGeneNet data.
-	base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
 	datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz",
 		      All_Disease_Genes = "all_gene_disease_associations.tsv.gz",
 		      Curated_Variants = "curated_variant_disease_associations.tsv.gz",
@@ -127,7 +129,7 @@ message(paste0("Compiled ",nGenes," mouse genes associated with ",
 	       nDisorders," DBDs or phenotypes!"))
 
 # Save to file.
-myfile <- file.path(tabsdir,paste0("mouse_DisGeneNet_Combined_geneSet.csv"))
+myfile <- file.path(tabsdir,paste0("mouse_Combined_DisGeneNet_geneSet.csv"))
 fwrite(data,myfile)
 
 # Description of the data.
@@ -147,7 +149,7 @@ for (i in 1:length(data_list)) {
 				    ID = diseaseID,
 				    name = namen, # disease name
 				    description = data_description,
-				    source = myurl,
+				    source = base_url,
 				    organism = "mouse",
 				    internalClassification = c("PL","DisGeneNET"),
 				    groups = "PL",
@@ -163,5 +165,5 @@ PLgroup <- newGroup(name = "PL",
 DisGeneNETcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
 
 # Save as RData.
-myfile <- file.path(rdatdir,paste0("mouse_DisGeneNet_",dataset,"_geneSet.RData"))
+myfile <- file.path(rdatdir,paste0("mouse_Combined_DisGeneNet_geneSet.RData"))
 saveRDS(DisGeneNETcollection,myfile)

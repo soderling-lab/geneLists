@@ -1,0 +1,190 @@
+status,gene_symbol,gene_name,human_gene_score,entrez_id,msEntrez,human_syndromic,syntenic,model_species,number_of_models,has_rescue_model
+9,ADNP,Activity-dependent neuroprotector homeobox,1,23394,11538,0,No,Mus musculus,12,1
+9,ADORA2A,Adenosine A2a receptor,3,135,11540,0,Unknown,Mus musculus,2,0
+9,AHI1,Abelson helper integration site 1,S,54806,52906,1,Unknown,Mus musculus,3,0
+9,ALDH5A1,"Aldehyde Dehydrogenase 5 family, member A1",1,7915,214579,0,Unknown,Mus musculus,4,1
+9,ANKRD11,ankyrin repeat domain 11,1,29123,77087,0,Unknown,Mus musculus,3,0
+9,ANKS1B,ankyrin repeat and sterile alpha motif domain containing 1BÃÂ ,3,56899,77531,1,No,Mus musculus,2,0
+9,APBA2,"amyloid beta (A4) precursor protein-binding, family A, member 2",3,321,11784,0,Unknown,Mus musculus,2,0
+9,ARHGAP32,Rho GTPase activating protein 32,3,9743,330914,0,No,Mus musculus,3,1
+9,ARHGEF10,Rho guanine nucleotide exchange factor 10,3,9639,234094,0,No,Mus musculus,1,0
+9,ARID1B,AT-rich interaction domain 1B,1,57492,239985,0,No,Mus musculus,8,1
+9,ARX,aristaless related homeobox,1,170302,11878,0,Unknown,Mus musculus,5,0
+9,ASH1L,ASH1 like histone lysine methyltransferase,1,55870,192195,0,No,Mus musculus,6,1
+9,ATP1A3,Sodium potassium ATPase alpha 3 subunit,3,478,232975,1,Unknown,Mus musculus,2,1
+9,ATP2B2,"TPase, Ca++ transporting, plasma membrane 2",2,491,11941,0,No,Mus musculus,1,0
+9,AUTS2,"AUTS2, activator of transcription and developmental regulator",1,26053,319974,0,No,Mus musculus,2,0
+9,AVPR1A,Arginine vasopressin receptor 1A,2,552,54140,0,Unknown,Mus musculus,2,0
+9,BCKDK,branched chain ketoacid dehydrogenase kinase,1,10295,12041,0,No,Mus musculus,3,1
+9,BCL11A,B-cell CLL/lymphoma 11A,1,53335,14025,0,Yes,Mus musculus,2,0
+9,CACNA1C,calcium voltage-gated channel subunit alpha1 C,1,775,12288,0,Unknown,Mus musculus,13,0
+9,CACNA1F,"Calcium channel, voltage-dependent, L type, alpha 1F subunit",3,778,54652,0,No,Mus musculus,1,0
+9,CACNA1G,Cav3.1 T-type Ca2+ Channel,3,8913,12291,0,Unknown,Mus musculus,6,0
+9,CACNA1H,"calcium channel, voltage-dependent, T type, alpha 1H subunit",2,8912,58226,0,Unknown,Mus musculus,1,0
+9,CACNA2D3,calcium voltage-gated channel auxiliary subunit alpha2delta 3,2,55799,12294,0,Yes,Mus musculus,2,0
+9,CADM1,cell adhesion molecule 1,3,23705,54725,0,Unknown,Mus musculus,4,0
+9,CADPS2,Ca2+-dependent activator protein for secretion 2,3,93664,320405,0,Yes,Mus musculus,5,0
+9,CAMK2A,calcium/calmodulin dependent protein kinase II alpha,3,815,12322,1,No,Mus musculus,2,0
+9,CAPRIN1,RNA granule protein 105 (Caprin 1),2,4076,53872,0,Unknown,Mus musculus,2,0
+9,CC2D1A,Coiled-coil and C2 domain containing 1A,2,54862,212139,0,No,Mus musculus,10,0
+9,CD38,CD38 molecule,3,952,12494,0,Unknown,Mus musculus,2,0
+9,CDKL5,cyclin-dependent kinase-like 5,1,6792,382253,0,No,Mus musculus,10,1
+9,CELF4,"CUGBP, Elav-like family member 4",2,56853,108013,0,No,Mus musculus,7,0
+9,CHD2,chromodomain helicase DNA binding protein 2,1,1106,244059,0,No,Mus musculus,5,1
+9,CHD7,Chromodomain Helicase DNA Binding Protein 7,1,55636,320790,0,No,Mus musculus,4,1
+9,CHD8,chromodomain helicase DNA binding protein 8,1,57680,67772,0,No,Mus musculus,22,1
+9,CIC,capicua transcriptional repressor,1,23152,71722,0,Yes,Mus musculus,8,1
+9,CNTN4,contactin 4,2,152330,269784,0,Unknown,Mus musculus,1,0
+9,CNTNAP2,contactin associated protein-like 2,2,26047,66797,1,Unknown,Mus musculus,30,1
+9,CNTNAP4,contactin associated protein-like 4,2,85445,170571,0,No,Mus musculus,7,1
+9,CSNK1E,"casein kinase 1, epsilon",3,1454,27373,0,No,Mus musculus,1,0
+9,CTNNB1,"catenin (cadherin associated protein), beta 1",1,1499,12387,0,Yes,Mus musculus,1,0
+9,CTNND2,"Catenin(cadherin associated protein), delta 2",2,1501,18163,0,No,Mus musculus,1,0
+9,CUL3,cullin 3,1,8452,26554,0,No,Mus musculus,9,1
+9,CYFIP1,Cytoplasmic FMR1 interacting protein 1,2,23191,20430,0,No,Mus musculus,3,1
+9,DAGLA,diacylglycerol lipasealpha,3,747,269060,0,No,Mus musculus,4,0
+9,DEAF1,"DEAF1, transcription factor",2,10522,54006,1,Yes,Mus musculus,9,0
+9,DHCR7,7-dehydrocholesterol reductase,1,1717,13360,0,No,Mus musculus,5,0
+9,DIP2A,disco interacting protein 2 homolog AÃÂ ,2,23181,64451,0,No,Mus musculus,2,1
+9,DISC1,Disrupted in schizophrenia 1,2,27185,244667,0,Unknown,Mus musculus,13,1
+9,DLG4,"discs, large homolog 4 (Drosophila)",1,1742,13385,0,Unknown,Mus musculus,1,0
+9,DLGAP1,DLG associated protein 1,2,9229,224997,0,No,Mus musculus,2,0
+9,DMD,Dystrophin,S,1756,13405,1,Unknown,Mus musculus,6,0
+9,DMPK,dystrophia myotonica-protein kinase,1,1760,13400,0,Unknown,Mus musculus,2,0
+9,DPP6,dipeptidyl- petidase 6,3,1804,13483,0,No,Mus musculus,1,0
+9,DPYSL3,dihydropyrimidinase like 3,3,1809,22240,0,Yes,Mus musculus ,1,0
+9,DRD1,Dopamine receptor D1,3,1812,13488,0,No,Mus musculus,2,0
+9,DRD3,Dopamine receptor D3,3,1814,13490,0,Unknown,Mus musculus,3,0
+9,DSCAM,DS cell adhesion molecule,1,1826,13508,0,No,Mus musculus,11,0
+9,DVL3,Dishevelled segment polarity protein 3,3,1857,13544,0,No,Mus musculus,5,1
+9,DYRK1A,dual specificity tyrosine-Y- phosphorylation regulated kinase 1A,1,1859,13548,0,No,Mus musculus,3,0
+9,EEF1A2,eukaryotic translation elongation factor 1 alpha 2,S,1917,13628,1,No,Mus musculus,7,0
+9,EIF4E,Eukaryotic translation initiation factor 4E,3,1977,13684,0,Yes,Mus musculus,2,1
+9,EN2,Engrailed homeobox 2,3,2020,13799,0,Unknown,Mus musculus,5,0
+9,ERBIN,erbb2 interacting protein,2,55914,59079,0,No,Mus musculus,2,0
+9,ESRRB,Estrogen-related receptor beta,3,2103,26380,0,Unknown,Mus musculus,2,0
+9,EXT1,exostosin 1,3,2131,14042,0,No,Mus musculus,1,0
+9,FEZF2,FEZ family zinc finger 2,3,55079,54713,0,Unknown,Mus musculus,1,0
+9,FMR1,fragile X mental retardation 1,1,2332,14265,0,Unknown,Mus musculus,56,1
+9,FOXG1,Forkhead Box G1,1,2290,15228,0,Unknown,Mus musculus,1,0
+9,GABRB3,gamma-aminobutyric acid type A receptor beta3 subunit,2,2562,14402,0,Unknown,Mus musculus,22,1
+9,GLRA2,"glycine receptor, alpha 2",3,2742,237213,0,Unknown,Mus musculus,1,0
+9,GRIA2,"Glutamate receptor, ionotropic, AMPA 2",2,2891,14800,0,Unknown,Mus musculus,1,0
+9,GRID2,"glutamate receptor, ionotropic, delta 2",3,2895,14804,0,No,Mus musculus,2,0
+9,GRIK2,"glutamate receptor, ionotropic, kainate 2",2,2898,14806,0,No,Mus musculus,4,1
+9,GRIK4,"Glutamate receptor, ionotropic, kainate 4",3,2900,110637,0,No,Mus musculus,12,1
+9,GRIN1,"glutamate receptor, ionotropic, N-methyl D-aspartate 1",2,2902,14810,0,No,Mus musculus,7,1
+9,GRIN2B,"Glutamate receptor, ionotropic, N-methyl D-aspartate 2B",1,2904,14812,0,No,Mus musculus,10,0
+9,GRID1,"glutamate receptor, ionotropic, delta 1",2,2894,14803,0,No,Mus musculus,1,0
+9,GRIP1,Glutamate receptor interacting protein 1,2,23426,74053,0,Unknown,Mus musculus,3,0
+9,GRM5,"glutamate receptor, metabotropic 5",3,2915,108071,0,No,Mus musculus,12,0
+9,GSTM1,Glutathione S-transferase mu 1,3,2944,14863,0,Unknown,Mus musculus,1,0
+9,GTF2I,general transcription factor Iii,3,2969,14886,0,Unknown,Mus musculus,2,0
+9,HDAC4,Histone deacetylase 4,3,9759,208727,1,Unknown,Mus musculus,2,0
+9,HMGN1,High mobility group nucleosome binding domain 1,2,3150,15312,0,Unknown,Mus musculus,2,0
+9,HOMER1,homer scaffolding protein 1,3,9456,26556,0,No,Mus musculus,4,0
+9,HOXA1,Homeobox A1,S,3198,15394,1,Unknown,Mus musculus,3,0
+9,HTR1B,5-hydroxytryptamine (serotonin) receptor 1B,3,3351,15551,0,Unknown,Mus musculus,2,0
+9,HTR3A,5-hydroxytryptamine (serotonin) receptor 3A,3,3359,15561,0,Unknown,Mus musculus,3,0
+9,IL1RAPL1,interleukin 1 receptor accessory protein-like 1,3,11141,331461,0,Unknown,Mus musculus,2,0
+9,IMMP2L,IMP2 inner mitochondrial membrane peptidase-like,3,83943,93757,0,Unknown,Mus musculus,2,0
+9,IQSEC2,IQ motif and Sec7 domain 2,1,23096,245666,0,Yes,Mus musculus,1,0
+9,ITGB3,"integrin, beta 3 (platelet glycoprotein IIIa, antigen CD61)",2,3690,16416,0,Unknown,Mus musculus,2,0
+9,KCNMA1,"potassium large conductance calcium-activated channel, subfamily M, alpha member 1",3,3778,16531,0,Yes,Mus musculus,3,0
+9,KCNQ2,"potassium voltage-gated channel, KQT-like subfamily, member 2",2,3785,16536,0,Unknown,Mus musculus,1,0
+9,KCTD13,potassium channel tetramerization domain containing 13,3,253980,233877,0,Yes,Mus musculus,6,0
+9,KIRREL3,Kin of Irregular Chiasm-like 3,2,84623,67703,0,No,Mus musculus,1,0
+9,KMT2A,Lysine methyltransferase 2A,1,4297,214162,0,No,Mus musculus,3,0
+9,LRFN2,leucine rich repeat and fibronectin type III domain containing 2,3,57497,70530,0,No,Mus musculus,2,0
+9,LRRC4,leucine rich repeat containing 4,3,64101,192198,0,No,Mus musculus,4,1
+9,MAGEL2,MAGE like 2,1,54551,27385,0,No,Mus musculus,1,0
+9,MAOA,Monoamine Oxidase A,3,4128,17161,0,Unknown,Mus musculus,3,0
+9,MBD3,methyl-CpG binding domain protein 3,3,53615,17192,0,Unknown,Mus musculus,1,0
+9,MCPH1,microcephalin 1,3,79648,244329,0,Unknown,Mus musculus,2,0
+9,MDGA2,MAM domain containing glycosylphosphatidylinositol anchor 2,3,161357,320772,0,No,Mus musculus,2,0
+9,MECP2,methyl-CpG binding protein 2,1,4204,17257,0,Yes,Mus musculus,90,1
+9,MEF2C,Myocyte Enhancer Factor 2C,3,4208,17260,1,Unknown,Mus musculus,9,1
+9,MET,"MET proto-oncogene, receptor tyrosine kinase",2,4233,17295,0,Unknown,Mus musculus,10,0
+9,MTHFR,methylenetetrahydrofolate reductase (NAD(P)H),3,4524,17769,0,No,Mus musculus,4,1
+9,NBEA,Neurobeachin,1,26960,26422,0,Unknown,Mus musculus,2,0
+9,NEGR1,neuronal growth regulator 1 ,3,257194,320840,0,No,Mus musculus ,9,1
+9,NEXMIF,neurite extension and migration factor ,1,340533,245555,0,No,Mus musculus,1,0
+9,NF1,neurofibromin 1,1,4763,18015,0,Unknown,Mus musculus,10,1
+9,NLGN1,neuroligin 1,2,22871,192167,0,Unknown,Mus musculus,10,0
+9,NLGN2,neuroligin 2,1,57555,216856,0,No,Mus musculus,4,0
+9,NLGN3,neuroligin 3,1,54413,245537,0,Yes,Mus musculus,43,1
+9,NPAS2,neuronal PAS domain protein 2,3,4862,18143,0,Unknown,Mus musculus,1,0
+9,NR3C2,"nuclear receptor subfamily 3, group C, member 2",2,4306,110784,1,Unknown,Mus musculus,2,0
+9,NRCAM,Neural cell adhesion molecule,3,4897,319504,0,Unknown,Mus musculus,1,0
+9,NRP2,neuropilin 2,3,8828,18187,0,Unknown,Mus musculus,4,0
+9,NRXN1,neurexin 1,1,9378,18189,0,Unknown,Mus musculus,2,0
+9,NRXN2,Neurexin2,1,9379,18190,0,No,Mus musculus,3,0
+9,NTNG1,Netrin G1,3,22854,80883,1,Unknown,Mus musculus,1,0
+9,NTNG2,Netrin G2,S,84628,171171,1,Unknown,Mus musculus,1,0
+9,NUAK1,"NUAK family, SNF1-like kinase, 1ÃÂ ",2,9891,77976,0,Unknown,Mus musculus,6,0
+9,OPHN1,Oligophrenin 1,2,4983,94190,0,Unknown,Mus musculus,1,0
+9,OTUD7A,OTU deubiquitinase 7A,2,161725,170711,0,Yes,Mus musculus,2,0
+9,OXT,oxytocin/neurophysin I prepropeptide [Homo sapiens (human),3,5020,18429,0,Yes,Mus musculus,7,1
+9,OXTR,Oxytocin receptor,2,5021,18430,0,Unknown,Mus musculus,16,1
+9,PAK2,p21 (RAC1) activated kinase 2,2,5062,224105,0,No,Mus musculus,3,1
+9,PCDH10,protocadherin 10,3,57575,18526,0,Unknown,Mus musculus,3,1
+9,PCDH19,protocadherin 19,1,57526,279653,0,No,Mus musculus,4,0
+9,PER1,Period homolog 1,3,5187,18626,0,Unknown,Mus musculus,1,0
+9,PITX1,paired-like homeodomain 1,3,5307,18740,0,Unknown,Mus musculus,1,0
+9,PLAUR,"plasminogen activator, urokinase receptor",3,5329,18793,0,Unknown,Mus musculus,1,0
+9,PRICKLE1,prickle homolog 1 (Drosophila),2,144165,106042,0,No,Mus musculus,5,0
+9,PRICKLE2,prickle homolog 2 (Drosophila),2,166336,243548,0,No,Mus musculus,2,0
+9,PRKCB,"Protein Kinase C, beta",2,5579,18751,0,Unknown,Mus musculus,1,0
+9,PRKDC,"Protein kinase, DNA activated, catalytic peptide",3,5591,19090,0,No,Mus musculus,2,1
+9,PTCHD1,Patched domain containing 1,1,139411,211612,0,No,Mus musculus,7,1
+9,PTEN,phosphatase and tensin homolog,1,5728,19211,0,Unknown,Mus musculus,27,1
+9,PTGS2,prostaglandin-endoperoxide synthase 2,3,5743,19225,0,No,Mus musculus,1,0
+9,RAI1,retinoic acid induced 1,1,10743,19377,0,Unknown,Mus musculus,12,1
+9,RAPGEF4,Rap guanine nucleotide exchange factor (GEF) 4,3,11069,56508,0,Unknown,Mus musculus,1,0
+9,RBFOX1,"RNA binding protein, fox-1 homolog",2,54715,268859,0,Unknown,Mus musculus,2,0
+9,RELN,Reelin,1,5649,19699,0,Unknown,Mus musculus,9,1
+9,RHEB,"Ras homolog, mTORC1 binding",S,6009,19744,1,No,Mus musculus,3,0
+9,RIMS1,regulating synaptic membrane exocytosis 1,1,22999,116837,0,Yes,Mus musculus,10,0
+9,RPS6KA3,"ribosomal protein S6 kinase, 90kDa, polypeptide 3",3,6197,110651,1,No,Mus musculus,1,0
+9,SCN1A,"sodium channel, voltage-gated, type I, alpha subunit",1,6323,20265,0,Unknown,Mus musculus,18,1
+9,SCN2A,sodium voltage-gated channel alpha subunit 2,1,6326,110876,0,Unknown,Mus musculus,7,1
+9,SCN8A,"sodium channel, voltage gated, type VIII, alpha subunit",1,6334,20273,0,Unknown,Mus musculus,1,0
+9,SEMA5A,"Sema domain, seven thrombospondin repeats (type 1 and type 1-like), transmembrane domain (TM) and short cytoplasmic domain, (semaphorin) 5A",2,9037,20356,0,Unknown,Mus musculus,1,0
+9,SETD5,SET domain containing 5ÃÂ ,1,55209,72895,0,No,Mus musculus,2,0
+9,SHANK1,SH3 and multiple ankyrin repeat domains 1,2,50944,243961,0,Unknown,Mus musculus,2,0
+9,SHANK2,SH3 and multiple ankyrin repeat domains 2,1,22941,210274,0,No,Mus musculus,22,1
+9,SHANK3,SH3 and multiple ankyrin repeat domains 3,1,85358,58234,0,Unknown,Mus musculus,89,1
+9,SLC1A2,"solute carrier family 1 (glial high affinity glutamate transporter), member 2",S,6506,20511,1,No,Mus musculus,8,1
+9,SLC25A12,"solute carrier family 25 (Mitochondrial carrier, Aralar), member 12",3,8604,78830,0,Unknown,Mus musculus,4,0
+9,SLC4A10,"Solute carrier 4, sodium bicarbonate transporter, member 10",3,57282,94229,0,Unknown,Mus musculus,1,0
+9,SLC6A1,Solute carrier family 6 member 1,1,6529,232333,0,No,Mus musculus,1,0
+9,SLC6A3,solute carrier family 6 member 3,2,6531,13162,0,No,Mus musculus,15,1
+9,SLC6A4,solute carrier family 6 member 4,3,6532,15567,0,Unknown,Mus musculus,14,1
+9,SLC6A8,Solute carrier family 6 member 8,3,6535,102857,0,Yes,Mus musculus,2,0
+9,SLC7A5,solute carrier family 7 member 5,2,8140,20539,0,No,Mus musculus,2,1
+9,SLC9A6,"solute carrier family 9, subfamily A",1,10479,236794,0,No,Mus musculus,3,0
+9,SLC9A9,solute carrier family 9 member A9,3,285195,331004,0,Yes,Mus musculus,3,0
+9,SLITRK5,"SLIT and NTRK-like family, member 5",2,26050,75409,0,No,Mus musculus,2,0
+9,SPAST,Spastin,1,6683,50850,0,No,Mus musculus,1,0
+9,ST8SIA2,"ST8 alpha-N-acetyl-neuraminide alpha-2,8-sialyltransferase 2",2,8128,20450,0,Unknown,Mus musculus,5,1
+9,STK39,"Serine threonine Kinase 39 (STE20/SPS1 homolog, yeast)",3,27347,53416,0,Unknown,Mus musculus,1,0
+9,STXBP1,syntaxin binding protein 1,1,6812,20910,0,Yes,Mus musculus ,6,1
+9,SYN2,Synapsin II,3,6854,20965,0,No,Mus musculus,3,1
+9,SYNGAP1,synaptic Ras GTPase activating protein 1a,1,8831,240057,0,Unknown,Mus musculus,13,0
+9,TAOK2,TAO kinase 2,2,9344,381921,0,No,Mus musculus,5,1
+9,TBR1,"T-box, brain 1",1,10716,21375,0,No,Mus musculus,17,1
+9,SYN1,Synapsin I,3,6853,20964,0,No,Mus musculus,1,0
+9,TBX1,T-box1,S,6899,21380,1,Unknown,Mus musculus,1,0
+9,TCF4,transcription factor 4,1,6925,21413,0,No,Mus musculus,4,1
+9,THRA,"thyroid hormone receptor, alpha (erythroblastic leukemia viral (v-erb-a) oncogene homolog, avian)",3,7067,21833,0,Unknown,Mus musculus,1,0
+9,TOP3B,Topoisomerase (DNA) 3 Beta,3,8940,21976,0,No,Mus musculus,2,0
+9,TRIO,Trio Rho guanine nucleotide exchange factor,1,7204,223435,0,No,Mus musculus,2,0
+9,TRPC6,"Transient receptor potential cation channel, subfamily C, member 6",2,7225,22068,0,No,Mus musculus,4,1
+9,TSC1,tuberous sclerosis 1,1,7248,64930,0,Unknown,Mus musculus,32,1
+9,TSC2,tuberous sclerosis 2,1,7249,22084,0,Unknown,Mus musculus,16,1
+9,UBE3A,ubiquitin protein ligase E3A,1,7337,22215,0,Unknown,Mus musculus,30,1
+9,TSHZ3,Teashirt zinc finger homeobox 3,1,57616,243931,0,No,Mus musculus,2,0
+9,UPF2,UPF2ÃÂ regulator of nonsense mediated mRNA decay,3,26019,326622,0,No,Mus musculus,3,1
+9,UPF3B,"UPF3B, regulator of nonsense mediated mRNA decay",1,65109,68134,0,No,Mus musculus,3,1
+9,USP7,Ubiquitin specific peptidase 7,2,7874,252870,1,No,Mus musculus,1,0
+9,WDFY3,WD repeat and FYVE domain containing 3,1,23001,72145,0,Unknown,Mus musculus,4,0
