@@ -6,7 +6,7 @@ DBD phenotypes were compiled from several databases.
 Human genes were mapped to mouse homologs using the NCBI Homologene database.
 
 With the exeption of SFARI gene groups, Disease/phenotype groups were 
-filtered to remove groups with less than 3 or more than 500 genes.
+filtered to remove groups with less than 3, or more than 500 genes.
 
 ### 1. DBD - Developmental Brain Disorders (DBD) Genes Database
 __Description:__ A curated resource of genes associated with 6 DBDs (ID, autism, ADHD,
@@ -18,8 +18,8 @@ __Disorders/Phenotypes:__ 6
 __Note:__   
 
 ### 2. DisGeneNET
-Description: A database of gene-disease associations from public data sources
-and the literature. Includes data from UniPrto, CGI, ClinGen, Genomics England
+__Description:__ A database of gene-disease associations from public data sources
+and the literature. Includes data from UniProt, CGI, ClinGen, Genomics England
 Panel App, PsyGeNET, Orphanet, HPO, and CTD. Genes compiled using the 
 BeFree System are extracted from MEDLINE abstracts.  
 __Dataset:__ `'All Disease Genes':'Mental or Behavioral Dysfunction'/'Mental Process'`  
