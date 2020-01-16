@@ -1,6 +1,6 @@
-# Building Gene lists for enrichment analysis with the AnRichment Package.
+# gene-lists 
 
-## Datasets:
+## Developmental Brain Disorder (DBD)-Associated Gene Datasets
 Human and animal genes associated with developmental brain disorders (DBDs) or 
 DBD phenotypes were compiled from several databases. 
 Human genes were mapped to mouse homologs using the NCBI Homologene database.
