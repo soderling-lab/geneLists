@@ -8,7 +8,7 @@ Human genes were mapped to mouse homologs using the NCBI Homologene database.
 With the exeption of SFARI gene groups, Disease/phenotype groups were 
 filtered to remove groups with less than 3, or more than 500 genes.
 
-### 1. DBD - Developmental Brain Disorders (DBD) Genes Database
+### 1. DBD Genes (Geisinger.org)
 __Description:__ A curated resource of genes associated with 6 DBDs (ID, autism, ADHD,
 schizophrenia, bipolar disorder, and epilspy) compiled from the literature.  
 __Dataset:__ `'All'` -- includes LOF and missense variants.  
@@ -26,22 +26,24 @@ __Source:__ [url](https://www.disgenet.org/static/disgenet_ap1/files/downloads)
 __Mouse Genes:__ 1718  
 __Disorders/Phenotypes:__ 371  
 
-### 3. SFARI Gene
+### 3. SFARI Human Genes
 __Description:__ an online database of human and animal genes associated with autism.  
 __Dataset:__ `'SFARI'`  
 __Source:__ [url](https://www.sfari.org/resource/sfari-gene/)  
 __Mouse Genes:__ 859  
 __Disorders/Phenotypes:__ 1  
 
-### 4. SFARI Animal
+### 4. SFARI Animal Genes
 __Description:__ an online database of human and animal genes associated with autism.  
 __Dataset:__ `'Animal'`  
 __Source:__ [url](https://www.sfari.org/resource/sfari-gene/)  
 __Mouse Genes:__ 189  
 __Disorders/Phenotypes:__ 1  
 
-### 5. URMC DBDB - University of Rochester Medical Center (URMC) Developmental Brain Disorders Database (DBDB)
-__Description:__ A databse of DBD-associated genes for clinician-scientists.   
+### 5. URMC DBDB 
+__Description:__ The University of Rochester Medical Center (URMC) 
+Developmental Brain Disorders Database (DBDB) is a databse of 
+DBD-associated genes intended for use by clinician-scientists.   
 __Dataset:__ `'Associations'`  
 __Source:__ [url]("https://www.dbdb.urmc.rochester.edu/associations/list")  
 __Mouse Genes:__ 568  
