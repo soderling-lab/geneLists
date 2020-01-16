@@ -1,7 +1,7 @@
 # gene-lists 
 
 ## Developmental Brain Disorder (DBD)-Associated Genes
-Human and animal genes associated with _developmental brain disorders_ __(DBDs)__ or 
+Human and animal genes associated with developmental brain disorders __(DBDs)__ or 
 DBD phenotypes were compiled from several databases. 
 Human genes were mapped to mouse homologs using the NCBI Homologene database.
 
