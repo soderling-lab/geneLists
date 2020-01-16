@@ -15,7 +15,6 @@ __Dataset:__ `'All'` -- includes LOF and missense variants.
 __Source:__ [url](http://dbd.geisingeradmi.org/#additional-information)  
 __Mouse Genes:__ 443  
 __Disorders/Phenotypes:__ 6  
-__Note:__   
 
 ### 2. DisGeneNET
 __Description:__ A database of gene-disease associations from public data sources
@@ -26,7 +25,6 @@ __Dataset:__ `'All Disease Genes':'Mental or Behavioral Dysfunction'/'Mental Pro
 __Source:__ [url](https://www.disgenet.org/static/disgenet_ap1/files/downloads)  
 __Mouse Genes:__ 1718  
 __Disorders/Phenotypes:__ 371  
-__Note:__ Kept genes associated with brain phenotypes or syndromes.   
 
 ### 3. SFARI Gene
 __Description:__ an online database of human and animal genes associated with autism.  
@@ -34,7 +32,6 @@ __Dataset:__ `'SFARI'`
 __Source:__ [url](https://www.sfari.org/resource/sfari-gene/)  
 __Mouse Genes:__ 859  
 __Disorders/Phenotypes:__ 1  
-__Note:__  
 
 ### 4. SFARI Animal
 __Description:__ an online database of human and animal genes associated with autism.  
@@ -42,7 +39,6 @@ __Dataset:__ `'Animal'`
 __Source:__ [url](https://www.sfari.org/resource/sfari-gene/)  
 __Mouse Genes:__ 189  
 __Disorders/Phenotypes:__ 1  
-__Note:__  
 
 ### 5. URMC DBDB - University of Rochester Medical Center (URMC) Developmental Brain Disorders Database (DBDB)
 __Description:__ A databse of DBD-associated genes for clinician-scientists.   
@@ -50,7 +46,6 @@ __Dataset:__ `'Associations'`
 __Source:__ [url]("https://www.dbdb.urmc.rochester.edu/associations/list")  
 __Mouse Genes:__ 568  
 __Disorders/Phenotypes:__ 49  
-__Note:__   
 
 ### 6. Gene2Phenotype DBD
 __Description:__ G2P is an online database designed to facilitate the
