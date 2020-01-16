@@ -1,52 +1,69 @@
 # Building Gene lists for enrichment analysis with the AnRichment Package.
 
 ## Datasets:
-1. DBD - Developmental Brain Disorders (DBD) Genes Database
-Description: A curated resource of genes associated with 6 DBDs (ID, autism, ADHD,
-schizophrenia, bipolar disorder, and epilspy) compiled from the literature.
-Dataset: "All"
-Source: [url](http://dbd.geisingeradmi.org/#additional-information)
-Mouse Genes: 443
-Disorders/Phenotypes: 6
-Note:
+Genes associated with DBDs or DBD phenotypes were compiled from several
+databases. Human genes were mapped to mouse homologs using the NCBI Homologene
+database.
 
-2. DisGeneNET
+Filtered disease groups: Removed groups with less than 3 or more than 500
+genes.
+
+### 1. DBD - Developmental Brain Disorders (DBD) Genes Database
+__Description:__ A curated resource of genes associated with 6 DBDs (ID, autism, ADHD,
+schizophrenia, bipolar disorder, and epilspy) compiled from the literature.
+__Dataset:__ "All" -- includes LOF and missense variants.
+__Source:__ [url](http://dbd.geisingeradmi.org/#additional-information)
+__Mouse Genes:__ 443
+__Disorders/Phenotypes:__ 6
+__Note:__ 
+
+### 2. DisGeneNET
 Description: A database of gene-disease associations from public data sources
 and the literature. Includes data from UniPrto, CGI, ClinGen, Genomics England
-Panel App, PsyGeNET, Orphanet, HPO, and CTD (human). Genes compiled using the 
+Panel App, PsyGeNET, Orphanet, HPO, and CTD. Genes compiled using the 
 BeFree System are extracted from MEDLINE abstracts.
-Dataset: "All Disease Genes : Mental or Behavioral Dysfunction/Mental Proces"
-Source: [url](https://www.disgenet.org/static/disgenet_ap1/files/downloads)
-Mouse Genes: 1718
-Disorders/Phenotypes: 371
-Note: Removed gene groups smaller than 3 or greater than 500.
+__Dataset:__ "All Disease Genes : 'Mental or Behavioral Dysfunction'/'Mental Process'"
+__Source:__ [url](https://www.disgenet.org/static/disgenet_ap1/files/downloads)
+__Mouse Genes:__ 1718
+__Disorders/Phenotypes:__ 371
+__Note:__ Kept genes associated with brain phenotypes or syndromes. 
 
-3. SFARI
-Description: an online database of human genes associated with autism.
-Dataset: "SFARI"
-Source: [url](https://www.sfari.org/resource/sfari-gene/)
-Mouse Genes: 859
-Disorders/Phenotypes: 1
-Note:
+### 3. SFARI Gene
+__Description:__ an online database of human and animal genes associated with autism.
+__Dataset:__ "SFARI"
+__Source:__ [url](https://www.sfari.org/resource/sfari-gene/)
+__Mouse Genes:__ 859
+__Disorders/Phenotypes:__ 1
+__Note:__
 
-4. URMC DBDB - University of Rochester Medical Center (URMC) Developmental Brain Disorders Database (DBDB)
-Description: A databse of DBD-associated genes for clinician-scientists. 
-Dataset: "Associations"
-Source: [url]("https://www.dbdb.urmc.rochester.edu/associations/list")
-Mouse Genes: 568
-Disorders/Phenotypes: 49
-Note: 
+### 4. SFARI Animal
+__Description:__ an online database of human and animal genes associated with autism.
+__Dataset:__ "Animal"
+__Source:__ [url](https://www.sfari.org/resource/sfari-gene/)
+__Mouse Genes:__ 189
+__Disorders/Phenotypes:__ 1
+__Note:__
 
-5. Gene2Phenotype DBD
-Description: G2P is an online database designed to facilitate the
+### 5. URMC DBDB - University of Rochester Medical Center (URMC) Developmental Brain Disorders Database (DBDB)
+__Description:__ A databse of DBD-associated genes for clinician-scientists. 
+__Dataset:__ "Associations"
+__Source:__ [url]("https://www.dbdb.urmc.rochester.edu/associations/list")
+__Mouse Genes:__ 568
+__Disorders/Phenotypes:__ 49
+__Note:__ 
+
+### 6. Gene2Phenotype DBD
+__Description:__ G2P is an online database designed to facilitate the
 development, validation, curation and distribution of large-scale,
 evidence-based datasets for use in diagnostic variant filtering. Each G2P entry
 associates an allelic requirement and a mutational consequence at a defined
 locus with a disease entity. A confidence level and evidence link are assigned
-to each entry. The Developmental Disease (DD) database was curated by 
-Helen V Firth and David FitzPatrick.
-Dataset: "DD:Brain/Cognition"
-Source: [url]("https://www.ebi.ac.uk/gene2phenotype/downloads")
-Mouse Genes: 169
-Disorders/Phenotypes: 15 
-Note:
+to each entry. 
+__Dataset:__ "DD:Brain/Cognition"
+__Source:__ [url]("https://www.ebi.ac.uk/gene2phenotype/downloads")
+__Mouse Genes:__ 169
+__Disorders/Phenotypes:__ 15 
+__Note:__ Genes associated with brain/congition phenotypes were kept.
+The Developmental Disease (DD) database was curated by Helen 
+V Firth and David FitzPatrick.
+

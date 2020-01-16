@@ -13,7 +13,8 @@ tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
 
 # Load geneSets.
-patterns <- c("SFARI","DDG2P","DisGeneNet","URMC","DBD-Genes")
+patterns <- c("SFARI-Gene_genes","SFARI-Gene_animal","DDG2P",
+	      "DisGeneNet_All_Disease_Genes","URMC","DBD-Genes")
 myfiles <- sapply(patterns,function(x) list.files(rdatdir,x,full.names=TRUE))
 geneSets <- lapply(myfiles,readRDS)
 names(geneSets) <- tools::file_path_sans_ext(basename(myfiles))
