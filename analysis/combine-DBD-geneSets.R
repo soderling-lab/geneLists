@@ -19,6 +19,16 @@ myfiles <- sapply(patterns,function(x) list.files(rdatdir,x,full.names=TRUE))
 geneSets <- lapply(myfiles,readRDS)
 names(geneSets) <- tools::file_path_sans_ext(basename(myfiles))
 
+# Some summary stats.
+data_list <- lapply(geneSets,function(x) x$dataSets[[1]]$data)
+df <- do.call(rbind,data_list)
+n_associations <- dim(df)[1]
+n_genes <- length(unique(df$Entrez))
+n_datasets <- length(unique(df$source))
+message(paste("Compiled",n_associations,"DBD-gene associations from",
+	      n_datasets, "databases cooresponding to",
+	      n_genes, "unique DBD-associated mouse genes."))
+
 # Combine.
 combinedCollection <- do.call(mergeCollections,geneSets)
 
