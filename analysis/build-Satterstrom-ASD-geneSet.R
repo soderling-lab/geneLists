@@ -32,18 +32,18 @@ downdir <- file.path(root,"downloads")
 myfiles <- list.files(downdir,pattern="Satterstrom",full.names=TRUE)
 names(myfiles) <- paste0("S",c(1:length(myfiles)))
 
-# We need the data from S2. 
-raw_data <- list()
-sheet_names <- excel_sheets(myfiles["S2"])
-for (sheet in sheet_names) {
-	raw_data[[sheet]] <- read_excel(myfiles["S2"],sheet)
-}
+# We need the data from S3. 
+	raw_data <- list()
+	sheet_names <- excel_sheets(myfiles["S3"])
+	for (sheet in sheet_names) {
+		raw_data[[sheet]] <- read_excel(myfiles["S3"],sheet)
+	}
 
 # Get ASD genes.
 data <- raw_data[["102_ASD"]]
 
 # Remove the last three rows--these just contain some comments.
-data <- data[!is.na(entrez),]
+data <- data[!is.na(data$entrez_id),]
 
 # Get human entrez ids.
 hsEntrez <- data$entrez_id
@@ -51,7 +51,7 @@ hsEntrez <- data$entrez_id
 # Status.
 n_genes <- sum(!is.na(hsEntrez))
 check <- n_genes == 102
-if (check) { message("Collected 102 ASD genes!") }
+if (!check) { stop("Warning, problem parsing excel data.") }
 
 # Map human genes in to their mouse homologs.
 msEntrez <- getHomologs(hsEntrez,taxid=10090)
