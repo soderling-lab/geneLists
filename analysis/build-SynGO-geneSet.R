@@ -82,8 +82,10 @@ names(data_list) <- as.character(sapply(data_list,function(x) unique(x$id)))
 # Loop to build gene sets:
 geneSets <- list()
 for (i in seq_along(data_list)) {
+
 	id <- names(data_list)[i]
 	subdat <- data_list[[i]]
+
 	geneSets[[i]] <- newGeneSet(geneEntrez = subdat$osEntrez,
 				    geneEvidence = "IEA", 
 				    geneSource = "SynGO",

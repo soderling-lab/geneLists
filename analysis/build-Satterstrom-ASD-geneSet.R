@@ -32,12 +32,12 @@ downdir <- file.path(root,"downloads")
 myfiles <- list.files(downdir,pattern="Satterstrom",full.names=TRUE)
 names(myfiles) <- paste0("S",c(1:length(myfiles)))
 
-# We need the data from S3. 
-	raw_data <- list()
-	sheet_names <- excel_sheets(myfiles["S3"])
-	for (sheet in sheet_names) {
-		raw_data[[sheet]] <- read_excel(myfiles["S3"],sheet)
-	}
+# We need the data from S2. 
+raw_data <- list()
+sheet_names <- excel_sheets(myfiles["S2"])
+for (sheet in sheet_names) {
+	raw_data[[sheet]] <- read_excel(myfiles["S2"],sheet)
+}
 
 # Get ASD genes.
 data <- raw_data[["102_ASD"]]
@@ -65,20 +65,23 @@ message(paste(n_mapped,"of", n_genes, "human ASD-risk",
 # Remove rows with unmapped genes.
 data <- subset(data, !is.na(msEntrez))
 
+# Save data.
+fwrite(data,file.path(tabsdir,"Satterstrom_et_al_ASD_Genes.csv"))
+
 # Split into disorder groups.
 disorders <- unique(data$ASD_vs_DDID)
 data_list <- data %>% group_by(ASD_vs_DDID) %>% group_split()
 names(data_list) <- disorders
 
 # Add combined data as well.
-data_list[["ASD-DDID"]] <- data
+#data_list[["ASD-DDID"]] <- data
 
 # Build gene sets:
 geneSets <- list()
 for (i in seq_along(data_list)) {
 	subdat <- data_list[[i]]
-	id <- names(data_list)[i]
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
+	id <- paste0("Satterstrom_",names(data_list)[i])
+	geneSets[[i]] <- newGeneSet(geneEntrez = subdat$msEntrez,
 				    geneEvidence = "IEA",
 				    geneSource = gene_source, 
 				    ID = id,
@@ -86,7 +89,7 @@ for (i in seq_along(data_list)) {
 				    description = data_description,
 				    source = data_source,
 				    organism = "mouse",
-				    internalClassification = c("PL"),
+				    internalClassification = c("PL","Satterstrom_ASD"),
 				    groups = "PL",
 				    lastModified = Sys.Date())
 } # Ends loop.
