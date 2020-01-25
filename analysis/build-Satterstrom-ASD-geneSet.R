@@ -66,40 +66,32 @@ message(paste(n_mapped,"of", n_genes, "human ASD-risk",
 data <- subset(data, !is.na(msEntrez))
 
 # Split rows with multiple OMIM phenotypes.
-data <- data %>% tidyr::separate_rows(OMIM_Phenotype,sep=";")
+#data <- data %>% tidyr::separate_rows(OMIM_Phenotype,sep=";")
 
 # Fill in blanks.
-is_blank <- data$OMIM_Phenotype == "."
-data$OMIM_Phenotype[is_blank] <- data$ASD_vs_DDID[is_blank]
+#is_blank <- data$OMIM_Phenotype == "."
+#data$OMIM_Phenotype[is_blank] <- data$ASD_vs_DDID[is_blank]
 
 # Save data.
 fwrite(data,file.path(tabsdir,"Satterstrom_et_al_ASD_Genes.csv"))
 
 # Split into disorder groups.
-disorders <- unique(data$ASD_vs_DDID)
-data_list <- data %>% group_by(ASD_vs_DDID) %>% group_split()
-names(data_list) <- disorders
-
-# Add combined data as well.
-#data_list[["ASD-DDID"]] <- data
+#disorders <- unique(data$ASD_vs_DDID)
+#data_list <- data %>% group_by(ASD_vs_DDID) %>% group_split()
+#names(data_list) <- disorders
 
 # Build gene sets:
-geneSets <- list()
-for (i in seq_along(data_list)) {
-	subdat <- data_list[[i]]
-	id <- paste0("Satterstrom_",names(data_list)[i])
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
-				    geneEvidence = "IEA",
-				    geneSource = gene_source, 
-				    ID = id,
-				    name = subdat$OMIM_Phenotype, # disorder name
-				    description = data_description,
-				    source = data_source,
-				    organism = "mouse",
-				    internalClassification = c("PL","Satterstrom_ASD"),
-				    groups = "PL",
-				    lastModified = Sys.Date())
-} # Ends loop.
+geneSets <- newGeneSet(geneEntrez = unique(data$msEntrez),
+		       geneEvidence = "IEA",
+		       geneSource = gene_source, 
+		       ID = "Satterstrom-ASD",
+		       name = "Satterstrom-ASD",
+		       description = data_description,
+		       source = data_source,
+		       organism = "mouse",
+		       internalClassification = c("PL","Satterstrom_ASD"),
+		       groups = "PL",
+		       lastModified = Sys.Date())
 
 # Define gene collection groups.
 PLgroup <- newGroup(name = "PL", 
@@ -107,7 +99,7 @@ PLgroup <- newGroup(name = "PL",
 		   source = data_source)
 
 # Combine as gene collection.
-GOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
+GOcollection <- newCollection(dataSets = list(geneSets), groups = list(PLgroup))
 
 # Save as RData.
 myfile <- file.path(rdatdir,output_file)
