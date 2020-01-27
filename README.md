@@ -8,6 +8,9 @@ Human genes were mapped to mouse homologs using the NCBI Homologene database.
 With the exeption of SFARI gene groups, Disease/phenotype groups were 
 filtered to remove groups with less than 3, or more than 500 genes.
 
+In all, __1,306__ DBD-gene associations were compiled from __8__ databases
+cooresponding to 984 unique DBD-associated mouse genes.
+
 ### 1. DBD Genes (Geisinger.org)
 __Description:__ A curated resource of genes associated with 6 DBDs (ID, autism, ADHD,
 schizophrenia, bipolar disorder, and epilspy) compiled from the literature.  
