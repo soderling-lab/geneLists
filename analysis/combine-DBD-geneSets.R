@@ -20,7 +20,7 @@ datasets <- c("SFARI-Gene_genes",
 	      "URMC",
 	      "DBD-Genes",
 	      "Satterstrom",
-	      "Sanders")
+	      "Sanders_ASD_geneSet")
 myfiles <- sapply(datasets,function(x) list.files(rdatdir,x,full.names=TRUE))
 geneSets <- lapply(myfiles,readRDS)
 names(geneSets) <- tools::file_path_sans_ext(basename(myfiles))
@@ -30,7 +30,7 @@ data_list <- lapply(geneSets,function(x) x$dataSets[[1]]$data)
 df <- do.call(rbind,data_list)
 n_associations <- dim(df)[1]
 n_genes <- length(unique(df$Entrez))
-n_datasets <- length(unique(df$source))
+n_datasets <- length(geneSets)
 message(paste("Compiled",n_associations,"DBD-gene associations from",
 	      n_datasets, "databases cooresponding to",
 	      n_genes, "unique DBD-associated mouse genes."))

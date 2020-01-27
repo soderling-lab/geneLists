@@ -97,8 +97,8 @@ PLgroup <- newGroup(name = "PL",
 		   source = data_source)
 
 # Combine as gene collection.
-GOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
+DBDcollection <- newCollection(dataSets = list(geneSets), groups = list(PLgroup))
 
 # Save as RData.
 myfile <- file.path(rdatdir,output_file)
-saveRDS(GOcollection,myfile)
+saveRDS(DBDcollection,myfile)
