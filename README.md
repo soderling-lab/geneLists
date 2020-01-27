@@ -63,3 +63,20 @@ __Disorders/Phenotypes:__ 15
 __Note:__ Genes associated with brain/congition phenotypes were kept.
 The Developmental Disease (DD) database was curated by Helen 
 V Firth and David FitzPatrick.   
+
+### 8. Satterstrom et al., 2015.
+__Description:__   
+__Dataset:__ `ASD/DDID`  
+__Source:__ [url]("")  
+__Mouse Genes:__ 96  
+__Disorders/Phenotypes:__ 2   
+__Note:__ 
+
+### 8. Sanders et al., 2015.
+__Description:__ 
+__Dataset:__ `65genes_tadaFdrAscSscExomeSscAgpSmallDel +
+59genes_tadaFdrAscSscExome`  
+__Source:__ [url]("https://www.ncbi.nlm.nih.gov/pubmed/26402605")  
+__Mouse Genes:__ 67  
+__Disorders/Phenotypes:__ 1   
+__Note:__ 

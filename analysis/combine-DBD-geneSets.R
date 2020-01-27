@@ -19,7 +19,8 @@ datasets <- c("SFARI-Gene_genes",
 	      "DisGeneNet_All_Disease_Genes",
 	      "URMC",
 	      "DBD-Genes",
-	      "Satterstrom")
+	      "Satterstrom",
+	      "Sanders")
 myfiles <- sapply(datasets,function(x) list.files(rdatdir,x,full.names=TRUE))
 geneSets <- lapply(myfiles,readRDS)
 names(geneSets) <- tools::file_path_sans_ext(basename(myfiles))

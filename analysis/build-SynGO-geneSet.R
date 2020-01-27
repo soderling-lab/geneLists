@@ -75,6 +75,11 @@ go_df <- data.frame("id" = as.character(anno_df$"GO term ID"),
 myfile <- file.path(tabsdir,paste0("SynGO_dataset.csv"))
 data.table::fwrite(go_df,myfile)
 
+# Write gmt.
+#as_gmt <- function(df,pathway_col,source"")
+#write_gmt
+
+
 # Group into gene groups.
 data_list <- go_df %>% group_by(id) %>% group_split()
 names(data_list) <- as.character(sapply(data_list,function(x) unique(x$id)))
