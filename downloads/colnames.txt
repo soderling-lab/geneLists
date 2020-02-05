@@ -1,0 +1,13 @@
+Patient ID
+Diagnosis
+Age
+Sex
+PMI
+Other diagnoses
+Medications
+ADI-R A
+ADI-R B Verbal
+ADI-R C
+ADI-R D
+ADI-R
+Cause of death

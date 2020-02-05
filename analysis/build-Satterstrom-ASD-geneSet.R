@@ -65,20 +65,8 @@ message(paste(n_mapped,"of", n_genes, "human ASD-risk",
 # Remove rows with unmapped genes.
 data <- subset(data, !is.na(msEntrez))
 
-# Split rows with multiple OMIM phenotypes.
-#data <- data %>% tidyr::separate_rows(OMIM_Phenotype,sep=";")
-
-# Fill in blanks.
-#is_blank <- data$OMIM_Phenotype == "."
-#data$OMIM_Phenotype[is_blank] <- data$ASD_vs_DDID[is_blank]
-
 # Save data.
 fwrite(data,file.path(tabsdir,"Satterstrom_et_al_ASD_Genes.csv"))
-
-# Split into disorder groups.
-#disorders <- unique(data$ASD_vs_DDID)
-#data_list <- data %>% group_by(ASD_vs_DDID) %>% group_split()
-#names(data_list) <- disorders
 
 # Build gene sets:
 geneSets <- newGeneSet(geneEntrez = unique(data$msEntrez),

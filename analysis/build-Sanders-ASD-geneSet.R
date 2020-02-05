@@ -3,6 +3,8 @@
 ## Building a ASD-risk gene dataset from the WES data from 
 # Sanders et al., 2015.
 
+## FIXME: Something isnt right... doesnt work when loaded into anrichment.
+
 # Supplemental data were downloaded from:
 # https://www.sciencedirect.com/science/article/pii/S0896627315007734?via%3Dihub#app2
 
