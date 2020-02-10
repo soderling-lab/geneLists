@@ -45,7 +45,7 @@ colnames(raw_data) <- gsub(" ", "_", colnames(raw_data))
 # Map human gene symbols to Entrez.
 genes <- unique(raw_data$gene_symbol)
 nHsGenes <- length(unique(genes))
-entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
+entrez <- mapIds(genes,from="symbol",to="entrez",species="human")
 names(entrez) <- genes
 
 # Map missing Entrez IDs by hand.

@@ -7,10 +7,11 @@
 dataset <- "All_Variants"
 disease_types <- c("Mental or Behavioral Dysfunction", "Mental Process")
 min_size <- 3
-max_size <- 500
+max_size <- 500 
+# Dont include BEFREE and CTD databases.
 data_sources <- c("PSYGENET","LHGDN","HPO",
 		      "GENOMICS_ENGLAND","RGD","GWASCAT","GWASDB","MGD",
-		      "CLINVAR","UNIPROT","ORPHANET") # Remove BEFREE and CTD databases
+		      "CLINVAR","UNIPROT","ORPHANET")
 
 # All potential data sources:
 all_data_sources <- c("CTD_human","BEFREE","PSYGENET","LHGDN","HPO",

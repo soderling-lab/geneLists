@@ -51,7 +51,7 @@ genes_df <- syngo_data$syngo_genes
 # Warning caused by missing (NA) MGI ids can be ignored.
 genes_df <- genes_df %>% separate_rows(mgi_id,sep=",")
 mgi <- paste0("MGI:",genes_df$mgi_id)
-msEntrez <- mapIDs(mgi,from="mgi",to="entrez",species="mouse")
+msEntrez <- mapIds(mgi,from="mgi",to="entrez",species="mouse")
 names(msEntrez) <- genes_df$mgi_id
 genes_df$msEntrez <- msEntrez
 if (map2mouse){

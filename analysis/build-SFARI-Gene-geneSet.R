@@ -4,7 +4,7 @@
 # the AnRichment package.
 
 # Which dataset?
-dataset <- "Animal" # SFARI or Animal
+dataset <- "SFARI" # SFARI or Animal
 
 # Imports.
 suppressPackageStartupMessages({
@@ -30,7 +30,7 @@ colnames(data) <- gsub("-","_",colnames(data))
 
 # Map human gene symbols to Entrez.
 genes <- data$gene_symbol
-entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
+entrez <- mapIds(genes,from="symbol",to="entrez",species="human")
 data <- tibble::add_column(data,"entrez_id" = entrez, .after = 4)
 data <- data[entrez_id != "NA"]
 

@@ -50,7 +50,7 @@ data <- subset(data,keep)
 
 # Map gene symbols to entrez.
 symbols <- data$RefSeqGeneName
-entrez <- mapIDs(symbols,from="symbol",to="entrez",species="human")
+entrez <- mapIds(symbols,from="symbol",to="entrez",species="human")
 
 # Map missing by hand.
 not_mapped <- which(is.na(entrez))

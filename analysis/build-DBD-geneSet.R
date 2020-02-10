@@ -40,7 +40,7 @@ unlink(myfile)
 
 # Map human gene symbols to Entrez.
 genes <- unique(raw_data$Gene)
-entrez <- mapIDs(genes,from="symbol",to="entrez",species="human")
+entrez <- mapIds(genes,from="symbol",to="entrez",species="human")
 names(entrez) <- genes
 
 # Map missing Entrez IDs by hand.
