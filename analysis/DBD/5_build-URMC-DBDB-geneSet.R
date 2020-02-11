@@ -8,20 +8,27 @@
 # To scrape the data, run ./scrape-UMRC-DBDB.py
 
 ## User parameters:
-min_size <- 3
-max_size <- 500
+diseases <- c("autism",
+	      "intellectual disability",
+	      "attention deficit hyperactivity disorder",
+	      "schizophrenia", 
+	      "bipolar disorder",
+	      "epilepsy")
 
 # Imports.
 suppressPackageStartupMessages({
-	library(anRichment)
 	library(data.table)
 	library(dplyr)
 	library(getPPIs)
 })
 
+# Load functions in R/
+devtools::load_all()
+
 # Directories.
 here <- getwd()
-root <- dirname(here)
+root <- dirname(dirname(here))
+datadir <- file.path(root,"data")
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
@@ -48,7 +55,8 @@ if (!check)  { stop() }
 
 # Add entrez IDs to data.
 idy <- "Gene" # Column after which Entrez ids will be added.
-data <- tibble::add_column(raw_data,"hsEntrez" = entrez[raw_data[[idy]]],.after=idy)
+data <- tibble::add_column(raw_data,
+			   "hsEntrez" = entrez[raw_data[[idy]]],.after=idy)
 
 # Map human genes in to their mouse homologs.
 hsEntrez <- data$hsEntrez
@@ -61,50 +69,28 @@ data <- data[msEntrez != "NA"]
 data$Phenotype[data$Gene=="GNAQ"] <- "Epilepsy;Intellectual disability"
 data$Phenotype[data$Gene=="GNAS"] <- "Endocrine dysfunction;Intellectual disability"
 
+# Split rows.
+data <- tidyr::separate_rows(data,Phenotype,sep=";")
+
+# Find genes associated with diseases of interest.
+rows <- lapply(diseases,function(x) grep(x,tolower(data$Phenotype)))
+
 # Split into disorder groups.
-disorders <- unique(data$Phenotype)
-data_list <- data %>% group_by(Phenotype) %>% group_split()
-names(data_list) <- gsub(" ","_",disorders)
+data_list <- lapply(rows,function(idx) data[idx,])
 
 # Check disorder group sizes.
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
-# Remove groups with less than min genes.
-keep <- names(sizes)[sizes > min_size]
-data_list <- data_list[keep] # This limits to 15 disease groups.
-data <- do.call(rbind,data_list)
+# Remove groups if size is 0.
+data_list <- data_list[-which(sizes==0)]
 
 # Status report.
 nGenes <- length(unique(c(unlist((sapply(data_list,function(x) x$Gene))))))
 nDisorders <- length(data_list)
 message(paste("Compiled",nGenes,"mouse genes associated with",nDisorders,"DBDs!"))
 
-# Build gene sets:
-geneSets <- list()
-for (i in seq_along(data_list)) {
-	subdat <- data_list[[i]]
-	id <- paste0("DBDB-",names(data_list)[i])
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
-				    geneEvidence = "IEA",
-				    geneSource = "URMC-DBDB",
-				    ID = id,
-				    name = subdat$Phenotype[1], # disorder name
-				    description = "URMC-DBD-associated genes.",
-				    source = "https://www.dbdb.urmc.rochester.edu/associations/list",
-				    organism = "mouse",
-				    internalClassification = c("PL","URMC-DBDB"),
-				    groups = "PL",
-				    lastModified = Sys.Date())
-} # Ends loop.
-
-# Define gene collection groups.
-PLgroup <- newGroup(name = "PL", 
-		   description = "G2P-DBD-associated genes.",
-		   source = "https://www.ebi.ac.uk/gene2phenotype/")
-
-# Combine as gene collection.
-GOcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
-
-# Save as RData.
-myfile <- file.path(rdatdir,paste0("mouse_URMC_DBDB_geneSet.RData"))
-saveRDS(GOcollection,myfile)
+# Write as gmt.
+gmt_list <- lapply(data_list,function(x) x$msEntrez)
+gmt_source = "https://www.dbdb.urmc.rochester.edu/associations/list"
+gmt_file <- file.path(datadir,"5_URMC_DBDB.gmt")
+write_gmt(gmt_list,gmt_source,gmt_file)

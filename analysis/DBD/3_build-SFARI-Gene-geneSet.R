@@ -8,7 +8,6 @@ dataset <- "SFARI" # SFARI or Animal
 
 # Imports.
 suppressPackageStartupMessages({
-	library(anRichment)
 	library(data.table)
 	library(dplyr)
 	library(getPPIs)
@@ -16,10 +15,14 @@ suppressPackageStartupMessages({
 
 # Directories.
 here <- getwd()
-root <- dirname(here)
+root <- dirname(dirname(here))
+datadir <- file.path(root,"data")
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
+
+# Load functions.
+devtools::load_all()
 
 # Load the data.
 datasets <- c(SFARI = "SFARI-Gene_genes",
@@ -51,27 +54,8 @@ message(paste0("Compiled ",nGenes," mouse genes associated with ",
 myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],".csv"))
 data.table::fwrite(data,myfile)
 
-# Build gene set:
-geneSet <- newGeneSet(geneEntrez = data$msEntrez,
-		      geneEvidence = "IEA", # Inferred from Electronic Annotation
-		      geneSource = datasets[dataset],
-		      ID = datasets[dataset],
-		      name = "SFARI", # disease name
-		      description = "SFARI autism genes.",
-		      source = "https://gene.sfari.org/tools/",
-		      organism = "mouse",
-		      internalClassification = c("PL","SFARI"),
-		      groups = "PL",
-		      lastModified = Sys.Date())
-
-# Define gene collection groups.
-PLgroup <- newGroup(name = "PL", 
-		   description = "SFARI autism-associated genes.",
-		   source = "sfari.org")
-
-# Combine as gene collection.
-SFARIcollection <- newCollection(dataSets = list(geneSet), groups = list(PLgroup))
-
-# Save as RData.
-myfile <- file.path(rdatdir,paste0("mouse_",datasets[dataset],"_geneSet.RData"))
-saveRDS(SFARIcollection,myfile)
+# Write to gmt.
+gmt_list <- data$msEntrez
+gmt_file <- file.path(datadir,"3_mouse_SFARI_Gene.gmt")
+gmt_source <- "https://gene.sfari.org/tools/"
+write_gmt(gmt_list,gmt_source,gmt_file)

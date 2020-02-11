@@ -21,7 +21,7 @@ suppressPackageStartupMessages({
 
 # Directories.
 here <- getwd()
-root <- dirname(here)
+root <- dirname(dirname(here))
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")

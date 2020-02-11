@@ -9,12 +9,9 @@
 
 ## User parameters:
 dataset <- "All" # One of c("LOF","Missense","All")
-min_size <- 3
-max_size <- 500
 
 # Imports.
 suppressPackageStartupMessages({
-	library(anRichment)
 	library(data.table)
 	library(dplyr)
 	library(getPPIs)
@@ -22,10 +19,14 @@ suppressPackageStartupMessages({
 
 # Directories.
 here <- getwd()
-root <- dirname(here)
+root <- dirname(dirname(here))
+datadir <- file.path(root,"data")
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 downdir <- file.path(root,"downloads")
+
+# Load functions in R/
+devtools::load_all()
 
 # Downoad the raw data.
 base_url <- "http://dbd.geisingeradmi.org/downloads"
@@ -68,10 +69,10 @@ data <- data[msEntrez != "NA"]
 disorders <- c("ID/DD","Autism","Epilepsy","ADHD",
 	       "Schizophrenia","Bipolar Disorder")
 idy <- sapply(disorders,function(x) grep(x,colnames(data)))
-da <- apply(data[,idy,with=FALSE],1,function(x) {
+anno <- apply(data[,idy,with=FALSE],1,function(x) {
 		    da <- paste(disorders[grep("X",x)],collapse=";")
 		    return(da) })
-data <- tibble::add_column(data,"disorder_association"=da,.after="msEntrez")
+data <- tibble::add_column(data,"disorder_association"=anno,.after="msEntrez")
 
 # Separate rows with multiple disorder associations.
 data <- tidyr::separate_rows(data,disorder_association,sep=";")
@@ -91,11 +92,6 @@ names(data_list) <- disorders
 # Check disorder group sizes.
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
-# Remove groups with less than min genes.
-keep <- names(sizes)[ sizes > min_size & sizes < max_size]
-data_list <- data_list[keep] 
-data <- do.call(rbind,data_list)
-
 # Status report.
 nGenes <- length(unique(data$msEntrez))
 nDisorders <- length(unique(data$disorder_association))
@@ -106,32 +102,8 @@ message(paste0("Compiled ",nGenes," mouse genes associated with ",
 myfile <- file.path(tabsdir,paste0("mouse_",datasets[dataset],".csv"))
 data.table::fwrite(data,myfile)
 
-# Build gene sets:
-geneSets <- list()
-for (i in seq_along(data_list)) {
-	subdat <- data_list[[i]]
-	id <- paste0("DBD-",names(data_list)[i])
-	geneSets[[i]] <- newGeneSet(geneEntrez = unique(subdat$msEntrez),
-				    geneEvidence = "IEA",
-				    geneSource = datasets[dataset],
-				    ID = id,
-				    name = names(data_list)[i], # disorder name
-				    description = "DBD-associated genes.",
-				    source = "http://dbd.geisingeradmi.org/",
-				    organism = "mouse",
-				    internalClassification = c("PL","DBD"),
-				    groups = "PL",
-				    lastModified = Sys.Date())
-} # Ends loop.
-
-# Define gene collection groups.
-PLgroup <- newGroup(name = "PL", 
-		   description = "DBD-associated genes.",
-		   source = "http://dbd.geisingeradmi.org/")
-
-# Combine as gene collection.
-DBDcollection <- newCollection(dataSets = geneSets, groups = list(PLgroup))
-
-# Save as RData.
-myfile <- file.path(rdatdir,paste0("mouse_",datasets[dataset],"_geneSet.RData"))
-saveRDS(DBDcollection,myfile)
+# Write as gmt file.
+gmt_list <- lapply(data_list,function(x) x$msEntrez)
+gmt_file <- file.path(datadir,"1_mouse_DBD.gmt")
+gmt_source <- "http://dbd.geisingeradmi.org/#additional-information"
+write_gmt(gmt_list,gmt_source,gmt_file)
