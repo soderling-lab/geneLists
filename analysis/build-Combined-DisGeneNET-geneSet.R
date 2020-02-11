@@ -3,21 +3,10 @@
 ## Building a disease-associated gene GO collection for analysis with 
 # the AnRichment package.
 
-# Which DisGene dataset to download and compile.
-dataset <- "All_Variants"
-disease_types <- c("Mental or Behavioral Dysfunction", "Mental Process")
-min_size <- 3
-max_size <- 500 
-# Dont include BEFREE and CTD databases.
-data_sources <- c("PSYGENET","LHGDN","HPO",
-		      "GENOMICS_ENGLAND","RGD","GWASCAT","GWASDB","MGD",
-		      "CLINVAR","UNIPROT","ORPHANET")
+## Parameters:
+nThreads <- 7
 
-# All potential data sources:
-all_data_sources <- c("CTD_human","BEFREE","PSYGENET","LHGDN","HPO",
-		      "GENOMICS_ENGLAND","RGD","GWASCAT","GWASDB","MGD",
-		      "CLINVAR","UNIPROT","CTD_rat","ORPHANET","CTD_mouse")
-## Datasets:
+## DisGeneNet Datasets:
 # [1] Curated_Disease_Genes
 # [2] All_Disease_Genes
 # [3] Curated_Variants
@@ -29,22 +18,32 @@ suppressPackageStartupMessages({
 	library(data.table)
 	library(dplyr)
 	library(getPPIs)
+	library(parallel)
+	library(doParallel)
 })
+
 # Directories.
 here <- getwd()
 root <- dirname(here)
+gmtdir <- file.path(root,"gmt")
 rdatdir <- file.path(root,"rdata")
 tabsdir <- file.path(root,"tables")
 
-# Notin function.
+# Load functions.
+devtools::load_all()  
+
+# Misc function.
 `%notin%` <- Negate(`%in%`)
 
-# Url for downloads.
-base_url <- "https://www.disgenet.org/static/disgenet_ap1/files/downloads"
-
 # Define a function that gets DisGeneNet data:
-getDisGeneNetData <- function(dataset,disease_types,data_sources,base_url){
+getDisGeneNetData <- function(dataset = c("Curated_Disease_Genes","All_Disease_Genes",
+					  "Curated_Variants","All_Variants"),
+			      data_sources = c("CTD_human","BEFREE","PSYGENET","LHGDN","HPO",
+					       "GENOMICS_ENGLAND","RGD","GWASCAT","GWASDB","MGD",
+					       "CLINVAR","UNIPROT","CTD_rat","ORPHANET","CTD_mouse"),
+			      base_url = "https://www.disgenet.org/static/disgenet_ap1/files/downloads") {
 	# Download, unzip, and load the DisGeneNet data.
+	# Variant Gene map is used for mapping gene variants.
 	datasets <- c(Curated_Disease_Genes = "curated_gene_disease_associations.tsv.gz",
 		      All_Disease_Genes = "all_gene_disease_associations.tsv.gz",
 		      Curated_Variants = "curated_variant_disease_associations.tsv.gz",
@@ -79,8 +78,6 @@ getDisGeneNetData <- function(dataset,disease_types,data_sources,base_url){
 	data <- tibble::add_column(data,msEntrez=msEntrez,.after=1)
 	# Remove rows with unmapped genes.
 	data <- subset(data, !is.na(data$msEntrez))
-	# Get diseases realated to brain function.
-	data <- subset(data,data$diseaseSemanticType %in% disease_types)
 	# Split rows (genes) derived from multiple sources.
 	data <- data %>% tidyr::separate_rows(source,sep=";")
 	# Keep the data of interest.
@@ -90,48 +87,63 @@ getDisGeneNetData <- function(dataset,disease_types,data_sources,base_url){
 
 # Get all DisGeneNet datasets.
 datasets <- c("Curated_Disease_Genes","All_Disease_Genes","Curated_Variants","All_Variants")
-disease_types <- c("Mental or Behavioral Dysfunction", "Mental Process")
-all_data <- lapply(datasets,function(x) getDisGeneNetData(x,disease_types,data_sources,base_url))
+all_data <- lapply(datasets,function(x) getDisGeneNetData(x))
 names(all_data) <- datasets
-backup_data <- all_data
 
-## Combine datasets.
-colNames <- intersect(colnames(all_data[[1]]),colnames(all_data[[4]]))
-allNames <- union(colnames(all_data[[1]]),colnames(all_data[[4]]))
+## Combine datasets by shared column names.
+colNames <- Reduce(intersect,sapply(all_data,colnames))
 
 # Note: The following columns will be dropped:
+#allNames <- Reduce(union,sapply(all_data,colnames))
 #allNames[allNames %notin% colNames]
 
 # Merge dataframes.
 data <- all_data %>% purrr::reduce(full_join,by=colNames)
 
-# If data was found in multiple dataframes a column was added. 
-# e.g. chromosome.x; remove these columns.
+# If data was found in multiple dataframes then a column is added.
+# e.g. chromosome.x; remove these duplicated columns.
 data <- data[,-c(grep("\\.",colnames(data)))]
 
 # Remove non-unique rows.
-data <- unique(data)
+#data <- unique(data)
+
+# We are interested in genes associated with:
+diseases <- c("autism",
+	      "intellectual disability",
+	      "attention deficit hyperactivity disorder",
+	      "schizophrenia", 
+	      "bipolar disorder",
+	      "epilepsy")
+
+# Write a function to find these rows.
+getRows <- function(diseases,i) {
+	idx <- grep(diseases[i], tolower(data$diseaseName))
+	return(idx)
+}
+
+# Parallelize the task with dopar.
+workers <- makeCluster(nThreads)
+registerDoParallel(workers)
+rows <- foreach(i=seq_along(diseases)) %dopar% { getRows(diseases,i) }
+suppressWarnings(stopCluster(workers))
 
 # Split data into disease groups.
-data_list <- split(data,data$diseaseId)
+data_list <- lapply(rows, function(idx) data[idx,])
+names(data_list) <- diseases
 
 # Check disorder group sizes.
 sizes <- sapply(data_list,function(x) length(unique(x$msEntrez)))
 
-# Remove groups with less than min genes or greater than max genes.
-keep <- names(sizes)[sizes > min_size & sizes < max_size]
-data_list <- data_list[keep] 
-data <- do.call(rbind,data_list)
+# Write as gmt file.
+gmt_list <- lapply(data_list,function(x) x$msEntrez)
+gmt_file <- file.path(gmtdir,"mouse_DisGeneNET.gmt")
+write_gmt(gmt_list,gmt_source="DisGeneNET",gmt_file)
 
 # Status report.
-nGenes <- length(unique(data$msEntrez))
-nDisorders <- length(unique(data$diseaseId))
+nGenes <- length(unique(unlist(sapply(data_list,function(x) x$msEntrez))))
+nDisorders <- length(diseases)
 message(paste0("Compiled ",nGenes," mouse genes associated with ",
-	       nDisorders," DBDs or phenotypes!"))
-
-# Save to file.
-myfile <- file.path(tabsdir,paste0("mouse_Combined_DisGeneNet_geneSet.csv"))
-fwrite(data,myfile)
+	       nDisorders," DBDs!"))
 
 # Description of the data.
 data_description <- paste("Gene-disease associations compiled from",
