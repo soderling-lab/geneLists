@@ -1,0 +1,14 @@
+Package: geneLists
+Title: tools for mapping gene identifiers and a collection of gene lists in a universal format
+Version: 0.0.1.0000
+Authors@R: 
+    person(given = "Tyler",
+           family = "Bradshaw",
+           role = c("aut", "cre"),
+           email = "twesleyb10@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1

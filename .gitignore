@@ -1,0 +1,12 @@
+downloads/
+debug.log
+rdata/
+tables/
+ARCHIVE/
+renv/
+bin/
+renv/
+refs/
+renv.lock
+.Rprofile
+*.sw*

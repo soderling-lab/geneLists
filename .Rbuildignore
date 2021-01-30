@@ -1,0 +1,8 @@
+^renv$
+^renv\.lock$
+\.git
+\.RData$
+\.Rhistory$
+\.Rprofile$
+\downloads
+\tmp\*
