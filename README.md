@@ -44,6 +44,12 @@ For additional details about each dataset, see the [README](./datasets/README.md
 in the `datasets/` directory. The source code used to compile each gene list is
 in `inst/analysis`.
 
+```R
+# to see all scripts:
+list.files(system.file("analysis/2_build-lists", package="geneLists"))
+
+```
+
 ## License
 This program is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
