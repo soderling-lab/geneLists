@@ -67,29 +67,33 @@ download.file(data_url, destfile=myfile)
 # read into R
 df <- read_excel(myfile)
 
-
 # we need the human gene map, install it if required
 #BiocManager::install("org.Hs.eg.db")
-
 
 # apparently these arent refseq...
 #entrez <- getIDs(genes,from="refseq",to="entrez","human")
 
-# we can map the uniprot IDs instead or gene symbols...
 # and Swiss-Prot is actually uniprot, yes gene identifiers are confusing!
+
+# we can map the uniprot IDs to entrez
 uniprot <- df$"Swiss-Prot"
 
 # map to uniprot
-df$entrez <- getIDs(uniprot,"uniprot","entrez","human")
+df$hsEntrez <- getIDs(uniprot,"uniprot","entrez","human")
+
+# how many were not mapped
+sum(is.na(df$hsEntrez))
 
 # drop 8 NA
-subdf <- df %>% filter(!is.na(entrez))
+subdf <- df %>% filter(!is.na(hsEntrez))
 
 # map to mouse with getHomologs
-subdf <- subdf %>% mutate(msEntrez = geneLists::getHomologs(entrez,"human","mouse"))
+subdf <- subdf %>% mutate(msEntrez = geneLists::getHomologs(hsEntrez,"mouse"))
 
-# 2 not mapped to homologs
+# 32 not mapped to homologs
 sum(is.na(subdf$msEntrez))
+
+head(subdf)
 
 # create gene_list excluding NA
 is_na <- is.na(subdf$msEntrez)
@@ -102,6 +106,9 @@ subdf %>% filter(`Gene Symbol` == "UBE3A")
 # categories of ligases
 l <- sapply(gene_list, length) 
 data.table(group=names(l), k=l) %>% knitr::kable()
+
+x = unlist(gene_list)
+length(x)
 
 
 ## ---- save
