@@ -49,6 +49,10 @@ in `inst/analysis`.
 list.files(system.file("analysis/2_build-lists", package="geneLists"))
 
 ```
+These scripts show how you can download a dataset and save it as a GMT formatted
+file and gene_list R object. See the `tutorials/064_E3-Ligases.R` script for a
+recent example on how to create a gene list.
+
 
 ## License
 This program is free software; you can redistribute it and/or modify it under
