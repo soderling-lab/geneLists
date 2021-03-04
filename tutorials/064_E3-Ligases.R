@@ -107,12 +107,12 @@ data.table(group=names(l), k=l) %>% knitr::kable()
 ## ---- save
 
 # write gmt file, saved in root/gmt
-write_gmt(gene_list, data_source, file.path(root,"gmt",script))
+#write_gmt(gene_list, data_source, file.path(root,"gmt",script))
 
 # generate simple dataset documentation in root/R 
 #   and generate rda object in root/data
-documentDataset(file.path(root,"gmt",script), short_name, 
-		file.path(root,"R"), file.path(root,"data"))
+#documentDataset(file.path(root,"gmt",script), short_name, 
+#		file.path(root,"R"), file.path(root,"data"))
 
 # now push changes to git and you can use
 #data(e3ligase)
