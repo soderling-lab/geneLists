@@ -8,18 +8,20 @@ gene lists for simple, reproducible Gene Set Enrichment Analysis (GSEA).
 A major focus of this repository is the collection of __synaptic proteome__
 genes as well as genes that are implicated in human __brain disorders__.
 
-Gene lists are stored in the Broad Institute [GMT
-format](https://bit.ly/38gtRLW) file.  These can be downloaded directly from
-`datasets/`, or accessed in __R__ with the `data()` command.
+Gene lists are stored in the Broad Institute's [GMT
+format](https://bit.ly/38gtRLW).  These can be downloaded directly from the
+`datasets/` directory, or accessed in __R__ with the `data()` command.  For
+example, load the [SFARI](https://gene.sfari.org/) autism candidate gene dataset
+with `data(sfariGene)`.
 
-Gene lists are are scraped from the literature or online databases. Gene
+Gene lists are are collected from the literature or online databases. Gene
 identifiers are mapped to stable, unique Entrez IDs. Often, it is
 necessary to map human genes to their homlogous mouse genes. This is done using
-the Homologene database.
+the Homologene database and the `getHomologs` function.
 
 ## Installation
 Insure you have installed `AnnotationDbi` beforing installing `geneLists`.
-For example in __R__, download `geneLists` from GitHub using the devtools package:
+To install this package in __R__, use the `devtools` package:
 
 ```R
 # Install from github
@@ -37,18 +39,35 @@ geneLists()
 # Load a dataset
 data(iPSD) # Uezu2016 iPSD genes
 
+# converting between identifiers
+gphn_proteome <- iPSD[["Gphn"]]
+uniprot <- getIDs(gphn_proteome, from="entrez", to="uniprot", species="mouse")
+
+# mapping genes using a given gene map
+data(uniprot_map)
+mapIDs(uniprot, from="Accession", to="Entrez", gene_map=uniprot_map)
+
+# NOTE: be careful to not confuse getIDs (uses org.##.eg.db) and
+# mapIDs (you must provide a gene_map; the arguments from and to specify columns
+# in the gene_map).
+
 ```
 
 ## Datasets
-For additional details about each dataset, see the [README](./datasets/README.md)
-in the `datasets/` directory. The source code used to compile each gene list is
-in `inst/analysis`.
+For additional details about each dataset, see the
+[README](./datasets/README.md) in the `datasets/` directory. Otherwise, the
+source code used to compile each gene list can be found in `inst/analysis`.
 
 ```R
-# to see all scripts:
+# to see all scripts in inst/analaysis/2_build-lists:
 list.files(system.file("analysis/2_build-lists", package="geneLists"))
-
 ```
+
+The scripts in `inst/analysis` record how each gene list was created. These
+can be used as examples to show you can download a dataset and save it as a GMT
+formatted file and gene_list R object. See the `tutorials/064_E3-Ligases.R`
+script for a recent example on how to create a gene list.
+
 
 ## License
 This program is free software; you can redistribute it and/or modify it under
