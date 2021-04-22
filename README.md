@@ -16,11 +16,11 @@ with `data(sfariGene)`.
 
 Gene lists are are collected from the literature or online databases. Gene
 identifiers are mapped to stable, unique Entrez IDs. Often, it is
-necessary to map human genes to their homlogous mouse genes. This is done using
-the Homologene database and the `getHomologs` function.
+necessary to map human genes to their homologous mouse genes. This is done using
+the HomoloGene database and the `getHomologs` function.
 
 ## Installation
-Insure you have installed `AnnotationDbi` beforing installing `geneLists`.
+Insure you have installed `AnnotationDbi` before installing `geneLists`.
 To install this package in __R__, use the `devtools` package:
 
 ```R
@@ -59,7 +59,7 @@ For additional details about each dataset, see the
 source code used to compile each gene list can be found in `inst/analysis`.
 
 ```R
-# to see all scripts in inst/analaysis/2_build-lists:
+# to see all scripts in inst/analysis/2_build-lists:
 list.files(system.file("analysis/2_build-lists", package="geneLists"))
 ```
 
