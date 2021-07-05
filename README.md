@@ -21,11 +21,22 @@ the HomoloGene database and the `getHomologs` function.
 
 ## Installation
 Insure you have installed `AnnotationDbi` before installing `geneLists`.
-To install this package in __R__, use the `devtools` package:
+```R
+ install.packages("BiocManager")
+ BiocManager::install("AnnotationDbi")
+ ```
+
+To install the `geneLists` package in __R__, use the `devtools` package:
 
 ```R
 # Install from github
 devtools::install_github("soderling-lab/geneLists")
+```
+The gene mapping function `getIDs` uses organism specific mapping data. Insure
+you have downloaded the required packages, e.g. for mouse data you should have
+installed `org.Mm.eg.db` with BiocManager:
+```R
+BiocManager::install("org.Mm.eg.db")
 ```
 
 ## Usage

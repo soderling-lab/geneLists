@@ -5,7 +5,9 @@
 #' for mapping mouse genes, you should have installed "org.Mm.eg.db" with
 #' BiocManager.
 #'
-#' @author Tyler W Bradshaw, \email{tyler.w.bradshaw@duke.edu}
+#' @author Tyler W Bradshaw, \email{twesleyb10@gmail.com}
+#'
+#' @export mappingDBs 
 
 mappingDBs <- function() {
   annotationDBs <- list(
