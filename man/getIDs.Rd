@@ -42,6 +42,6 @@ getIDs(mygenes, from = "symbol", to = "entrez", species = "mouse")
 none
 }
 \author{
-Tyler W Bradshaw, \email{tyler.w.bradshaw@duke.edu}
+Tyler W Bradshaw, \email{twesleyb10@gmail.com}
 }
 \keyword{none}

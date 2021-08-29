@@ -22,6 +22,6 @@ write_gmt(gmt_list, gmt_source, gmt_file)
 none
 }
 \author{
-Tyler W Bradshaw, \email{tyler.w.bradshaw@duke.edu}
+Tyler W Bradshaw, \email{twesleyb10@gmail.com}
 }
 \keyword{}
