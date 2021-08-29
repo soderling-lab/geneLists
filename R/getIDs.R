@@ -40,8 +40,10 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
     message("Warning: missing values (NA) detected in input identifiers.")
   }
 
-  # Get organism specific mapping database.
+  # load annotation database info
   annotationDBs <- mappingDBs()
+
+  # Get organism specific mapping database
   if (!is.null(taxid)) {
     orgDB <- unlist(annotationDBs[sapply(annotationDBs, "[", 1) == taxid])
   } else if (!is.null(species)) {
@@ -57,21 +59,25 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
   })
   osDB <- eval(parse(text = orgDB[["database"]]))
 
-  # Get input type (from) and output type (to).
-  colIDto <- grep(toupper(to), columns(osDB))
-  colIDfrom <- grep(toupper(from), columns(osDB))
+  # Get input type (from) and output type (to)
+  colIDto <- match(toupper(to), columns(osDB))
+  colIDfrom <- match(toupper(from), columns(osDB))
 
-  # Check that from and to map to a single column.
+  # Check that from and to map to a single column
   keys <- keytypes(osDB)
-  msg <- paste0(
-    "Please provide one of the following",
-    "(case insensitive): ", paste(keys, collapse = ", "), "."
-  )
   if (length(colIDto) > 1) {
-    stop(paste("Multiple matching keys (to).\n", msg))
+  msg <- paste0(
+    "Multiple matching keys (to):",
+    paste(keys[colIDto], collapse = ", "), "."
+  )
+    stop(msg)
   }
   if (length(colIDfrom) > 1) {
-    stop(paste("Multiple matching keys (from).\n", msg))
+  msg <- paste0(
+    "Multiple matching keys (from): ", 
+	paste(keys[colIDfrom], collapse = ", "), "."
+  )
+    stop(msg)
   }
 
   # Check MGI format if input is MGI.
