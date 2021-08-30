@@ -59,24 +59,28 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
   osDB <- eval(parse(text = orgDB[["database"]]))
 
   # Get input type (from) and output type (to)
-  colIDto <- match(toupper(to), columns(osDB))
-  colIDfrom <- match(toupper(from), columns(osDB))
+  colIDto <- grep(toupper(to), columns(osDB))
+  colIDfrom <- grep(toupper(from), columns(osDB))
 
   # Check that from and to map to a single column
   keys <- keytypes(osDB)
   if (length(colIDto) > 1) {
     msg <- c(
-      "Input argument 'to' matches multiple keys:\n\t",
-      paste(keys[colIDfrom], collapse = ", ")
+      "Input argument 'to' matches multiple keys: ",
+      paste(keys[colIDto], collapse = ", "),"\n",
+	  paste("Using: ", columns(osDB)[colIDto[1]])
     )
-    stop(msg)
+    warning(msg)
+	colIDto <- colIDto[1]
   }
   if (length(colIDfrom) > 1) {
     msg <- c(
-      "Input argument 'to' matches multiple keys:\n\t",
-      paste(keys[colIDfrom], collapse = ", ")
+      "Input argument 'from' matches multiple keys: ",
+      paste(keys[colIDfrom], collapse = ", "),"\n",
+	  paste("Using: ", columns(osDB)[colIDfrom[1]])
     )
-    stop(msg)
+    warning(msg)
+	colIDfrom <- colIDfrom[1]
   }
 
   # Check MGI format if input is MGI
