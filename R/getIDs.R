@@ -29,7 +29,6 @@
 #'
 #' @examples
 #' getIDs(mygenes, from = "symbol", to = "entrez", species = "mouse")
-
 getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
                    quiet = TRUE, multiVals = "first", ...) {
 
@@ -53,7 +52,7 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
   }
   names(orgDB) <- sapply(strsplit(names(orgDB), "\\."), "[", 2)
 
-  # load database
+  # load mapping database
   suppressPackageStartupMessages({
     eval(parse(text = paste0("require(", orgDB[["database"]], ",quietly=TRUE)")))
   })
@@ -66,21 +65,21 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
   # Check that from and to map to a single column
   keys <- keytypes(osDB)
   if (length(colIDto) > 1) {
-  msg <- paste0(
-    "Multiple matching keys (to):",
-    paste(keys[colIDto], collapse = ", "), "."
-  )
+    msg <- c(
+      "Input argument 'to' matches multiple keys:\n\t",
+      paste(keys[colIDfrom], collapse = ", ")
+    )
     stop(msg)
   }
   if (length(colIDfrom) > 1) {
-  msg <- paste0(
-    "Multiple matching keys (from): ", 
-	paste(keys[colIDfrom], collapse = ", "), "."
-  )
+    msg <- c(
+      "Input argument 'to' matches multiple keys:\n\t",
+      paste(keys[colIDfrom], collapse = ", ")
+    )
     stop(msg)
   }
 
-  # Check MGI format if input is MGI.
+  # Check MGI format if input is MGI
   if (columns(osDB)[colIDfrom] == "MGI") {
     if (!any(grepl("MGI:", identifiers))) {
       stop("Please provide MGI identifiers as MGI:ID")
@@ -91,7 +90,7 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
     )
   }
 
-  # Map gene identifiers.
+  # Map gene identifiers
   suppressMessages({
     output <- AnnotationDbi::mapIds(osDB,
       keys = as.character(identifiers),
@@ -101,7 +100,7 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
     )
   })
 
-  # Check if output is a list.
+  # Check if output is a list
   if (is.list(output)) {
     # Replace NULL
     is_null <- sapply(output, is.null)
@@ -109,7 +108,7 @@ getIDs <- function(identifiers, from, to, species = NULL, taxid = NULL,
     output <- unlist(output)
   }
 
-  # Check that all nodes (entrez) are mapped to gene symbols.
+  # Check that all nodes (entrez) are mapped to gene symbols
   not_mapped <- is.na(output)
 
   if (!quiet & sum(is.na(output)) != 0) {
