@@ -28,7 +28,7 @@ documentDataset <- function(gmt_file, short_name, Rdir, datadir,
   if (n > 1) {
     stop("More than one gmt source detected.")
   }
-  # Generate documentation.
+  # Generate Roxygen documentation.
   dataset <- readLines(file.path(Rdir, "data_emptyDataset.R"))
   namen <- paste(unique(gmt_list$names), collapse = "|")
   dataset[1] <- gsub("dataset_name", namen, dataset[1])

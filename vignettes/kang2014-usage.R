@@ -36,6 +36,5 @@ for (i in c(1:length(uniprotSubcell))) {
 }
 
 #df = do.call(rbind,results) %>% arrange(desc(`Fold enrichment`))
-
-fwrite(df, "foo.csv")
+#fwrite(df, "foo.csv")
 
